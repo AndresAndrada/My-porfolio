@@ -17,7 +17,6 @@ const About = () => {
             Muchas gracias por su tiempo.
             
             </h4>
-            <Footer />
         </div>
     )
 };

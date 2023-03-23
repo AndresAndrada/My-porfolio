@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import About from '../About/About'
 import Footer from "../Footer/Footer";
+import Technology from '../Technology/Technology'
 import style from '../../componentes/Home/Home.module.css'
 
 const Home = () => {
@@ -17,9 +18,12 @@ const Home = () => {
                     <Link to='/project'><button type="button" class="btn btn-secondary">VER PROYECTOS</button></Link>
                 </div>
             </div>
-                <div>
-                    <About />
-                </div>
+            <div>
+                <About />
+            </div>
+            <div>
+                <Technology />
+            </div>
                 <Footer />
         </>
     );

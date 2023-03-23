@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import whtp from '../../img/whtp.png'
-import linkedIn from '../../img/linkedIn.png'
-import github from '../../img/github.png'
-import inst from '../../img/inst.png'
+import style from '../../componentes/Footer/Footer.module.css'
 
 const Footer = () => {
 
@@ -20,22 +17,22 @@ const Footer = () => {
     };
 
     return (
-        <div>
-            <h5>
+        <div className={ style.footer }>
                 <Link onClick={ handleClickWapp }>
-                    <img src={ whtp } alt="whtp" width='50' />
+                    {/* <img src={ whtp } alt="whtp" width='50' /> */}
+                    <ion-icon name="logo-whatsapp"></ion-icon>
                 </Link>
-            </h5>
-            <h5>
                 <Link onClick={ handleClickLinkedIn }>
-                    <img src={ linkedIn } alt="linkedIn" width='50' />
+                    {/* <img src={ linkedIn } alt="linkedIn" width='50' /> */}
+                    <ion-icon name="logo-linkedin"></ion-icon>
                 </Link>
-            </h5>
-            <h5>
                 <Link onClick={ handleClickInst }>
-                    <img src={ inst } alt="inst" width='50' />
+                    {/* <img src={ inst } alt="inst" width='50' /> */}
+                    <ion-icon name="logo-instagram"></ion-icon>
                 </Link>
-                </h5>
+                <Link onClick={ handleClickInst }>
+                    <ion-icon name="logo-github"></ion-icon>
+                </Link>
         </div>
     );
 };
