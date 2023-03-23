@@ -1,0 +1,49 @@
+.conteiner {
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.left {
+    flex: 1;
+    list-style: none;
+    padding: 25px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    transition: 0.3s;
+    font-weight: bold;
+    list-style: none;
+}
+
+.fotohome {
+    border-radius: 100%;
+    width: 50px;
+    transition: 0.5s;
+}
+
+.fotohome:hover {
+    width: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    /* transition: .4s; */
+}
+
+.link {
+    transition: .4s;
+}
+
+.link:hover {
+    font-size: 20px;
+    color: rgb(229, 155, 102);
+}

@@ -1,0 +1,39 @@
+.home {
+    background-image: url('../../img/home.jpg');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    display: flex;
+    padding-left: 50px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.left {
+    flex: 1;
+    list-style: none;
+    padding: 25px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.saludo {
+    color: wheat;
+}
+
+.presentacion {
+    color: wheat;
+}
+
+.nombre {
+    color: red;
+}
+
+.profesion {
+    color: wheat;
+}

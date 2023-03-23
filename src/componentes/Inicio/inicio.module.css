@@ -1,0 +1,48 @@
+.inicio {
+    background-image: url('../../img/cba4.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* position: absolute; */
+    background-position: 20%;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 300px;
+    border-radius: 100%;
+    border: solid 2px;
+    transition: .4s;
+}
+
+.image:hover {
+    width: 320px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title {
+    color: rgb(242, 242, 242);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    transition: .5s;
+}
+
+.title:hover {
+    font-size: 45px;
+}
+
+.subtitle {
+    color: rgb(241, 233, 122);
+    font-family: 'Times New Roman', Times, serif;
+}
