@@ -1,7 +1,8 @@
 .home {
     background-image: url('../../img/home.jpg');
     background-size: cover;
-    padding-top: 100px;
+    background-position: 500%;
+    padding-top: 200px;
     padding-bottom: 300px;
     display: flex;
     padding-left: 50px;
@@ -10,16 +11,28 @@
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px #000;
     flex: 1;
     list-style: none;
     padding: 25px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(243, 243, 243, 0.2);
 }
 
 .right {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 1;
+    height: 100%;    
 }
 
 .saludo {
@@ -35,5 +48,42 @@
 }
 
 .profesion {
-    color: wheat;
+    color: rgb(247, 214, 153);
+}
+
+.title {
+    height: 250px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.imageconteiner {
+    height: 100%;
+    animation: move 12s ease-in infinite alternate;
+}
+
+@keyframes move {
+    20%{
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateY(-400px);
+    }
+    100%{
+        transform: translateY(-600px);
+    }
+
+}
+
+/* .imagediv {
+    margin: 10px;
+} */
+
+.image {
+    width: 400px;
+    height: 200px;
+    padding-bottom: 0;
+    font-size: 1rm;
+    border-radius: 15px;
+    margin: 15px;
 }

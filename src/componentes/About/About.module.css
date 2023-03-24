@@ -1,0 +1,26 @@
+.about {
+    background-color: #ffcbcb;
+    margin: 60px;
+}
+
+.conteiner {
+    list-style: none;
+    padding: 25px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(37, 27, 27, 0.2);
+}
+
+.link{
+    text-decoration: none;
+    color: blue;
+}
+
+/* a {
+    color: blue;
+    transition: .4s;
+}
+
+a:hover {
+    font-size: 20px;
+} */

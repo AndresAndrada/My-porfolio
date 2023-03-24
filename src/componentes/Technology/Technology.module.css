@@ -1,6 +1,7 @@
 .contenedor {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #ffcbcb;
 }
 
 .technology {
@@ -38,6 +39,14 @@ h2 {
 .logos {
     display: flex;
     flex-wrap: wrap;
+}
+
+.simbolos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 .icons {

@@ -6,7 +6,9 @@ import CurriculumVitae from './componentes/CurriculumVitae/CurriculumVitae';
 import About from './componentes/About/About';
 import { Route } from 'react-router-dom';
 import Project from './componentes/Project/Project';
-// import Footer from './componentes/Footer/Footer';
+import Technology from './componentes/Technology/Technology';
+import Footer from './componentes/Footer/Footer';
+import Contac from './componentes/Contac/Contac';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
       <Route path='/curriculumvitae' component={ CurriculumVitae } />
       <Route path='/about' component={ About } />
       <Route path='/project' component={ Project } />
-      {/* <Route path='/' component={ Footer } /> */}
+      <Route path='/technology' component={ Technology } />
+      <Route path='/contact' component={ Contac } />
+      <Route path='/' component={ Footer } />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from '../../componentes/Footer/Footer.module.css'
 
-const Footer = () => {
+const Contac = () => {
 
     const handleClickWapp = () => {
         window.open('https://wa.me/543517445402');
@@ -21,7 +21,7 @@ const Footer = () => {
     };
 
     return (
-        <div className={ style.footer }>
+        <div className={ style.contac }>
             <div className={ style.parrafo }>
                 <p>Muchas gracias por visitar mi porfolio.
                     <br /><br />
@@ -49,4 +49,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Contac;

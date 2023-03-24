@@ -5,7 +5,6 @@ const CurriculumVitae = () => {
     return (
         <div>
             <h1>CurriculumVitae</h1>
-            <Footer />
         </div>
     )
 };
