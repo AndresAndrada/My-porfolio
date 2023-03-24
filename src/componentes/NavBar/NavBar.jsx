@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <div className={ styles.right }>
                 <li><Link className={ styles.link } to='/curriculumvitae'>CURRICULUM VITAE</Link></li>
-                <li><Link className={ styles.link } to='/about'>ACERCA DE ME</Link></li>
+                <li><Link className={ styles.link } to='/about'>ACERCA DE MI</Link></li>
                 <li><Link className={ styles.link } to='/project'>PROYECTO</Link></li>
                 <li><Link className={ styles.link } to='/contact'>CONTACTO</Link></li>
             </div>
