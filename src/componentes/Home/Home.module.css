@@ -2,6 +2,7 @@
     background-image: url('../../img/home.jpg');
     background-size: cover;
     background-position: 500%;
+    background-attachment: fixed;
     padding-top: 200px;
     padding-bottom: 300px;
     display: flex;

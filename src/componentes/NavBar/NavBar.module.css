@@ -1,10 +1,13 @@
 .conteiner {
     background-color: #222831;
     display: flex;
+    width: 100%;
+    position: fixed;
     align-items: center;
     height: 64px;
     color: white;
     letter-spacing: 4px;
+    inset: 0 95% 0 0;
 }
 
 .left {
