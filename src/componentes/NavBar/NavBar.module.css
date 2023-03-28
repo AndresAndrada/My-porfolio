@@ -2,7 +2,7 @@
     background-color: #222831;
     display: flex;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     align-items: center;
     height: 64px;
     color: white;
