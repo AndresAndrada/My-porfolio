@@ -5,48 +5,52 @@ import style from '../../componentes/Technology/Technology.module.css'
 
 const Technology = () => {
     return (
-        <div className={ style.contenedor }>
+        <div className={style.contenedor}>
             <h2>Tecnologías</h2>
             <div className={style.technology}>
                 <div className={style.left}>
                     <h3>Front-end</h3>
-                    <div className={style.logos}>
-                        <div className={ style.simbolos }>
-                            <h5>JavaScript</h5>
-                            <IoLogoJavascript className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>React</h5>
-                            <IoLogoReact className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>HTML5</h5>
-                            <IoLogoHtml5 className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>CSS</h5>
-                            <IoLogoCss3 className={style.icons} />
+                    <div className={style.conteinerlogo}>
+                        <div className={style.logos}>
+                            <div className={style.simbolos}>
+                                <h5>JavaScript</h5>
+                                <IoLogoJavascript className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>React</h5>
+                                <IoLogoReact className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>HTML5</h5>
+                                <IoLogoHtml5 className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>CSS</h5>
+                                <IoLogoCss3 className={style.icons} />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className={style.right}>
                     <h3>Back-end</h3>
-                    <div className={style.logos}>
-                        <div className={ style.simbolos }>
-                            <h5>Node.JS</h5>
-                            <IoLogoNodejs className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>Express.JS</h5>
-                            <SiExpress className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>Sequelize</h5>
-                            <SiSequelize className={style.icons} />
-                        </div>
-                        <div className={ style.simbolos }>
-                            <h5>PostgreSQL</h5>
-                            <SiPostgresql className={style.icons} />
+                    <div className={style.conteinerlogo}>
+                        <div className={style.logos}>
+                            <div className={style.simbolos}>
+                                <h5>Node.JS</h5>
+                                <IoLogoNodejs className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>Express.JS</h5>
+                                <SiExpress className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>Sequelize</h5>
+                                <SiSequelize className={style.icons} />
+                            </div>
+                            <div className={style.simbolos}>
+                                <h5>PostgreSQL</h5>
+                                <SiPostgresql className={style.icons} />
+                            </div>
                         </div>
                     </div>
                 </div>
