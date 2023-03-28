@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: 500%;
     background-attachment: fixed;
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 300px;
     display: flex;
     padding-left: 50px;
@@ -55,7 +55,8 @@
 .title {
     height: 250px;
     overflow: hidden;
-    padding: 0;
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
 .imageconteiner {
@@ -86,5 +87,9 @@
     padding-bottom: 0;
     font-size: 1rm;
     border-radius: 15px;
+    margin: 15px;
+}
+
+.links {
     margin: 15px;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import About from '../About/About'
-import Footer from "../Footer/Footer";
 import Technology from '../Technology/Technology'
 import style from '../../componentes/Home/Home.module.css'
 import { IoLocationSharp } from "react-icons/io5";
@@ -33,8 +32,12 @@ const Home = () => {
                             <div><img className={ style.image } src={ pokemon } alt={ bonita } /></div>
                         </div>
                     </div>
+                    <div>
+                        <Link to='/project' className={ style.links }><button type="button" class="btn btn-secondary">VER PROYECTOS</button></Link>
+                        <Link to='/curriculum'><button type="button" class="btn btn-secondary">CURRICULUM</button></Link>
+
+                    </div>
                     {/* </Slider> */}
-                    <Link to='/project'><button type="button" class="btn btn-secondary">VER PROYECTOS</button></Link>
                 </div>
             </div>
             <div>

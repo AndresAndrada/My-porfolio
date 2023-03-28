@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from '../NavBar/NavBar.module.css'
 import img from '../../img/FOTO CV.png'
+import docs from '../../doc/CV.pdf';
+
 
 const Navbar = () => {
     return (
@@ -10,10 +12,10 @@ const Navbar = () => {
                 <li><Link to='/home'><img src={ img } className={ styles.fotohome } alt="home" /></Link></li>
             </div>
             <div className={ styles.right }>
-                <li><Link className={ styles.link } to='/curriculumvitae'>CURRICULUM VITAE</Link></li>
                 <li><Link className={ styles.link } to='/about'>ACERCA DE MI</Link></li>
                 <li><Link className={ styles.link } to='/project'>PROYECTO</Link></li>
                 <li><Link className={ styles.link } to='/contact'>CONTACTO</Link></li>
+                <li><a className={ styles.a } href={ docs }>CURRICULUM VITAE</a></li>
             </div>
         </div>
 
