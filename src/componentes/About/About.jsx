@@ -7,7 +7,7 @@ const About = () => {
         <div className= { style.about }>
             <div className={ style.conteiner }>
                 <h2>Acerca de mi</h2>
-                <h4>Quiero comentarles que soy un persona que siempre esta en permanente capacitacion y estudiando lo que realmente me apaciona. Puedo agragar de que eh sufrido algunos cambios en mi vida, los me han llevado a grandes desafios que pude superarlos con mucho esfuerzo y sacrificio y gracias a ello eh logrado ser lo que soy ahora, una persona comprometida, responsable, sociable y con gran capacidad de adaptabilidad.
+                <h4>Quiero comentarles que soy un persona que siempre esta en permanente capacitacion y estudiando lo que realmente me apaciona. Puedo agregar de que eh sufrido algunos cambios en mi vida, los me han llevado a grandes desafios que pude superarlos con mucho esfuerzo y sacrificio y gracias a ello eh logrado ser lo que soy ahora, una persona comprometida, responsable, sociable y con gran capacidad de adaptabilidad.
                 <br /><br />
                 Al terminar mi escolaridad decidí estudiar Profesorado de Educación Física y capacitarme como Preparador Físico de alto rendimiento. Es lo que me a pasionaba y quería llegar a cumplir un sueño, que era llegar a lo más alto de futbol argentino y lo logré trabajando para Instituto Atlético Central Córdoba de Córdoba, Argentina y Club Deportivo Godoy Cruz Antonio Tomba de Mendoza, Argentina.
                 <br /><br />

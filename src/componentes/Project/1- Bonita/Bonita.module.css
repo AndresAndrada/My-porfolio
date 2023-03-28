@@ -1,14 +1,21 @@
 .bonita {
-    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
     /* padding-bottom: 100px; */
-    background-color: white;
-    border-radius: 60px;
-    padding: 25px;
+    border-radius: 40px;
+    /* background-color: black; */
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    background-color: rgba(45, 22, 22, 0.2);
+    background-color: rgba(30, 22, 22, 0.2);
+}
+
+.title {
+    color: chocolate;
 }

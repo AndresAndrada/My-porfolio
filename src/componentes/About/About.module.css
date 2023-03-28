@@ -1,14 +1,15 @@
 .about {
-    background-color: #ffcbcb;
+    background-color: #e3e3e3;
     margin: 60px;
 }
 
 .conteiner {
     list-style: none;
     padding: 25px;
+    border-radius: 20px;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    background-color: rgba(37, 27, 27, 0.2);
+    background-color: rgba(97, 74, 74, 0.2);
 }
 
 .link{
