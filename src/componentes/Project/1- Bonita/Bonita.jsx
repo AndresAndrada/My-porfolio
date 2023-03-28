@@ -16,8 +16,8 @@ const Bonita = () => {
 
     return (
         <div className={ style.bonita }>
-            <h2 className={ style.title }>Bonita Devoto</h2>
-            <h4>E-commerce</h4>
+            <h1 className={ style.title }>Bonita Devoto</h1>
+            <h4 className={ style.proyecto }>E-commerce</h4>
                 <ReactPlayer  
                     url={ bonita }
                     // width='400'

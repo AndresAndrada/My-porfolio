@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import bonita from '../../img/bonita.png'
-import pokemon from '../../img/pokemon.png'
-import hire from '../../img/hire.png'
+// import bonita from '../../img/bonita.png'
+// import pokemon from '../../img/pokemon.png'
+// import hire from '../../img/hire.png'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Bonita from "./1- Bonita/Bonita";
@@ -19,7 +19,7 @@ const Project = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         cssEase: "linear"
       };
     return (

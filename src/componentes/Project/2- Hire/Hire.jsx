@@ -15,7 +15,7 @@ const HireMySkills = () => {
 
     return (
         <div className={ style.bonita }>
-            <h2>HireMySkills</h2>
+            <h1 className={ style.title }>HireMySkills</h1>
             <h4>E-commerce de Servicios</h4>
             <div className={ style.imagen}>
                 <img src={ hire } alt={ hire } width='800' />

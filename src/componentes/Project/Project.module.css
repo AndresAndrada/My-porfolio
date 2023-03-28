@@ -1,4 +1,8 @@
 .project {
+    background-image: url('../../img/noche1.jpg');
+    background-size: cover;
+    background-position: 500%;
+    background-attachment: fixed;
     padding-top: 100px;
     padding-bottom: 20px;
     height: 100vh;
