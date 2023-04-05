@@ -1,5 +1,6 @@
 .home {
     background-image: url('../../img/home.jpg');
+    width: 100%;
     background-size: cover;
     background-position: 500%;
     background-attachment: fixed;
