@@ -14,8 +14,8 @@ const Navbar = () => {
       <div className={styles.right}>
         <li><Link className={styles.link} to='/about'>ACERCA DE MI</Link></li>
         <li><Link className={styles.link} to='/project'>PROYECTO</Link></li>
-        <li><Link className={styles.link} to='/contact'>CONTACTO</Link></li>
-        <li><a className={styles.a} href={docs}>CURRICULUM VITAE</a></li>
+        {/* <li><Link className={styles.link} to='/contact'>CONTACTO</Link></li> */}
+        <li><a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
       </div>
     </div>
 
