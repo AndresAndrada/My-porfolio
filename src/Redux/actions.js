@@ -24,3 +24,11 @@ export const patchCount = (id, count) => {
         });
     };
 };
+
+export const postReviews = (obj) => {
+    return async (dispatch) => {
+        console.log(obj);
+        const aux = await axios.post('/reviews', obj);
+        console.log(aux.data);
+    }
+}

@@ -8,6 +8,7 @@ import bonita from '../../img/bonita.png';
 import hire from '../../img/hire.png';
 import pokemon from '../../img/pokemon.png';
 import docs from '../../doc/CV.pdf';
+import Reviews from "../Reviews/Reviews";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
@@ -46,6 +47,9 @@ const Home = () => {
       </div>
       <div>
         <Technology />
+      </div>
+      <div>
+        <Reviews />
       </div>
     </>
   );

@@ -6,6 +6,8 @@ import docs from '../../doc/CV.pdf';
 
 
 const Navbar = () => {
+  console.log(window.pageYOffset, 'WIND NAV');
+
   return (
     <div className={styles.conteiner}>
       <div className={styles.left}>
@@ -18,25 +20,6 @@ const Navbar = () => {
         <li><a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
       </div>
     </div>
-
-    // <div>
-    //     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    //         <div className="container-fluid">
-    //             <Link to='/home'><img src={ img } className={ styles.fotohome } alt="home" /></Link>
-    //             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    //                 <span class="navbar-toggler-icon"></span>
-    //             </button>
-    //             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    //                 <div class="navbar-nav">
-    //                     {/* <Link class="nav-link active" aria-current="page" href="#">Home</Link> */}
-    //                     <Link class="nav-link" to='/about'>About</Link>
-    //                     <Link class="nav-link" to='/project'>Project</Link>
-    //                     <Link class="nav-link" to='/curriculumvitae'>Curriculum Vitae</Link>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </nav>
-    // </div>
   );
 };
 

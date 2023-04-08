@@ -9,8 +9,10 @@ import Project from './componentes/Project/Project';
 import Footer from './componentes/Footer/Footer';
 import Contac from './componentes/Contac/Contac';
 import TechnologyComp from './componentes/Technology/TechnologyComp/TechnologyComp';
+import Reviews from './componentes/Reviews/Reviews';
 
 function App() {
+  // console.log(window.pageYOffset, 'WIND APP');
   return (
     <div className="App">
       <Route path='/' component={ Navbar } />
@@ -20,6 +22,7 @@ function App() {
       <Route path='/about' component={ About } />
       <Route path='/project' component={ Project } />
       <Route path='/technology' component={ TechnologyComp } />
+      <Route path='/reviews' component={ Reviews } />
       <Route path='/contact' component={ Contac } />
       <Route path='/' component={ Footer } />
     </div>
