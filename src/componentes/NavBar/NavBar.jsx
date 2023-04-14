@@ -1,26 +1,80 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import styles from '../NavBar/NavBar.module.css'
 import img from '../../img/FOTO CV.png'
 import docs from '../../doc/CV.pdf';
 
 
 const Navbar = () => {
-  console.log(window.pageYOffset, 'WIND NAV');
+  const [scroll, setScroll] = useState(false);
+  
+
+  const handleClick = () => setScroll(!scroll);
+
+  const closeMenu = () => setScroll(false);
+
+  // const handleHome = () => {
+
+  // }
+
 
   return (
-    <div className={styles.conteiner}>
+    <div className={styles.conteiner} id="Inicio">
       <div className={styles.left}>
-        <li><Link to='/home'><img src={img} className={styles.fotohome} alt="home" /></Link></li>
+        <li>
+          <a href="/home">
+          <img src={img} className={styles.fotohome} alt="home" />
+          </a>
+        </li>
       </div>
       <div className={styles.right}>
-        <li><Link className={styles.link} to='/about'>ACERCA DE MI</Link></li>
-        <li><Link className={styles.link} to='/project'>PROYECTO</Link></li>
-        {/* <li><Link className={styles.link} to='/contact'>CONTACTO</Link></li> */}
-        <li><a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
+        <li className={ styles.navItem }>
+          <Link className={styles.link} to="About" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
+            ACERCA DE MI
+          </Link></li>
+        <li className={ styles.navItem }>
+          <Link className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>
+            PROYECTO
+          </Link></li>
+        <li className={ styles.navItem }>
+          <Link className={ styles.link } to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>
+            CONTACTO
+          </Link></li>
+        <li className={ styles.navItem }>
+          <a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
       </div>
     </div>
   );
 };
 
 export default Navbar;
+
+
+// const [current, setCurrent] = useState("Home");
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (parseInt(window.pageYOffset) === 848) alert('ESTOY')
+
+  //     const homeSection = document.getElementById("Home");
+  //     const aboutMeSection = document.getElementById("About");
+  //     const proyectoSection = document.getElementById("Proyecto");
+  //     const footerSection = document.getElementById("Footer");
+  //     // console.log(inicioSection, 'INICIO');
+  //     if (window.pageYOffset >= homeSection.offsetTop && window.pageXOffset < aboutMeSection.offsetTop) {
+  //       setCurrent("Home");
+  //     } else if (window.pageYOffset >= aboutMeSection.offsetTop &&
+  //       window.pageYOffset < proyectoSection.offsetTop) {
+  //       setCurrent('About');
+  //     } else if (window.pageYOffset >= proyectoSection.offsetTop &&
+  //       window.pageYOffset < footerSection.offsetTop) {
+  //       setCurrent('Proyecto');
+  //     } else if (window.pageYOffset >= footerSection.offsetTop) {
+  //       setCurrent('Footer')
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll)
+  //   // console.log(window.addEventListener('scroll', handleScroll), 'EVENT');
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);

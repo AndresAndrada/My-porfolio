@@ -9,6 +9,7 @@ import hire from '../../img/hire.png';
 import pokemon from '../../img/pokemon.png';
 import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
+import Project from '../Project/Project'
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +17,7 @@ import Reviews from "../Reviews/Reviews";
 const Home = () => {
   return (
     <>
-      <div className={style.home}>
+      <div className={style.home} id="Home">
         <div className={style.left}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}
           <h1 className={style.presentacion}>
@@ -47,6 +48,9 @@ const Home = () => {
       </div>
       <div>
         <Technology />
+      </div>
+      <div>
+        <Project />
       </div>
       <div>
         <Reviews />

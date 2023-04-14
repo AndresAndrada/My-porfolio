@@ -15,7 +15,7 @@ function Inicio() {
 
     const handleClick = (numero) => {
         setNum(num.count + numero);
-        console.log(num, 'SETNUME INICIO');
+        // console.log(num, 'SETNUME INICIO');
         dispatch(patchCount(count[0].id, num))
     };
 

@@ -23,7 +23,7 @@ const Project = () => {
         cssEase: "linear"
       };
     return (
-        <div className={ style.project } >
+        <div className={ style.project } id="Proyecto" >
             {/* <h1>Project</h1> */}
             <Slider {...settings}>
                 <div>

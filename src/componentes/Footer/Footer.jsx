@@ -21,13 +21,14 @@ const Footer = () => {
     };
 
     return (
-        <div className={ style.footer }>
+        <div className={ style.footer } id="Footer">
             <div className={ style.parrafo }>
                 <p>Muchas gracias por visitar mi porfolio.
                     <br /><br />
-                    En caso de que desee contactarme le dejo los siguieste datos:
+                    En caso de que desee contactarme les dejo los siguieste datos:
                     </p>
             </div>
+            <br /><br />
             <div>
                 <Link onClick={ handleClickWapp }>
                     {/* <img src={ whtp } alt="whtp" width='50' /> */}
