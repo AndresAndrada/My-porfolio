@@ -49,6 +49,7 @@ a {
 
 .link {
     transition: .4s;
+    border-radius: 6px;
 }
 
 .link:hover {
@@ -57,7 +58,7 @@ a {
     color: rgb(229, 155, 102);
 }
 
-.link .active {
+.link:active {
     /* padding-bottom: 12px; */
     color: rgb(229, 155, 102);
 }

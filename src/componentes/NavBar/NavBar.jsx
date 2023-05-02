@@ -6,9 +6,9 @@ import img from '../../img/FOTO CV.png'
 import docs from '../../doc/CV.pdf';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [scroll, setScroll] = useState(false);
-  
+  console.log(props.location.pathname, 'URL NAV');
 
   const handleClick = () => setScroll(!scroll);
 
@@ -24,26 +24,45 @@ const Navbar = () => {
       <div className={styles.left}>
         <li>
           <a href="/home">
-          <img src={img} className={styles.fotohome} alt="home" />
+            <img src={img} className={styles.fotohome} alt="home" />
           </a>
         </li>
       </div>
-      <div className={styles.right}>
-        <li className={ styles.navItem }>
-          <Link className={styles.link} to="About" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
-            ACERCA DE MI
-          </Link></li>
-        <li className={ styles.navItem }>
-          <Link className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>
-            PROYECTO
-          </Link></li>
-        <li className={ styles.navItem }>
-          <Link className={ styles.link } to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>
-            CONTACTO
-          </Link></li>
-        <li className={ styles.navItem }>
-          <a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
-      </div>
+      <>
+        {props.location.pathname === "/" ? <div className={styles.right}>
+          {/* <li className={styles.navItem}>
+            <button className={styles.link} to="About" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} disabled>
+              ACERCA DE MI
+            </button></li>
+          <li className={styles.navItem}>
+            <button className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu} disabled>
+              PROYECTO
+            </button></li>
+          <li className={styles.navItem}>
+            <button className={styles.link} to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu} disabled>
+              CONTACTO
+            </button></li>
+          <li className={styles.navItem}>
+            <a className={styles.link} href={docs} disabled>CURRICULUM VITAE</a></li> */}
+        </div > :
+          <div className={styles.right}>
+            <li className={styles.navItem}>
+              <Link className={styles.link} to="About" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>
+                ACERCA DE MI
+              </Link></li>
+            <li className={styles.navItem}>
+              <Link className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>
+                PROYECTO
+              </Link></li>
+            <li className={styles.navItem}>
+              <Link className={styles.link} to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>
+                CONTACTO
+              </Link></li>
+            <li className={styles.navItem}>
+              <a className={styles.link} href={docs}>CURRICULUM VITAE</a></li>
+          </div>
+        }
+      </>
     </div>
   );
 };
