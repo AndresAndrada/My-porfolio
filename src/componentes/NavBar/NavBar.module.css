@@ -27,10 +27,19 @@
     list-style: none;
 }
 
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+}
+
 .fotohome {
     border-radius: 100%;
     width: 50px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .fotohome:hover {
@@ -61,4 +70,19 @@ a {
 .link:active {
     /* padding-bottom: 12px; */
     color: rgb(229, 155, 102);
+}
+
+.checkbtn {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+}
+
+.check {
+    display: none;
 }
