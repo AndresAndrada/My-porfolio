@@ -6,44 +6,49 @@ import styles from '../NavBar/NavBar.module.css';
 
 // import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
-    const closeMenu = () => setClick(false)
+  const closeMenu = () => setClick(false)
 
-    return (
-        <div className={styles.conteiner}>
-            {/* <nav> */}
-              <div className={styles.left}>
-                <a href='/home'>
-                    <img src={logo}  className={styles.fotohome} alt='logo' />
-                </a>
-                {/* <div className={ styles.hamburger } onClick={handleClick}>
+  return (
+    <div className={styles.conteiner}>
+      {/* <nav> */}
+      <div className={styles.left}>
+        <a href='/home'>
+          <img src={logo} className={styles.fotohome} alt='logo' />
+        </a>
+        {/* <div className={ styles.hamburger } onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
                 </div> */}
-              </div>
-              <div className={styles.right}>
-                {/* <ul className={click ? styles.navmenu : styles.navmenu}> */}
-                    <li className={styles.navitem}>
-                        <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
-                    </li>
-                    <li className={styles.navItem}>
-                        <Link className={styles.link} to='About' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Proyectos</Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
-                    </li>
-                {/* </ul> */}
-              </div>
-            {/* </nav> */}
-        </div>
-    )
+      </div>
+      <>
+        {props.location.pathname === "/" ? <div className={styles.right}>
+        </div > :
+          <div className={styles.right}>
+            {/* <ul className={click ? styles.navmenu : styles.navmenu}> */}
+            <li className={styles.navitem}>
+              <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link className={styles.link} to='About' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Proyectos</Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
+            </li>
+            {/* </ul> */}
+          </div>
+        }
+      </>
+      {/* </nav> */}
+    </div>
+  )
 }
 
 export default Navbar
