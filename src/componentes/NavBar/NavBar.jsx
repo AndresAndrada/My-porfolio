@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 import logo from '../../img/FOTO CV.png';
 import styles from '../NavBar/NavBar.module.css';
+import docs from '../../doc/CV.pdf';
+
 
 // import './Navbar.css'
 
@@ -45,6 +47,9 @@ const Navbar = (props) => {
             <li className={styles.navitem}>
               <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
             </li>
+            {/* <li>
+              <a className={styles.link} href={docs} disabled>CURRICULUM VITAE</a>
+            </li> */}
             {/* </ul> */}
           </div>
         }
