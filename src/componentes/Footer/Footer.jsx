@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <div className={ style.footer } id="Footer">
             <div className={ style.parrafo }>
-                <p>Muchas gracias por visitar mi porfolio.
+                <p className={ style.letra }>Muchas gracias por visitar mi porfolio.
                     <br /><br />
                     En caso de que desee contactarme les dejo los siguieste datos:
                     </p>

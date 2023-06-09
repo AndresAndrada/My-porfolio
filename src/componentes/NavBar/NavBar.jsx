@@ -34,10 +34,13 @@ const Navbar = (props) => {
               <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
             </li>
             <li className={styles.navItem}>
-              <Link className={styles.link} to='About' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+              <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
             </li>
             <li className={styles.navitem}>
-              <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Proyectos</Link>
+              <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Tecnologias</Link>
             </li>
             <li className={styles.navitem}>
               <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>

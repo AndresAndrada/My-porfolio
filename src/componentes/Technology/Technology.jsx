@@ -5,7 +5,7 @@ import style from '../../componentes/Technology/Technology.module.css'
 
 const Technology = () => {
     return (
-        <div className={style.contenedor}>
+        <div className={style.contenedor} id="Technology">
             <h2>Tecnologías</h2>
             <div className={style.technology}>
                 <div className={style.left}>
