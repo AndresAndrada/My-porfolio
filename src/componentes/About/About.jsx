@@ -15,7 +15,7 @@ const About = () => {
               <img src={image} alt="Mi foto" className={style.profilePic} />
             </div>
             <div className={style.bioContainer}>
-              <h4>Hola, soy Andrada Andres!br</h4>
+              <h4>Hola, soy Andrada Andres!</h4>
               <br />
               <h4>Soy un apasionado por la tecnología y me encanta desarrollar aplicaciones web. Tengo experiencia en HTML, CSS, JavaScript y otras tecnologías web.</h4>
               <br />
