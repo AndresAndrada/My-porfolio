@@ -54,3 +54,35 @@
 .btn:hover {
     border: 2px solid rgb(45, 40, 40);
 }
+
+@media (max-width: 858px) {
+    .reviews {
+        margin: 0;
+        padding: 0;
+    }
+    .conten {
+        margin: 50px 50px 50px 50px;
+    }
+    .texto {
+        font-size: 15px;
+        padding: 25px 25px 25px 25px;
+    }
+    .name {
+        margin: 20px 20px 20px 20px;
+    }
+    .coment {
+        margin: 15px 15px 15px 15px;
+
+    }
+    .fomurlario {
+        display: flex;
+    }
+    .btn {
+        font-size: 15px;
+        /* width: 20%; */
+    }
+}
+
+@media (max-width: 600px) {
+
+}

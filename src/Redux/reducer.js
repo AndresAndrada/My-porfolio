@@ -1,7 +1,8 @@
 import { GET_COUNT } from "./actions";
 
 const initialState = {
-    count: []
+    count: [],
+    rewiews: [],
 };
 
 const rootReducer = (state = initialState, action) => {

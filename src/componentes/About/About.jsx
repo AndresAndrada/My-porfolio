@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import style from '../About/About.module.css';
-import docs from '../../doc/CV.pdf';
+// import docs from '../../doc/CV.pdf';
 import image from '../../img/FOTO CV.png'
 
 const About = () => {
@@ -15,12 +15,12 @@ const About = () => {
               <img src={image} alt="Mi foto" className={style.profilePic} />
             </div>
             <div className={style.bioContainer}>
-              <h4>Hola, soy Andrada Andres!</h4>
+              <h4 className={style.textH4}>Hola, soy Andrada Andres!</h4>
               <br />
-              <h4>Soy un apasionado por la tecnología y me encanta desarrollar aplicaciones web. Tengo experiencia en HTML, CSS, JavaScript y otras tecnologías web.</h4>
+              <h4 className={style.textH4}>Soy un apasionado por la tecnología y me encanta desarrollar aplicaciones web. Tengo experiencia en HTML, CSS, JavaScript y otras tecnologías web.</h4>
               <br />
-              <h4>En mi tiempo libre, disfruto aprendiendo nuevas habilidades y creando proyectos interesantes.</h4>
-              <h4>¡No dudes en contactarme si tienes alguna pregunta o proyecto en el que pueda ayudarte!</h4>
+              <h4 className={style.textH4}>En mi tiempo libre, disfruto aprendiendo nuevas habilidades y creando proyectos interesantes.</h4>
+              <h4 className={style.textH4}>¡No dudes en contactarme si tienes alguna pregunta o proyecto en el que pueda ayudarte!</h4>
             </div>
           </div>
         </div>

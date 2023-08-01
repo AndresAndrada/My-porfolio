@@ -27,13 +27,16 @@
     list-style: none;
 }
 
+.ulLista {
+    list-style: none;
+    display: flex;
+}
+
 .lista {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    list-style: none;
     font-weight: bold;
-
 }
 
 .fotohome {
@@ -47,16 +50,14 @@
     width: 55px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .navItem .active {
     color: rgb(229, 155, 102);
 }
 
 .link {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
     transition: .4s;
     border-radius: 6px;
 }
@@ -67,24 +68,96 @@ a {
     color: rgb(229, 155, 102);
 }
 
-.link:active {
-    color: rgb(229, 155, 102);
+.checkbtn {
+    color: white;
+    float: right;
+    cursor: pointer;
+    display: none;
 }
 
-.checkbtn {
+/* .checkInp {
+    display: none;
+} */
+
+@media (max-width: 858px) {
+    .right {
+        justify-content: space-evenly;
+    }
+    .ulLista {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .right {
+        justify-content: flex-end;
+        margin: 30px;
+        /* display: flex; */
+    }
+    .checkbtn {
+        display: block;
+        list-style: none;
+        float: right;
+    }
+    .ulLista {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(67, 44, 44);
+        top: 64px;
+        left: -120%;
+        text-align: center;
+        /* flex-direction: column; */
+        transition: .5s;
+    }
+    .ulListaFalse {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(67, 44, 44);
+        top: 64px;
+        left: 0;
+        text-align: center;
+        /* transition: .5s; */
+    }
+    .navitem {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .link {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .link:hover, .link.active {
+        background: none;
+        color: rgb(229, 155, 102);;
+    }
+    /* #checkInput:checked ~ .ulLista {
+        left: 0;
+    } */
+}
+
+
+/* .check {
+    display: none;
+} */
+
+/* .icon {
+    color: white;
+    font-size: 30px;
+} */
+
+/* .link:active {
+    color: rgb(229, 155, 102);
+} */
+
+/* .checkbtn {
     color: white;
     display: none;
     cursor: pointer;
-}
-
-.icon {
-    color: white;
-    font-size: 30px;
-}
-
-.check {
-    display: none;
-}
+} */
 
 /* .header {
     position: fixed;

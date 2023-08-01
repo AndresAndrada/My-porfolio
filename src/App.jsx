@@ -24,7 +24,7 @@ function App() {
       <Route path='/technology' component={ TechnologyComp } />
       <Route path='/reviews' component={ Reviews } />
       <Route path='/contact' component={ Contac } />
-      <Route path='/' component={ Footer } />
+      <Route path='/home' component={ Footer } />
     </div>
   );
 }

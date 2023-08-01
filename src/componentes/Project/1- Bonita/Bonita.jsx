@@ -11,7 +11,7 @@ const Bonita = () => {
     };
 
     const handleClickDeploy = () => {
-        window.open('https://my-porfolio-henna.vercel.app/');
+        window.open('https://9-pf-deploy-font.vercel.app/');
     };
 
     return (

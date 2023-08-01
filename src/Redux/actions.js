@@ -1,6 +1,7 @@
 import axios from 'axios';
 export const GET_COUNT = 'GET_COUNT';
-export const PATCH_COUNT= 'PATCH_COUNT';
+export const PATCH_COUNT = 'PATCH_COUNT';
+export const CLEAR_COUNT = 'CLEAR_COUNT';
 
 export const getCount = () => {
     return async (dispatch) => {
@@ -31,4 +32,4 @@ export const postReviews = (obj) => {
         const aux = await axios.post('/reviews', obj);
         console.log(aux.data);
     }
-}
+};
