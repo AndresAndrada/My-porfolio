@@ -6,7 +6,7 @@
 .conten {
     /* background-color: rgb(177, 169, 169); */
     border-radius: 15px;
-    margin: 200px;
+    margin: 150px;
     padding-top: 20px;
 }
 
@@ -84,5 +84,26 @@
 }
 
 @media (max-width: 600px) {
+    .reviews {
+        margin: 0;
+        padding: 0;
+    }
+    .texto {
+        font-size: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+    .name {
+        margin: 20px 20px 20px 20px;
+    }
+    .conten {
+        margin: 15px 15px 15px 15px;
 
+    }
+    .fomurlario {
+        display: flex;
+    }
+    .btn {
+        font-size: 15px;
+        /* width: 20%; */
+    }
 }
