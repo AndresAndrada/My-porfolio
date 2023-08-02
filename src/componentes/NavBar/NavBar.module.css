@@ -80,6 +80,12 @@
 } */
 
 @media (max-width: 858px) {
+    .conteiner {
+        height: 55px;
+    }
+    .fotohome {
+        width: 45px;
+    }
     .right {
         justify-content: space-evenly;
     }
@@ -90,6 +96,12 @@
 }
 
 @media (max-width: 600px) {
+    .conteiner {
+        height: 50px;
+    }
+    .fotohome {
+        width: 35px;
+    }
     .right {
         justify-content: flex-end;
         margin: 30px;

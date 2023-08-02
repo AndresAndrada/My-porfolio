@@ -52,3 +52,39 @@
     color: rgb(241, 233, 122);
     font-family: 'Times New Roman', Times, serif;
 }
+
+@media (max-width: 858px) {
+    .image {
+        width: 250px;
+    }
+    .image:hover {
+        width: 270px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .title:hover {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        width: 200px;
+    }
+    .image:hover {
+        width: 2200px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .title:hover {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+}
