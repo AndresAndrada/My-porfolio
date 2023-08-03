@@ -32,8 +32,8 @@ const Home = () => {
           <div className={style.title}>
             <div className={style.imageconteiner}>
               <div><img className={style.image} src={bonita} alt={bonita} /></div>
-              <div><img className={style.image} src={hire} alt={bonita} /></div>
-              <div><img className={style.image} src={pokemon} alt={bonita} /></div>
+              <div><img className={style.image} src={hire} alt={hire} /></div>
+              <div><img className={style.image} src={pokemon} alt={pokemon} /></div>
             </div>
           </div>
           <div>
