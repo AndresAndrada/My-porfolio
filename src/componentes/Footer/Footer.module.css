@@ -27,3 +27,21 @@ ion-icon {
     margin: 10px;
     color: white;
 }
+
+@media (max-width: 600px) {
+    .letra {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .letra {
+        font-size: 12px;
+    }
+    ion-icon {
+        font-size: 50px;
+        width: 30px;
+        margin: 10px;
+        color: white;
+    }
+}

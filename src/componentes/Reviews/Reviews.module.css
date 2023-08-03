@@ -59,6 +59,7 @@
     .reviews {
         margin: 0;
         padding: 0;
+        height: 100vh;
     }
     .conten {
         margin: 50px 50px 50px 50px;
@@ -87,6 +88,7 @@
     .reviews {
         margin: 0;
         padding: 0;
+        height: 100vh;
     }
     .texto {
         font-size: 15px;
