@@ -24,7 +24,7 @@ const Home = () => {
             Hola! Mi nombre es
             <span className={style.nombre}> Andres Andrada</span>
           </h1>
-          <h3 className={ style.localizacion}><IoLocationSharp /><span>Córdoba, Argentina</span></h3>
+          <h3 className={style.localizacion}><IoLocationSharp /><span>Córdoba, Argentina</span></h3>
           <h3><span className={style.profesion}>Full-Stack Developer</span></h3>
         </div>
         <div className={style.right}>
@@ -37,8 +37,8 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <Link to='/project' className={style.links}><button id={ style.boton } type="button" class="btn btn-secondary"><h6 className={ style.textH6 }>VER PROYECTOS</h6></button></Link>
-            <a href={ docs }><button type="button" class="btn btn-secondary"><h6 className={ style.textH6 }>CURRICULUM</h6></button></a>
+            <Link to='/project' className={style.links}><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}>VER PROYECTOS</h6></button></Link>
+            <a href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
 
           </div>
           {/* </Slider> */}
@@ -47,9 +47,9 @@ const Home = () => {
       <div>
         <About />
       </div>
-        <div>
-          <Project />
-        </div>
+      <div>
+        <Project />
+      </div>
       <div>
         <Technology />
       </div>

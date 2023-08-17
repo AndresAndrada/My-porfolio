@@ -38,11 +38,11 @@ const Navbar = (props) => {
               <li className={styles.navitem}>
                 <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
               </li>
-              { window.outerWidth < 800 ? '' : 
+              {/* { window.outerWidth < 800 ? '' :  */}
                 <li className={styles.navitem}>
                   <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
                 </li>
-              }
+              {/* } */}
               <li className={styles.navitem}>
                 <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Tecnologias</Link>
               </li>
