@@ -1,7 +1,7 @@
 .project {
     background-image: url('../../img/noche1.jpg');
     width: 100%;
-    height: 100hv;
+    /* height: 100hv; */
     background-size: cover;
     /* background-position: 500%; */
     background-position: center center;
