@@ -16,10 +16,97 @@
     background-color: rgba(30, 22, 22, 0.2);
 }
 
+.bonita1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    /* padding-bottom: 100px; */
+    border-radius: 40px;
+    /* background-color: black; */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(30, 22, 22, 0.2);
+}
+
 .title {
     color: chocolate;
 }
 
 .proyecto {
     color: white;
+}
+
+.image {
+    width: 700px;
+}
+
+@media (max-width: 858px) {
+    .bonita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100hv;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        /* padding-bottom: 100px; */
+        border-radius: 40px;
+        /* background-color: black; */
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        background-color: rgba(30, 22, 22, 0.2);
+    }
+    .image {
+        width: 500px;
+    }
+    .contenVideo {
+        margin: 50px 0;
+    }
+    .video {
+        /* top: 0; */
+        width: 450px;
+        height: 10px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bonita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100hv;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        /* padding-bottom: 100px; */
+        border-radius: 40px;
+        /* background-color: black; */
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        background-color: rgba(30, 22, 22, 0.2);
+    }
+    .image {
+        width: 350px;
+    }
+    .contenVideo {
+        margin: 50px 0;
+    }
+    .video {
+        /* top: 0; */
+        width: 450px;
+        height: 10px;
+        padding-bottom: 40px;
+    }
+   
 }

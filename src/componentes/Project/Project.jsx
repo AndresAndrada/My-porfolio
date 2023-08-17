@@ -25,7 +25,7 @@ const Project = () => {
     return (
         <div className={ style.project } id="Proyecto" >
             {/* <h1>Project</h1> */}
-            <Slider {...settings}>
+            <Slider {...settings} className={ style.conten }>
                 <div>
                     {/* <h3>3</h3> */}
                     {/* <img src={bonita} alt="" width='400'/> */}

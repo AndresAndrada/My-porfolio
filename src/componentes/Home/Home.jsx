@@ -47,11 +47,9 @@ const Home = () => {
       <div>
         <About />
       </div>
-      { window.outerWidth < 800 ? '' : 
         <div>
           <Project />
         </div>
-      }
       <div>
         <Technology />
       </div>

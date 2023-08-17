@@ -18,7 +18,8 @@ const HireMySkills = () => {
             <h1 className={ style.title }>HireMySkills</h1>
             <h4>E-commerce de Servicios</h4>
             <div className={ style.imagen}>
-                <img src={ hire } alt={ hire } width='800' />
+                {/* <img src={ hire } alt={ hire } width='800' /> */}
+                <img src={ hire } alt={ hire } className={ style.image }/>
             </div>
             <div>
                 <Link onClick={ handleClickgithub }>

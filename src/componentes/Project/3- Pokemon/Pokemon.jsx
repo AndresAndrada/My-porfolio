@@ -14,7 +14,8 @@ const Pokemon = () => {
             <h1 className={ style.title }>Pokemon</h1>
             <h4>Proyecto Indivicual</h4>
             <div className={ style.imagen}>
-                <img src={ pokemon } alt={ pokemon } width='800' />
+                <img src={ pokemon } alt={ pokemon } className={ style.image } />
+                {/* <img src={ pokemon } alt={ pokemon } width='400' /> */}
             </div>
             <div>
                     <Link onClick={ handleClickgithub }>
