@@ -1,5 +1,5 @@
 import React from "react";
-import docs from '../../doc/CV.pdf';
+// import docs from '../../doc/CV.pdf';
 
 const CurriculumVitae = () => {
     return (

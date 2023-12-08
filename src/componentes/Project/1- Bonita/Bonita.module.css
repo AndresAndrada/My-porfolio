@@ -1,5 +1,46 @@
 .bonita {
     display: flex;
+    background-color: rgb(97, 91, 91);
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 50px;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    /* border: 5px solid #ccc; */
+    border-radius: 20px;
+}
+
+.image {
+    width: 400px;
+    height: 230px;
+}
+
+.video {
+    width: 100%;
+    /* height: 10; */
+
+    /* width: 400px;
+    height: 10px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 40px; */
+}
+
+.contenVideo {
+    /* margin: 50px 0; */
+    width: 400px;
+    height: 250px;
+    padding-top: 0;
+}
+
+.icon {
+    color: black;
+}
+
+/* .bonita {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -8,9 +49,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-    /* padding-bottom: 100px; */
     border-radius: 40px;
-    /* background-color: black; */
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(30, 22, 22, 0.2);
@@ -26,9 +65,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-    /* padding-bottom: 100px; */
     border-radius: 40px;
-    /* background-color: black; */
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(30, 22, 22, 0.2);
@@ -57,9 +94,7 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 50px;
-        /* padding-bottom: 100px; */
         border-radius: 40px;
-        /* background-color: black; */
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         background-color: rgba(30, 22, 22, 0.2);
@@ -71,7 +106,6 @@
         margin: 50px 0;
     }
     .video {
-        /* top: 0; */
         width: 450px;
         height: 10px;
         padding-bottom: 40px;
@@ -89,9 +123,7 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 50px;
-        /* padding-bottom: 100px; */
         border-radius: 40px;
-        /* background-color: black; */
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         background-color: rgba(30, 22, 22, 0.2);
@@ -103,7 +135,6 @@
         margin: 50px 0;
     }
     .video {
-        /* top: 0; */
         width: 450px;
         height: 10px;
         padding-bottom: 40px;
@@ -121,9 +152,7 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 50px;
-        /* padding-bottom: 100px; */
         border-radius: 40px;
-        /* background-color: black; */
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         background-color: rgba(30, 22, 22, 0.2);
@@ -135,9 +164,8 @@
         margin: 50px 0;
     }
     .video {
-        /* top: 0; */
         width: 450px;
         height: 10px;
         padding-bottom: 40px;
     }
-}
+} */

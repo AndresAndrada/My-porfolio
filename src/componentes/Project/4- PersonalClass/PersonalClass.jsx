@@ -1,12 +1,11 @@
 import React from "react";
-import ReactPlayer from 'react-player';
 import { Link } from "react-router-dom";
-import bonita1 from '../../../video/bonita.mp4'
-import style from './Bonita.module.css'
+import pc from '../../../img/pc.png'
+import style from '../1- Bonita/Bonita.module.css'
 
-const Bonita = () => {
+const PersonalClass = () => {
     const handleClickgithub = () => {
-        window.open('https://github.com/AndresAndrada/pfhenry-back');
+        window.open('https://github.com/AndresAndrada/PersonalClass-Front');
     };
 
     const handleClickDeploy = () => {
@@ -17,16 +16,12 @@ const Bonita = () => {
         <div className={style.bonita}>
             <h1 className={style.title}>Bonita Devoto</h1>
             <h4 className={style.proyecto}>E-commerce</h4>
-            <div className={style.contenVideo}>
-                <ReactPlayer
-                    url={bonita1}
-                    width='100%'
-                    height='100%'
-                    controls
-                    playing
-                    className={style.video}
-                />
+            {/* {window.outerWidth < 858 ? */}
+            <div className={style.imagen}>
+                <img src={pc} alt={pc} className={style.image} />
+                {/* <img src={ pokemon } alt={ pokemon } width='400' /> */}
             </div>
+            {/* } */}
             <div className={style.boton}>
                 <Link onClick={handleClickgithub}>
                     <ion-icon name="logo-github" className={style.icon}></ion-icon>
@@ -39,4 +34,4 @@ const Bonita = () => {
     )
 }
 
-export default Bonita; 
+export default PersonalClass; 
