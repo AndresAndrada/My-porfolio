@@ -9,13 +9,13 @@ const PersonalClass = () => {
     };
 
     const handleClickDeploy = () => {
-        window.open('https://9-pf-deploy-font.vercel.app/');
+        window.open('https://api.personalclassonline.com/');
     };
 
     return (
         <div className={style.bonita}>
-            <h1 className={style.title}>Bonita Devoto</h1>
-            <h4 className={style.proyecto}>E-commerce</h4>
+            <h1 className={style.title}>Personal Class</h1>
+            <h4 className={style.proyecto}>Academia Educativa</h4>
             {/* {window.outerWidth < 858 ? */}
             <div className={style.imagen}>
                 <img src={pc} alt={pc} className={style.image} />
