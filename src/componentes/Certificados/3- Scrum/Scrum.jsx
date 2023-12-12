@@ -1,20 +1,20 @@
 import React from "react";
-import style from './Henry.module.css';
-import henry from '../../../img/Henry.jpeg';
+import style from '../1- Henry/Henry.module.css';
+import scrum from '../../../img/PersonalClass SCRUM.png';
 // import { Link } from "react-router-dom";
-import docs from "../../../doc/Full Stack Web Developer - Henry.pdf";
+import docs from '../../../doc/Andrés Andrada PersonalClass SCRUM.pdf'
 
 
-const Henry = () => {
+const Scrum = () => {
     return (
         <div className={style.henry}>
             <div className={style.image}>
                 {/* <img src={ hire } alt={ hire } width='800' /> */}
-                <img src={henry} alt={henry} className={style.image} />
+                <img src={scrum} alt={scrum} className={style.image} />
             </div>
             <div className={style.title}>
-                <h4 className={style.title}>Henry</h4>
-                <h5>Full Stack Developer</h5>
+                <h4 className={style.title}>Scrum</h4>
+                <h5>Metodologías Agiles</h5>
             </div>
             <div>
                 <a target="_blank" href={docs} className={style.link}>
@@ -25,4 +25,4 @@ const Henry = () => {
     )
 }
 
-export default Henry; 
+export default Scrum;

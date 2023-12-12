@@ -10,6 +10,7 @@ import pokemon from '../../img/pokemon.png';
 import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
+import Certificados from "../Certificados/Certificados";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
@@ -38,8 +39,7 @@ const Home = () => {
           </div>
           <div>
             <Link to='/project' className={style.links}><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}>VER PROYECTOS</h6></button></Link>
-            <a href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
-
+            <a target="_blank" href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
           </div>
           {/* </Slider> */}
         </div>
@@ -52,6 +52,9 @@ const Home = () => {
       </div>
       <div>
         <Technology />
+      </div>
+      <div>
+        <Certificados />
       </div>
       <div>
         <Reviews />

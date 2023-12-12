@@ -17,7 +17,7 @@ const About = () => {
             <div className={style.bioContainer}>
               <h4 className={style.textH4}>Hola, soy Andrada Andres!</h4>
               <br />
-              <h4 className={style.textH4}>Soy un apasionado por la tecnología y me encanta desarrollar aplicaciones web. Tengo experiencia en HTML, CSS, JavaScript y otras tecnologías web.</h4>
+              <h4 className={style.textH4}>Soy  un apasionado desarrollador web con experiencia destacada en el desarrollo del lado del front-end y back-end. Mi enfoque se centra en la creación de aplicaciones web innovadoras y eficientes. Poseo habilidades sólidas en las tecnologías clave del ecosistema web, con énfasis en JavaScript, React.js y Node.js</h4>
               <br />
               <h4 className={style.textH4}>En mi tiempo libre, disfruto aprendiendo nuevas habilidades y creando proyectos interesantes.</h4>
               <h4 className={style.textH4}>¡No dudes en contactarme si tienes alguna pregunta o proyecto en el que pueda ayudarte!</h4>

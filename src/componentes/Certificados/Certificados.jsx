@@ -2,44 +2,36 @@ import React from "react";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import Bonita from "./1- Bonita/Bonita";
-import HireMySkills from "./2- Hire/Hire";
-import Pokemon from "./3- Pokemon/Pokemon";
-import style from '../Project/Project.module.css'
-import PersonalClass from "./4- PersonalClass/PersonalClass";
+import style from "./Certificado.module.css";
+import Henry from "./1- Henry/Henry";
+import Platzi from "./2- Platzi/Platzi";
+import Scrum from "./3- Scrum/Scrum";
 
 
 const Certificados = () => {
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     speed: 1000,
-    //     autoplaySpeed: 3500,
-    //     cssEase: "linear"
-    //   };
+
     return (
-        <div className={style.certificado} id="Proyecto" >
-            {/* <h1>Project</h1> */}
-            {/* <Slider
+        <>
+            <div className={style.title}>
+                <h2>Certificados</h2>
+            </div>
+            <div className={style.certificado} id="Proyecto" >
+                {/* <h1>Project</h1> */}
+                {/* <Slider
                 // {...settings} 
                 className={style.conten}> */}
-            <div>
-                <Bonita />
+                <div>
+                    <Henry />
+                </div>
+                <div>
+                    <Platzi />
+                </div>
+                <div>
+                    <Scrum />
+                </div>
+                {/* </Slider> */}
             </div>
-            <div>
-                <HireMySkills />
-            </div>
-            <div>
-                <PersonalClass />
-            </div>
-            <div>
-                <Pokemon />
-            </div>
-            {/* </Slider> */}
-        </div>
+        </>
     )
 };
 

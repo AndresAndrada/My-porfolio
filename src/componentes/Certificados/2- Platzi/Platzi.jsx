@@ -1,20 +1,19 @@
 import React from "react";
-import style from './Henry.module.css';
-import henry from '../../../img/Henry.jpeg';
+import style from '../1- Henry/Henry.module.css';
+import platzi from '../../../img/Platzi-blazor-webassembly.png';
 // import { Link } from "react-router-dom";
-import docs from "../../../doc/Full Stack Web Developer - Henry.pdf";
+import docs from '../../../doc/Platzi-diploma-blazor-webassembly.pdf'
 
-
-const Henry = () => {
+const Platzi = () => {
     return (
         <div className={style.henry}>
             <div className={style.image}>
                 {/* <img src={ hire } alt={ hire } width='800' /> */}
-                <img src={henry} alt={henry} className={style.image} />
+                <img src={platzi} alt={platzi} className={style.image} />
             </div>
             <div className={style.title}>
-                <h4 className={style.title}>Henry</h4>
-                <h5>Full Stack Developer</h5>
+                <h4 className={style.title}>Platzi</h4>
+                <h5>Blazor - WebAssembly</h5>
             </div>
             <div>
                 <a target="_blank" href={docs} className={style.link}>
@@ -25,4 +24,4 @@ const Henry = () => {
     )
 }
 
-export default Henry; 
+export default Platzi;

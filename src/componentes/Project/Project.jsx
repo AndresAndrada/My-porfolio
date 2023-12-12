@@ -21,25 +21,29 @@ const Project = () => {
     //     cssEase: "linear"
     //   };
     return (
-        <div className={style.project} id="Proyecto" >
-            {/* <h1>Project</h1> */}
-            {/* <Slider
+        <>
+            <div className={style.title}>
+                <h2>Proyectos</h2>
+            </div>
+            <div className={style.project} id="Proyecto" >
+                {/* <Slider
                 // {...settings} 
                 className={style.conten}> */}
-            <div>
-                <Bonita />
+                <div>
+                    <Bonita />
+                </div>
+                <div>
+                    <HireMySkills />
+                </div>
+                <div>
+                    <PersonalClass />
+                </div>
+                <div>
+                    <Pokemon />
+                </div>
+                {/* </Slider> */}
             </div>
-            <div>
-                <HireMySkills />
-            </div>
-            <div>
-                <PersonalClass />
-            </div>
-            <div>
-                <Pokemon />
-            </div>
-            {/* </Slider> */}
-        </div>
+        </>
     )
 };
 
