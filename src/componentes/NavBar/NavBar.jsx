@@ -11,7 +11,7 @@ import styles from '../NavBar/NavBar.module.css';
 const Navbar = (props) => {
 
   const [click, setClick] = useState(false)
-  
+
   const handleClick = () => {
     // console.log(window.outerWidth, 'WINDOW')
     setClick(!click)
@@ -39,12 +39,15 @@ const Navbar = (props) => {
                 <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
               </li>
               {/* { window.outerWidth < 800 ? '' :  */}
-                <li className={styles.navitem}>
-                  <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
-                </li>
+              <li className={styles.navitem}>
+                <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
+              </li>
               {/* } */}
               <li className={styles.navitem}>
                 <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Tecnologias</Link>
+              </li>
+              <li className={styles.navitem}>
+                <Link className={styles.link} to='Certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
               </li>
               <li className={styles.navitem}>
                 <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
@@ -53,8 +56,8 @@ const Navbar = (props) => {
               <a className={styles.link} href={docs} disabled>CURRICULUM VITAE</a>
             </li> */}
             </ul>
-            <div className={styles.hamburger} onClick={ handleClick }>
-            {/* <input type="checkbox" id='checkInput' className={ styles.checkInp } /> */}
+            <div className={styles.hamburger} onClick={handleClick}>
+              {/* <input type="checkbox" id='checkInput' className={ styles.checkInp } /> */}
               {click ? (<FaTimes className={styles.checkbtn} size={30} />)
                 : (<FaBars className={styles.checkbtn} size={30} style={{ color: '#ffffff' }} />)}
             </div>
@@ -172,14 +175,14 @@ export default Navbar
 // <li className={styles.navItem}>
 //            <button className={styles.link} to="About" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu} disabled>
 //            ACERCA DE MI
-  //          </button></li>
-    //      <li className={styles.navItem}>
-      //      <button className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu} disabled>
-        //      PROYECTO
-          //  </button></li>
-         // <li className={styles.navItem}>
-           // <button className={styles.link} to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu} disabled>
-    //   CONTACTO
-      //      </button></li>
-        //  <li className={styles.navItem}>
-          //  <a className={styles.link} href={docs} disabled>CURRICULUM VITAE</a></li> 
+//          </button></li>
+//      <li className={styles.navItem}>
+//      <button className={styles.link} to="Proyecto" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu} disabled>
+//      PROYECTO
+//  </button></li>
+// <li className={styles.navItem}>
+// <button className={styles.link} to="Footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu} disabled>
+//   CONTACTO
+//      </button></li>
+//  <li className={styles.navItem}>
+//  <a className={styles.link} href={docs} disabled>CURRICULUM VITAE</a></li> 

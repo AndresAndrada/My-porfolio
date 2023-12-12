@@ -22,10 +22,10 @@ const Project = () => {
     //   };
     return (
         <>
-            <div className={style.title}>
+            <div className={style.title} id="Proyecto">
                 <h2>Proyectos</h2>
             </div>
-            <div className={style.project} id="Proyecto" >
+            <div className={style.project} >
                 {/* <Slider
                 // {...settings} 
                 className={style.conten}> */}

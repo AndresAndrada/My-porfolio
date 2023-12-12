@@ -83,12 +83,15 @@
     .conteiner {
         height: 55px;
     }
+
     .fotohome {
         width: 45px;
     }
+
     .right {
         justify-content: space-evenly;
     }
+
     .ulLista {
         letter-spacing: 1px;
         font-size: 16px;
@@ -99,19 +102,23 @@
     .conteiner {
         height: 50px;
     }
+
     .fotohome {
         width: 35px;
     }
+
     .right {
         justify-content: flex-end;
         margin: 30px;
         /* display: flex; */
     }
+
     .checkbtn {
         display: block;
         list-style: none;
         float: right;
     }
+
     .ulLista {
         position: fixed;
         width: 100%;
@@ -123,6 +130,7 @@
         /* flex-direction: column; */
         transition: .5s;
     }
+
     .ulListaFalse {
         position: fixed;
         width: 100%;
@@ -133,20 +141,26 @@
         text-align: center;
         /* transition: .5s; */
     }
+
     .navitem {
         display: block;
         margin: 50px 0;
         line-height: 30px;
         transition: .5s;
     }
+
     .link {
         font-size: 20px;
         text-decoration: none;
     }
-    .link:hover, .link.active {
+
+    .link:hover,
+    .link.active {
         background: none;
-        color: rgb(229, 155, 102);;
+        color: rgb(229, 155, 102);
+        ;
     }
+
     /* #checkInput:checked ~ .ulLista {
         left: 0;
     } */
@@ -154,7 +168,7 @@
 
 @media (max-width: 445px) {
     .ulLista {
-        left: -160%;
+        left: -200%;
     }
 }
 

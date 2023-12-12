@@ -12,10 +12,10 @@ const Certificados = () => {
 
     return (
         <>
-            <div className={style.title}>
+            <div className={style.title} id="Certificado">
                 <h2>Certificados</h2>
             </div>
-            <div className={style.certificado} id="Proyecto" >
+            <div className={style.certificado}>
                 {/* <h1>Project</h1> */}
                 {/* <Slider
                 // {...settings} 
