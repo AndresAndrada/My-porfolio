@@ -1,40 +1,25 @@
-.bonita {
+.henry {
     display: flex;
+    background-color: rgb(97, 91, 91);
     flex-wrap: wrap;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     margin: 10px 10px 50px;
     padding: 10px;
     grid-template-columns: auto auto;
     /* border: 5px solid #ccc; */
-    /* border-radius: 20px; */
-    transition: all 400ms ease;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-.bonita:hover {
-    cursor: default;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-
+    border-radius: 20px;
 }
 
 .image {
-    width: 100%;
-    height: 210px;
-    /* transition: 0.5s; */
-}
-
-.title {
-    /* margin: 0; */
-    line-height: 1.5;
-    color: #6a6a6a;
+    width: 400px;
+    height: 245px;
 }
 
 .video {
     width: 100%;
-    height: 210px;
+    /* height: 10; */
 
     /* width: 400px;
     height: 10px;
@@ -48,32 +33,13 @@
     width: 400px;
     height: 250px;
     padding-top: 0;
-    /* transition: 0.5s; */
 }
 
-/* .contenVideo:hover {
-    border-radius: 5px;
-    cursor: pointer;
-    width: 420px;
-    height: 250px;
-} */
-
-.link {
-    color: rgb(68, 65, 65);
-    font-size: 35px;
-    transition: all 400ms ease;
-}
-
-.link:hover {
-    font-size: 40px;
-    transition: all 400ms ease;
-}
-
-icon-icon {
+.icon {
     color: black;
 }
 
-/* .bonita {
+/* .henry {
     display: flex;
     flex-direction: column;
     align-items: center;

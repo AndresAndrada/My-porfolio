@@ -14,18 +14,20 @@ const HireMySkills = () => {
     };
 
     return (
-        <div className={ style.bonita }>
-            <h1 className={ style.title }>HireMySkills</h1>
-            <h4>E-commerce de Servicios</h4>
-            <div className={ style.imagen}>
+        <div className={style.bonita}>
+            <div className={style.image}>
                 {/* <img src={ hire } alt={ hire } width='800' /> */}
-                <img src={ hire } alt={ hire } className={ style.image }/>
+                <img src={hire} alt={hire} className={style.image} />
+            </div>
+            <div className={style.title}>
+                <h4 className={style.title}>HireMySkills</h4>
+                <h5>E-commerce de Servicios</h5>
             </div>
             <div>
-                <Link onClick={ handleClickgithub }>
+                <Link onClick={handleClickgithub} className={style.link}>
                     <ion-icon name="logo-github"></ion-icon>
                 </Link>
-                <Link onClick={ handleClickDeploy }>
+                <Link onClick={handleClickDeploy} className={style.link}>
                     <ion-icon name="reader"></ion-icon>
                 </Link>
             </div>

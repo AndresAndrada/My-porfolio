@@ -1,7 +1,8 @@
 import React from "react";
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 import { Link } from "react-router-dom";
-import bonita1 from '../../../video/bonita.mp4'
+import img from '../../../img/bonita.png'
+// import bonita1 from '../../../video/bonita.mp4'
 import style from './Bonita.module.css'
 
 const Bonita = () => {
@@ -15,9 +16,11 @@ const Bonita = () => {
 
     return (
         <div className={style.bonita}>
-            <h1 className={style.title}>Bonita Devoto</h1>
-            <h4 className={style.proyecto}>E-commerce</h4>
-            <div className={style.contenVideo}>
+            <div className={style.image}>
+                {/* <img src={ img } alt={ hire } width='800' /> */}
+                <img src={img} alt={img} className={style.image} />
+            </div>
+            {/* <div className={style.contenVideo}>
                 <ReactPlayer
                     url={bonita1}
                     width='100%'
@@ -26,13 +29,17 @@ const Bonita = () => {
                     playing
                     className={style.video}
                 />
+            </div> */}
+            <div className={style.title}>
+                <h4>Bonita Devoto</h4>
+                <h5>E-commerce</h5>
             </div>
             <div className={style.boton}>
-                <Link onClick={handleClickgithub}>
-                    <ion-icon name="logo-github" className={style.icon}></ion-icon>
+                <Link onClick={handleClickgithub} className={style.link}>
+                    <ion-icon name="logo-github"></ion-icon>
                 </Link>
-                <Link onClick={handleClickDeploy}>
-                    <ion-icon name="reader" className={style.icon}></ion-icon>
+                <Link onClick={handleClickDeploy} className={style.link}>
+                    <ion-icon name="reader"></ion-icon>
                 </Link>
             </div>
         </div>

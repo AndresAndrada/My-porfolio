@@ -21,28 +21,28 @@ const Footer = () => {
     };
 
     return (
-        <div className={ style.footer } id="Footer">
-            <div className={ style.parrafo }>
-                <p className={ style.letra }>Muchas gracias por visitar mi porfolio.
+        <div className={style.footer} id="Footer">
+            <div className={style.parrafo}>
+                <p className={style.letra}>Muchas gracias por visitar mi porfolio.
                     <br /><br />
                     En caso de que desee contactarme les dejo los siguieste datos:
-                    </p>
+                </p>
             </div>
             <br /><br />
             <div>
-                <Link onClick={ handleClickWapp }>
+                <Link onClick={handleClickWapp}>
                     {/* <img src={ whtp } alt="whtp" width='50' /> */}
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </Link>
-                <Link onClick={ handleClickLinkedIn }>
+                <Link onClick={handleClickLinkedIn}>
                     {/* <img src={ linkedIn } alt="linkedIn" width='50' /> */}
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </Link>
-                <Link onClick={ handleClickInst }>
+                <Link onClick={handleClickInst}>
                     {/* <img src={ inst } alt="inst" width='50' /> */}
                     <ion-icon name="logo-instagram"></ion-icon>
                 </Link>
-                <Link onClick={ handleClickgithub }>
+                <Link onClick={handleClickgithub}>
                     <ion-icon name="logo-github"></ion-icon>
                 </Link>
             </div>

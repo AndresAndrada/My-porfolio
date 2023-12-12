@@ -9,7 +9,7 @@ import style from '../Project/Project.module.css'
 import PersonalClass from "./4- PersonalClass/PersonalClass";
 
 
-const Project = () => {
+const Certificados = () => {
     // const settings = {
     //     dots: true,
     //     infinite: true,
@@ -21,7 +21,7 @@ const Project = () => {
     //     cssEase: "linear"
     //   };
     return (
-        <div className={style.project} id="Proyecto" >
+        <div className={style.certificado} id="Proyecto" >
             {/* <h1>Project</h1> */}
             {/* <Slider
                 // {...settings} 
@@ -43,4 +43,4 @@ const Project = () => {
     )
 };
 
-export default Project;
+export default Certificados;

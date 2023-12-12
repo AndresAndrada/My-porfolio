@@ -10,17 +10,19 @@ const Pokemon = () => {
     };
 
     return (
-        <div className={ style.bonita }>
-            <h1 className={ style.title }>Pokemon</h1>
-            <h4>Proyecto Indivicual</h4>
-            <div className={ style.imagen}>
-                <img src={ pokemon } alt={ pokemon } className={ style.image } />
+        <div className={style.bonita}>
+            <div className={style.image}>
+                <img src={pokemon} alt={pokemon} className={style.image} />
                 {/* <img src={ pokemon } alt={ pokemon } width='400' /> */}
             </div>
+            <div className={style.title}>
+                <h4 className={style.title}>Pokemon</h4>
+                <h5>Proyecto Indivicual</h5>
+            </div>
             <div>
-                    <Link onClick={ handleClickgithub }>
-                        <ion-icon name="logo-github"></ion-icon>
-                    </Link>
+                <Link onClick={handleClickgithub} className={style.link}>
+                    <ion-icon name="logo-github"></ion-icon>
+                </Link>
             </div>
         </div>
     )
