@@ -30,19 +30,19 @@ const Footer = () => {
             </div>
             <br /><br />
             <div>
-                <Link onClick={handleClickWapp}>
+                <Link onClick={handleClickWapp} className={style.link}>
                     {/* <img src={ whtp } alt="whtp" width='50' /> */}
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </Link>
-                <Link onClick={handleClickLinkedIn}>
+                <Link onClick={handleClickLinkedIn} className={style.link}>
                     {/* <img src={ linkedIn } alt="linkedIn" width='50' /> */}
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </Link>
-                <Link onClick={handleClickInst}>
+                <Link onClick={handleClickInst} className={style.link}>
                     {/* <img src={ inst } alt="inst" width='50' /> */}
                     <ion-icon name="logo-instagram"></ion-icon>
                 </Link>
-                <Link onClick={handleClickgithub}>
+                <Link onClick={handleClickgithub} className={style.link}>
                     <ion-icon name="logo-github"></ion-icon>
                 </Link>
             </div>
