@@ -7,6 +7,7 @@
 .technology {
     margin: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -23,7 +24,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .right {
@@ -35,31 +36,35 @@ h2 {
     justify-content: center;
 }
 
-.conteinerlogo {
+/* .conteinerlogo {
     overflow: hidden;
-}
+} */
 
 .logos {
     display: flex;
-    flex-direction: column;
-    animation: move 10s ease-in infinite alternate;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* animation: move 10s ease-in infinite alternate; */
 }
 
-@keyframes move {
-    25%{
+/* @keyframes move {
+    25% {
         transform: translateY(-200px);
     }
-    50%{
+
+    50% {
         transform: translateY(-400px);
     }
-    75%{
+
+    75% {
         transform: translateY(-400px);
     }
-    100%{
+
+    100% {
         transform: translateY(-600px);
     }
 
-}
+} */
 
 .simbolos {
     display: flex;

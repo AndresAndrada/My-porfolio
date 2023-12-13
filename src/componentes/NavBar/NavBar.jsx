@@ -44,7 +44,7 @@ const Navbar = (props) => {
               </li>
               {/* } */}
               <li className={styles.navitem}>
-                <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Tecnologias</Link>
+                <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
               </li>
               <li className={styles.navitem}>
                 <Link className={styles.link} to='Certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
