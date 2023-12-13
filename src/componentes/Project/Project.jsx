@@ -7,6 +7,7 @@ import HireMySkills from "./2- Hire/Hire";
 import Pokemon from "./3- Pokemon/Pokemon";
 import style from '../Project/Project.module.css'
 import PersonalClass from "./4- PersonalClass/PersonalClass";
+import Whatsapp from "./5- Whatsapp.js/Whatsapp";
 
 
 const Project = () => {
@@ -40,6 +41,9 @@ const Project = () => {
                 </div>
                 <div>
                     <Pokemon />
+                </div>
+                <div>
+                    <Whatsapp />
                 </div>
                 {/* </Slider> */}
             </div>

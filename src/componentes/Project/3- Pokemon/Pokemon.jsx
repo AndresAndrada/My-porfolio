@@ -17,7 +17,7 @@ const Pokemon = () => {
             </div>
             <div className={style.title}>
                 <h4 className={style.title}>Pokemon</h4>
-                <h5>Proyecto Indivicual</h5>
+                <h5>Proyecto Individual</h5>
             </div>
             <div>
                 <Link onClick={handleClickgithub} className={style.link}>
