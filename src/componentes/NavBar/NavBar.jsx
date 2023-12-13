@@ -32,9 +32,9 @@ const Navbar = (props) => {
         </div > :
           <div className={styles.right}>
             <ul className={!click ? styles.ulLista : styles.ulListaFalse}>
-              <li className={styles.navitem}>
+              {/* <li className={styles.navitem}>
                 <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
-              </li>
+              </li> */}
               <li className={styles.navitem}>
                 <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
               </li>
