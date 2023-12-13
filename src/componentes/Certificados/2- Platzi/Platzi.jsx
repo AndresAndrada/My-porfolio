@@ -17,7 +17,7 @@ const Platzi = () => {
             </div>
             <div>
                 <a target="_blank" href={docs} className={style.link}>
-                    <ion-icon name="logo-github"></ion-icon>
+                    <ion-icon name="reader"></ion-icon>
                 </a>
             </div>
         </div>
