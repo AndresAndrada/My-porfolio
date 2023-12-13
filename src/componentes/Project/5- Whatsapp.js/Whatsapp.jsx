@@ -27,9 +27,9 @@ const Whatsapp = () => {
                 <Link onClick={handleClickgithub} className={style.link}>
                     <ion-icon name="logo-github"></ion-icon>
                 </Link>
-                <Link onClick={handleClickDeploy} className={style.link}>
+                {/* <Link onClick={handleClickDeploy} className={style.link}>
                     <ion-icon name="reader"></ion-icon>
-                </Link>
+                </Link> */}
             </div>
         </div>
     )
