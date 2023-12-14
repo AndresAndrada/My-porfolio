@@ -2,6 +2,7 @@ import React from "react";
 import { SiSequelize, SiPostgresql, SiExpress } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoHtml5 } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
 import style from '../../componentes/Technology/Technology.module.css'
 
 const Technology = () => {
@@ -17,6 +18,10 @@ const Technology = () => {
                         <div className={style.simbolos}>
                             <h5>JavaScript</h5>
                             <IoLogoJavascript className={style.icons} />
+                        </div>
+                        <div className={style.simbolos}>
+                            <h5>TypeScript</h5>
+                            <SiTypescript className={style.icons} />
                         </div>
                         <div className={style.simbolos}>
                             <h5>React</h5>
