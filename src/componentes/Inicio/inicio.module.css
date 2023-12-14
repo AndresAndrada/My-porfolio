@@ -1,8 +1,9 @@
 .inicio {
-    background-image: url('../../img/cba4.jpg');
-    width: 100%;
+    background-image: url('../../assets/cba4.jpg');
+    width: 10ovw;
     height: 100vh;
     background-size: cover;
+    overflow: hidden;
     /* position: absolute; */
     /* background-position: 20%; */
     background-position: center center;
@@ -72,6 +73,27 @@
 }
 
 @media (max-width: 600px) {
+    .image {
+        width: 200px;
+    }
+    .image:hover {
+        width: 2200px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .title:hover {
+        font-size: 25px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 00px) {
+    /* .inicio {
+        width: 100vw;
+    } */
     .image {
         width: 200px;
     }

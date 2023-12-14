@@ -1,7 +1,7 @@
 import React from "react";
 // import ReactPlayer from 'react-player';
 import { Link } from "react-router-dom";
-import img from '../../../img/bonita.png'
+import img from '../../../assets/bonita.png'
 // import bonita1 from '../../../video/bonita.mp4'
 import style from './Bonita.module.css'
 

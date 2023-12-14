@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import foto from '../../img/FOTO CV.png';
+import foto from '../../assets/FOTO CV.png';
 import styles from '../Inicio/inicio.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { getCount, patchCount } from "../../Redux/actions";
@@ -21,15 +21,15 @@ function Inicio() {
 
     useEffect(() => {
         dispatch(getCount());
-    },[dispatch]);
+    }, [dispatch]);
 
     return (
-        <div className={ styles.inicio }>
+        <div className={styles.inicio}>
             {/* <Navbar /> */}
-            <div className={ styles.card }>
-                <Link to='/home'><img onClick={() => handleClick(1)} className={ styles.image } src={ foto } alt="Foto carnet"/></Link>
-                <Link to='/home' className={ styles.link }><h1 onClick={() => handleClick(1)} className={ styles.title }>Andres Andrada</h1></Link>
-                <h3 className={ styles.subtitle }>Full Stack Developer</h3>
+            <div className={styles.card}>
+                <Link to='/home'><img onClick={() => handleClick(1)} className={styles.image} src={foto} alt="Foto carnet" /></Link>
+                <Link to='/home' className={styles.link}><h1 onClick={() => handleClick(1)} className={styles.title}>Andres Andrada</h1></Link>
+                <h3 className={styles.subtitle}>Full Stack Developer</h3>
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import style from '../1- Henry/Henry.module.css';
-import platzi from '../../../img/Platzi-blazor-webassembly.png';
+import platzi from '../../../assets/Platzi-blazor-webassembly.png';
 // import { Link } from "react-router-dom";
 import docs from '../../../doc/Platzi-diploma-blazor-webassembly.pdf'
 

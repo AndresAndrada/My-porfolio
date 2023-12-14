@@ -4,9 +4,9 @@ import About from '../About/About'
 import Technology from '../Technology/Technology'
 import style from '../../componentes/Home/Home.module.css'
 import { IoLocationSharp } from "react-icons/io5";
-import bonita from '../../img/bonita.png';
-import hire from '../../img/hire.png';
-import pokemon from '../../img/pokemon.png';
+import bonita from '../../assets/BonitaImg.png';
+import hire from '../../assets/hire.png';
+import pokemon from '../../assets/pokemon.png';
 import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
@@ -17,7 +17,7 @@ import Certificados from "../Certificados/Certificados";
 
 const Home = () => {
   return (
-    <>
+    <div className={style.container}>
       <div className={style.home} id="Home">
         <div className={style.left}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
           <div>
             <Link to='/project' className={style.links}><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}>VER PROYECTOS</h6></button></Link>
-            <a target="_blank" href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
+            <Link target="_blank" href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></Link>
           </div>
           {/* </Slider> */}
         </div>
@@ -59,7 +59,7 @@ const Home = () => {
       <div>
         <Reviews />
       </div>
-    </>
+    </div>
   );
 };
 

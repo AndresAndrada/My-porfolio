@@ -10,21 +10,23 @@ import Footer from './componentes/Footer/Footer';
 import Contac from './componentes/Contac/Contac';
 import TechnologyComp from './componentes/Technology/TechnologyComp/TechnologyComp';
 import Reviews from './componentes/Reviews/Reviews';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
   // console.log(window.pageYOffset, 'WIND APP');
+  const location = useLocation()
   return (
     <div className="App">
-      <Route path='/' component={ Navbar } />
-      <Route exact path='/' component={ Inicio } />
-      <Route exact path='/home'  component={ Home }/>
-      <Route path='/curriculumvitae' component={ CurriculumVitae } />
-      <Route path='/about' component={ About } />
-      <Route path='/project' component={ Project } />
-      <Route path='/technology' component={ TechnologyComp } />
-      <Route path='/reviews' component={ Reviews } />
-      <Route path='/contact' component={ Contac } />
-      <Route path='/home' component={ Footer } />
+      {location.pathname !== '/' && <Route path='/' component={Navbar} />}
+      <Route exact path='/' component={Inicio} />
+      <Route exact path='/home' component={Home} />
+      <Route path='/curriculumvitae' component={CurriculumVitae} />
+      <Route path='/about' component={About} />
+      <Route path='/project' component={Project} />
+      <Route path='/technology' component={TechnologyComp} />
+      <Route path='/reviews' component={Reviews} />
+      <Route path='/contact' component={Contac} />
+      <Route path='/home' component={Footer} />
     </div>
   );
 }

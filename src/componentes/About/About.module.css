@@ -13,6 +13,48 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(97, 74, 74, 0.2);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: initial;
+    /* transition: 350ms; */
+    /* animation-name: tranparente;
+    animation-duration: 2000ms; */
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 0.9s ease-in-out;
+  }
+  
+  .fadeOut {
+    animation: fadeOut 0.9s ease-in-out;
+  }
+  
+/* @keyframes tranparente {
+    0%{display: flex;}
+    100%{display: none;}
+} */
+
+.container:hover {
+    border-radius: 0.3125rem;
+    box-shadow: 0px 100px 80px 0px rgba(33, 42, 42, 0.07), 0px 41.778px 33.422px 0px rgba(33, 42, 42, 0.07), 0px 22.336px 17.869px 0px rgba(33, 42, 42, 0.07), 0px 12.522px 10.017px 0px rgba(33, 42, 42, 0.07), 0px 6.65px 5.32px 0px rgba(33, 42, 42, 0.07), 0px 2.767px 2.214px 0px rgba(33, 42, 42, 0.07);
 }
 
 .title {

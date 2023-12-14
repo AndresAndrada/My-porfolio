@@ -1,6 +1,6 @@
 import React from "react";
 import style from '../1- Bonita/Bonita.module.css';
-import hire from '../../../img/hire.png'
+import hire from '../../../assets/hire.png'
 import { Link } from "react-router-dom";
 
 

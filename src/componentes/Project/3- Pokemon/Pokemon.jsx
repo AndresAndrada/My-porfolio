@@ -1,6 +1,6 @@
 import React from "react";
 import style from '../1- Bonita/Bonita.module.css';
-import pokemon from '../../../img/pokemon.png'
+import pokemon from '../../../assets/pokemon.png'
 import { Link } from "react-router-dom";
 
 

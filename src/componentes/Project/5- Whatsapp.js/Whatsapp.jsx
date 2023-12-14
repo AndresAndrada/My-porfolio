@@ -1,6 +1,6 @@
 import React from "react";
 import style from '../1- Bonita/Bonita.module.css';
-import wtp from '../../../img/whtp.png'
+import wtp from '../../../assets/whtp.png'
 import { Link } from "react-router-dom";
 
 
@@ -9,9 +9,9 @@ const Whatsapp = () => {
         window.open('https://github.com/AndresAndrada/whatsapp-web');
     };
 
-    const handleClickDeploy = () => {
-        window.open('https://pf-hire-my-skills.vercel.app/');
-    };
+    // const handleClickDeploy = () => {
+    //     window.open('https://pf-hire-my-skills.vercel.app/');
+    // };
 
     return (
         <div className={style.bonita}>

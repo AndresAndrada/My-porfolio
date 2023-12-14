@@ -1,8 +1,9 @@
 import React from "react";
 import style from '../1- Henry/Henry.module.css';
-import scrum from '../../../img/PersonalClass SCRUM.png';
+import scrum from '../../../assets/PersonalClass SCRUM.png';
 // import { Link } from "react-router-dom";
 import docs from '../../../doc/Andrés Andrada PersonalClass SCRUM.pdf'
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
 const Scrum = () => {
@@ -17,9 +18,9 @@ const Scrum = () => {
                 <h5>Metodologías Agiles</h5>
             </div>
             <div>
-                <a target="_blank" href={docs} className={style.link}>
+                <Link target="_blank" href={docs} className={style.link}>
                     <ion-icon name="reader"></ion-icon>
-                </a>
+                </Link>
             </div>
         </div>
     )

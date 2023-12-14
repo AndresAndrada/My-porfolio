@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pc from '../../../img/pc.png'
+import pc from '../../../assets/pc.png'
 import style from '../1- Bonita/Bonita.module.css'
 
 const PersonalClass = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Henry.module.css';
-import henry from '../../../img/Henry.jpeg';
+import henry from '../../../assets/Henry.jpeg';
 // import { Link } from "react-router-dom";
 import docs from "../../../doc/Full Stack Web Developer - Henry.pdf";
 
