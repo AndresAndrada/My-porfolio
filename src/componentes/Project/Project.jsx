@@ -5,7 +5,7 @@ import React from "react";
 import Bonita from "./1- Bonita/Bonita";
 import HireMySkills from "./2- Hire/Hire";
 import Pokemon from "./3- Pokemon/Pokemon";
-import style from '../Project/Project.module.css'
+import styles from '../Project/Project.module.css'
 import PersonalClass from "./4- PersonalClass/PersonalClass";
 import Whatsapp from "./5- Whatsapp.js/Whatsapp";
 
@@ -22,14 +22,14 @@ const Project = () => {
     //     cssEase: "linear"
     //   };
     return (
-        <>
-            <div className={style.title} id="Proyecto">
+        <div className={styles.container}>
+            <div className={styles.title} id="Proyecto">
                 <h2>Proyectos</h2>
             </div>
-            <div className={style.project} >
+            <div className={styles.project} >
                 {/* <Slider
                 // {...settings} 
-                className={style.conten}> */}
+                className={styles.conten}> */}
                 <div>
                     <Bonita />
                 </div>
@@ -47,7 +47,7 @@ const Project = () => {
                 </div>
                 {/* </Slider> */}
             </div>
-        </>
+        </div>
     )
 };
 

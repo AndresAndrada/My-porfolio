@@ -1,63 +1,90 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+// import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
 import logo from '../../assets/FOTO CV.png';
 import styles from '../NavBar/NavBar.module.css';
 // import docs from '../../doc/CV.pdf';
 import './NavBar.module.css'
+import { BurgerButton } from './dropdown/BurgerButton';
 
 function Navbar(props) {
 
   const [click, setClick] = useState(false);
+  // const [section, setSection] = useState('home');
+  //   const handleClick = () => {
+  //     setClick(!click);
+  //   };
 
-  const handleClick = () => {
-    setClick(!click);
+  const closeMenu = () => {
+    setClick(false)
   };
 
-  const closeMenu = () => setClick(false);
-
   return (
-    <div className={styles.conteiner}>
-      {/* <nav> */}
-      <div className={styles.left}>
-        <a href='/home' className='enlace'>
-          <img src={logo} className={styles.fotohome} alt='logo' />
-        </a>
+    <>
+      <div className={styles.conteiner}>
+        <div className={styles.img}>
+          <a href='/home' className='enlace'>
+            <img src={logo} className={styles.fotohome} alt='logo' />
+          </a>
+        </div>
+        <div className={`${styles.list} ${click ? styles.active : null}`}>
+          <Link className={styles.link} to='Home' name='home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+          <Link className={styles.link} to='About' name='about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+          <Link className={styles.link} to='Proyecto' name='project' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
+          <Link className={styles.link} to='Technology' name='technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
+          <Link className={styles.link} to='Certificado' name='certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
+          <Link className={styles.link} to='Footer' name='footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
+        </div>
+        <div className={styles.burguer}>
+          <BurgerButton click={click} onClick={() => setClick(!click)} />
+        </div>
+        <div className={`${click ? styles.bgDiv : styles.bgDiv1}`} />
       </div>
-      <>
-        {props.location.pathname === "/" ? <div className={styles.right}>
-        </div> :
-          <div className={styles.right}>
-            <ul className={!click ? styles.ulLista : styles.ulListaFalse}>
-              {/* <li className={styles.navitem}>
-                      <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
-                    </li> */}
-              <li className={styles.navitem}>
-                <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
-              </li>
-              {/* { window.outerWidth < 800 ? '' :  */}
-              <li className={styles.navitem}>
-                <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
-              </li>
-              {/* } */}
-              <li className={styles.navitem}>
-                <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
-              </li>
-              <li className={styles.navitem}>
-                <Link className={styles.link} to='Certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
-              </li>
-              <li className={styles.navitem}>
-                <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
-              </li>
-            </ul>
-            <div className={styles.hamburger} onClick={handleClick}>
-              {click ? (<FaTimes className={styles.checkbtn} size={30} />)
-                : (<FaBars className={styles.checkbtn} size={30} style={{ color: '#ffffff' }} />)}
-            </div>
-          </div>}
-      </>
-      {/* </nav> */}
-    </div>
+    </>
+
+
+
+    // <div className={styles.conteiner}>
+    //   {/* <nav> */}
+    //   <div className={styles.left}>
+    //     <a href='/home' className='enlace'>
+    //       <img src={logo} className={styles.fotohome} alt='logo' />
+    //     </a>
+    //   </div>
+    //   <>
+    //     {props.location.pathname === "/" ? <div className={styles.right}>
+    //     </div> :
+    //       <div className={styles.right}>
+    //         <ul className={!click ? styles.ulLista : styles.ulListaFalse}>
+    //           {/* <li className={styles.navitem}>
+    //                   <Link className={styles.link} to='Home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
+    //                 </li> */}
+    //           <li className={styles.navitem}>
+    //             <Link className={styles.link} to='About' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+    //           </li>
+    //           {/* { window.outerWidth < 800 ? '' :  */}
+    //           <li className={styles.navitem}>
+    //             <Link className={styles.link} to='Proyecto' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
+    //           </li>
+    //           {/* } */}
+    //           <li className={styles.navitem}>
+    //             <Link className={styles.link} to='Technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
+    //           </li>
+    //           <li className={styles.navitem}>
+    //             <Link className={styles.link} to='Certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
+    //           </li>
+    //           <li className={styles.navitem}>
+    //             <Link className={styles.link} to='Footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
+    //           </li>
+    //         </ul>
+    //         <div className={styles.hamburger} onClick={handleClick}>
+    //           {click ? (<FaTimes className={styles.checkbtn} size={30} />)
+    //             : (<FaBars className={styles.checkbtn} size={30} style={{ color: '#ffffff' }} />)}
+    //         </div>
+    //       </div>}
+    //   </>
+    //   {/* </nav> */}
+    // </div>
   );
 }
 

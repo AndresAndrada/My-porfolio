@@ -21,7 +21,7 @@ const Footer = () => {
     };
 
     return (
-        <div className={style.footer} id="Footer">
+        <div className={style.footer}>
             <div className={style.parrafo}>
                 <p className={style.letra}>Muchas gracias por visitar mi porfolio.
                     <br /><br />

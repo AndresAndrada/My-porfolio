@@ -17,7 +17,7 @@ const Henry = () => {
                 <h5>Full Stack Developer</h5>
             </div>
             <div>
-                <a target="_blank" href={docs} className={style.link}>
+                <a target="_blank" href={docs} className={style.link} rel="noreferrer">
                     <ion-icon name="reader"></ion-icon>
                 </a>
             </div>

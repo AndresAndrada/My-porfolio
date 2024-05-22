@@ -1,5 +1,6 @@
-.about {
-    padding: 80px 0;
+    .about {
+    padding: 60px 0;
+    width: 100vw;
     background-color: #f7f7f7;
 }
 
@@ -15,9 +16,6 @@
     background-color: rgba(97, 74, 74, 0.2);
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: initial;
-    /* transition: 350ms; */
-    /* animation-name: tranparente;
-    animation-duration: 2000ms; */
     cursor: pointer;
 }
 
@@ -67,6 +65,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.textH4 {
+    text-align: center;
 }
 
 .profilePicContainer {

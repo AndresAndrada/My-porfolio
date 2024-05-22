@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import style from '../Reviews/Reviews.module.css';
-import { postReviews, resertImput } from "../../Redux/actions";
+import styles from '../Reviews/Reviews.module.css';
+import { postReviews } from "../../Redux/actions";
 import swal from 'sweetalert';
 
 const Reviews = () => {
@@ -34,14 +34,14 @@ const Reviews = () => {
   };
 
   return (
-    <div className={style.reviews}>
-      <div className={style.conten}>
-        <h4 className={style.texto}>Si deseas dejar un comentario para realizarme un feedback de mis trabajos, para que puede mejorar, puedes hacerlo aquí:</h4>
-        <div>
-          <form ref={form} className={style.fomurlario}>
-            <textarea name="email" className={style.name} placeholder='Name' onChange={handleChange} />
-            <textarea name="comment" className={style.coment} placeholder="Comentario..." onChange={handleChange} />
-            <input type="submit" className={style.btn} onClick={handleSubmit} />
+    <div className={styles.reviews} id="Footer">
+      <div className={styles.conten}>
+        <h4 className={styles.texto}>Si deseas dejar un comentario para realizarme un feedback de mis trabajos, para que puede mejorar, puedes hacerlo aquí:</h4>
+        <div className={styles.card}>
+          <form ref={form} className={styles.fomurlario}>
+            <textarea name="email" className={styles.name} placeholder='Name' onChange={handleChange} />
+            <textarea name="comment" className={styles.coment} placeholder="Comentario..." onChange={handleChange} />
+            <input type="submit" className={styles.btn} onClick={handleSubmit} />
           </form>
         </div>
       </div>

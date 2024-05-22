@@ -2,7 +2,7 @@ import React from "react";
 import { SiSequelize, SiPostgresql, SiExpress } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoHtml5 } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import style from '../../componentes/Technology/Technology.module.css'
 
 const Technology = () => {
@@ -36,15 +36,14 @@ const Technology = () => {
                             <IoLogoCss3 className={style.icons} />
                         </div>
                         <div className={style.simbolos}>
-                            <h5>CSS</h5>
+                            <h5>Tailwind</h5>
+                            <SiTailwindcss className={style.icons} />
+                        </div>
+                        <div className={style.simbolos}>
+                            <h5>Next</h5>
                             <TbBrandNextjs className={style.icons} />
                         </div>
                     </div>
-                    {/* </div> */}
-                    {/* </div> */}
-                    {/* <div className={style.right}> */}
-                    {/* <h3>Back-end</h3> */}
-                    {/* <div className={style.conteinerlogo}> */}
                     <div className={style.logos}>
                         <div className={style.simbolos}>
                             <h5>Node.JS</h5>

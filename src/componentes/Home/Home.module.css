@@ -1,6 +1,8 @@
 .container {
-    /* display: flex;
-    flex-direction: 'column'; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     overflow: hidden;
 }
@@ -72,6 +74,12 @@
 .imageconteiner {
     height: 100%;
     animation: move 12s ease-in infinite alternate;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes move {

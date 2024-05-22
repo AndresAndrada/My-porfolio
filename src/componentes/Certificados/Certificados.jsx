@@ -2,7 +2,7 @@ import React from "react";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import style from "./Certificado.module.css";
+import styles from "./Certificado.module.css";
 import Henry from "./1- Henry/Henry";
 import Platzi from "./2- Platzi/Platzi";
 import Scrum from "./3- Scrum/Scrum";
@@ -11,27 +11,27 @@ import Scrum from "./3- Scrum/Scrum";
 const Certificados = () => {
 
     return (
-        <>
-            <div className={style.title} id="Certificado">
+        <div className={styles.container}>
+            <div className={styles.title} id="Certificado">
                 <h2>Certificados</h2>
             </div>
-            <div className={style.certificado}>
+            <div className={styles.certificado}>
                 {/* <h1>Project</h1> */}
                 {/* <Slider
                 // {...settings} 
-                className={style.conten}> */}
-                <div>
+                className={styles.conten}> */}
+                <div className={styles.card}>
                     <Henry />
                 </div>
-                <div>
+                <div className={styles.card}>
                     <Platzi />
                 </div>
-                <div>
+                <div className={styles.card}>
                     <Scrum />
                 </div>
                 {/* </Slider> */}
             </div>
-        </>
+        </div>
     )
 };
 

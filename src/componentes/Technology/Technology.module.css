@@ -1,12 +1,21 @@
 .contenedor {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding: 50px 0;
     background-color: #e3e3e3;
 }
 
 .technology {
     margin: 20px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -35,36 +44,6 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-
-/* .conteinerlogo {
-    overflow: hidden;
-} */
-
-.logos {
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    /* animation: move 10s ease-in infinite alternate; */
-}
-
-/* @keyframes move {
-    25% {
-        transform: translateY(-200px);
-    }
-
-    50% {
-        transform: translateY(-400px);
-    }
-
-    75% {
-        transform: translateY(-400px);
-    }
-
-    100% {
-        transform: translateY(-600px);
-    }
-
-} */
 
 .simbolos {
     display: flex;

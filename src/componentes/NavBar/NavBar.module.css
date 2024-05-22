@@ -1,4 +1,116 @@
 .conteiner {
+    position: fixed;
+    width: 100vw;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem;
+    z-index: 1;
+}
+.fotohome {
+    border-radius: 100%;
+    width: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.fotohome:hover {
+    width: 55px;
+}
+.burguer {
+    display: none;
+    color: white;
+    z-index: 2;
+}
+.list {
+    position: initial;
+    margin: 0;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem; 
+    display: inline;
+    cursor: pointer;
+}
+.link:hover,
+.link.active {
+    background: none;
+    color: rgb(229, 155, 102);
+}
+@media (max-width: 768px) { 
+    .list {
+        position: absolute;
+        top: -700px;
+        width: 5rem;
+        left: -2000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transition: all .2s ease;
+    }
+    .link {
+        color: white;
+        font-size: 2rem;
+        display: block;
+        margin: 2rem;
+    }
+    .link:hover,
+    .link.active {
+        background: none;
+        color: rgb(229, 155, 102);
+    }
+    .active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transition: all .7s ease;
+    }
+    .burguer {
+        display: flex;
+        color: white;
+        width: 100%;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    .bgDiv {
+        position: absolute;
+        background-color: #222831;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1;
+        border-radius: 0 0 80% 0;
+        transition: all .6s ease;
+    }
+    .bgDiv1 {
+        /* display: none;   */
+        top: -700px;
+        left: -1000px;
+    }
+}
+
+@media (max-width: 350px) { 
+    .bgDiv {
+        border-radius: 0 0 50% 0;
+    }
+}
+
+
+
+
+
+
+
+/*.conteiner {
     background-color: #222831;
     display: flex;
     width: 100%;
@@ -11,7 +123,7 @@
     z-index: 1;
 }
 
-.left {
+ .left {
     flex: 1;
     list-style: none;
     padding: 25px;
@@ -75,10 +187,6 @@
     display: none;
 }
 
-/* .checkInp {
-    display: none;
-} */
-
 @media (max-width: 858px) {
     .conteiner {
         height: 55px;
@@ -110,7 +218,6 @@
     .right {
         justify-content: flex-end;
         margin: 30px;
-        /* display: flex; */
     }
 
     .checkbtn {
@@ -128,7 +235,6 @@
         top: 64px;
         left: -120%;
         text-align: center;
-        /* flex-direction: column; */
         transition: .5s;
     }
 
@@ -140,7 +246,6 @@
         top: 50px;
         left: 0;
         text-align: center;
-        /* transition: .5s; */
     }
 
     .navitem {
@@ -161,9 +266,6 @@
         color: rgb(229, 155, 102);
     }
 
-    /* #checkInput:checked ~ .ulLista {
-        left: 0;
-    } */
 }
 
 @media (max-width: 445px) {
@@ -171,4 +273,4 @@
         display: none;
         left: -200%;
     }
-}
+} */

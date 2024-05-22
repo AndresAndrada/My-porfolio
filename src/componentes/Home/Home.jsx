@@ -56,7 +56,7 @@ const Home = () => {
       <div>
         <Certificados />
       </div>
-      <div>
+      <div className={style.reviews}>
         <Reviews />
       </div>
     </div>
