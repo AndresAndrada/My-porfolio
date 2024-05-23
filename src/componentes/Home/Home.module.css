@@ -82,6 +82,13 @@
     justify-content: center;
 }
 
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes move {
     20%{
         transform: translateY(-200px);

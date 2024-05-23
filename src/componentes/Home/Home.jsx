@@ -44,7 +44,7 @@ const Home = () => {
           {/* </Slider> */}
         </div>
       </div>
-      <div>
+      <div className={style.about}>
         <About />
       </div>
       <div>

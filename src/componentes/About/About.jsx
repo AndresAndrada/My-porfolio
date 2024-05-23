@@ -9,7 +9,7 @@ const About = () => {
   console.log(showDescription, 'SHOW');
   return (
     <div className={style.about} id="About" onClick={() => setShowDescription(!showDescription)}>
-      <section id="about" className={style.about}>
+      <section id="about" className={style.about1}>
         <h2 className={style.title}>Acerca de Mí</h2>
         {showDescription
           ? <div className={`${style.container} ${style.fadeOut}`}>

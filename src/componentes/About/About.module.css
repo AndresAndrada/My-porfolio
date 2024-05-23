@@ -4,6 +4,10 @@
     background-color: #f7f7f7;
 }
 
+.about1 {
+    width: 100%;
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -64,7 +68,7 @@
 .aboutContent {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .textH4 {
@@ -131,6 +135,10 @@
     .container {
         display: block;
         padding: 10px 40px 10px 40px;
+    }
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
     }
     .title {
         font-size: 25px;
