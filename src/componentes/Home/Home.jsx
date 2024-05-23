@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import About from '../About/About'
 import Technology from '../Technology/Technology'
 import style from '../../componentes/Home/Home.module.css'
@@ -11,6 +11,7 @@ import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
+import { Link } from "react-scroll";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
@@ -39,7 +40,7 @@ const Home = () => {
           </div>
           <div>
             <Link to='/project' className={style.links}><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}>VER PROYECTOS</h6></button></Link>
-            <Link target="_blank" href={docs}><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></Link>
+            <a target="_blank" href={docs} rel="noreferrer"><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
           </div>
           {/* </Slider> */}
         </div>
