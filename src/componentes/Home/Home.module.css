@@ -71,6 +71,11 @@
     padding-bottom: 10px;
 }
 
+.containerBtn {
+    display: flex;
+    gap: 1rem;
+}
+
 .imageconteiner {
     height: 100%;
     animation: move 12s ease-in infinite alternate;
@@ -88,6 +93,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.textH6 {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* opcional */
+}
+  
 
 @keyframes move {
     20%{
@@ -110,9 +122,9 @@
     margin: 15px;
 }
 
-.links {
-    margin: 15px;
-}
+.linkedin{
+    font-size: 320px; /* o el tamaño que quieras */
+  }
 
 @media (max-width: 858px) {
     .presentacion {

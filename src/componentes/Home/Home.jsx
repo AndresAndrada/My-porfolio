@@ -11,10 +11,7 @@ import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
-import { Link } from "react-scroll";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -38,9 +35,9 @@ const Home = () => {
               <div><img className={style.image} src={pokemon} alt={pokemon} /></div>
             </div>
           </div>
-          <div>
-            <Link to='/project' className={style.links}><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}>VER PROYECTOS</h6></button></Link>
-            <a target="_blank" href={docs} rel="noreferrer"><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>CURRICULUM</h6></button></a>
+          <div className={style.containerBtn}>
+            <Link to='https://www.linkedin.com/in/andres-alfredo-andrada/' name='project' rel="noreferrer"><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}><ion-icon name="logo-linkedin" className={style.linkedin}></ion-icon> LinkedIn</h6></button></Link>
+            <a target="_blank" href={docs} rel="noreferrer"><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>Curriculum</h6></button></a>
           </div>
           {/* </Slider> */}
         </div>

@@ -25,7 +25,7 @@ function Navbar(props) {
         </div>
         <div className={`${styles.list} ${click ? styles.active : null}`}>
           <Link className={styles.link} to='Home' name='home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
-          <Link className={styles.link} to='About' name='about' spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link>
+          <Link className={styles.link} to='About' name='about' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>About</Link>
           <Link className={styles.link} to='Proyecto' name='project' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
           <Link className={styles.link} to='Technology' name='technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
           <Link className={styles.link} to='Certificado' name='certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
