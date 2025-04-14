@@ -11,9 +11,13 @@ import docs from '../../doc/CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Home = () => {
+  const handleClickLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/andr%C3%A9s-alfredo-andrada-1a83261b5/');
+  };
+
   return (
     <div className={style.container}>
       <div className={style.home} id="Home">
@@ -36,8 +40,17 @@ const Home = () => {
             </div>
           </div>
           <div className={style.containerBtn}>
-            <Link to='https://www.linkedin.com/in/andres-alfredo-andrada/' name='project' rel="noreferrer"><button id={style.boton} type="button" class="btn btn-secondary"><h6 className={style.textH6}><ion-icon name="logo-linkedin" className={style.linkedin}></ion-icon> LinkedIn</h6></button></Link>
-            <a target="_blank" href={docs} rel="noreferrer"><button type="button" class="btn btn-secondary"><h6 className={style.textH6}>Curriculum</h6></button></a>
+            <Link onClick={handleClickLinkedIn} className={style.link}>
+              <button id='linkedin' type="button" className={style.boton}>
+                {/* <ion-icon name="logo-linkedin" className={style.icons}></ion-icon> */}
+                <h6 className={style.textH6}>LinkedIn</h6>
+              </button>
+            </Link>
+            <a target="_blank" href={docs} rel="noreferrer">
+              <button type="button" className={style.boton}>
+                <h6 className={style.textH6}>Curriculum</h6>
+              </button>
+            </a>
           </div>
           {/* </Slider> */}
         </div>

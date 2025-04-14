@@ -76,6 +76,52 @@
     gap: 1rem;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #024e77;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton:hover {
+    background-color: #005f91;
+    transform: translateY(-2px);
+  }
+  
+  .boton:active {
+    transform: scale(0.98);
+  }
+  
+  .icons {
+    font-size: 1em; /* se adapta al tamaño de la fuente del botón */
+    line-height: 1;
+  }
+  
+  .textH6 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+
+/* 
+.icons {
+    size: 10px;
+} */
+
 .imageconteiner {
     height: 100%;
     animation: move 12s ease-in infinite alternate;
@@ -122,10 +168,6 @@
     margin: 15px;
 }
 
-.linkedin{
-    font-size: 320px; /* o el tamaño que quieras */
-  }
-
 @media (max-width: 858px) {
     .presentacion {
         font-size: 25px;
@@ -162,7 +204,7 @@
 }
 
 @media (max-width: 400px) {
-    .home {
+   .home {
         display: block;
         position: relative;
         padding-top: 100px;
@@ -175,6 +217,7 @@
         padding: 5px 20px 5px 20px;
     }
     .right {
+        width: 100%;
         padding: 10px;
     }
     .title {
@@ -191,10 +234,7 @@
     border-radius: 15px;
     margin: 15px;
     }
-    .imageconteiner {
-        height: 100%;
-        animation: move 12s ease-in infinite alternate;
-    }
+
     @keyframes move {
         20%{
             transform: translateY(-150px);
@@ -205,10 +245,5 @@
         100%{
             transform: translateY(-450px);
         }
-    }
-
-    .textH6 {
-        font-size: 10px;
-        margin: 0;
     }
 }

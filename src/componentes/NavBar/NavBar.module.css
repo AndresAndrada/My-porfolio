@@ -33,8 +33,12 @@
     display: inline;
     cursor: pointer;
 }
-.link:hover,
-.link.active {
+.link:hover {
+    background: none;
+    color: rgb(229, 155, 102);
+}
+
+.link:active {
     background: none;
     color: rgb(229, 155, 102);
 }

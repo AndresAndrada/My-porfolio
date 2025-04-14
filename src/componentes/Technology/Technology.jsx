@@ -2,7 +2,7 @@ import React from "react";
 import { SiSequelize, SiPostgresql, SiExpress } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoHtml5 } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiTypescript, SiTailwindcss } from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiSolidity } from "react-icons/si";
 import style from '../../componentes/Technology/Technology.module.css'
 
 const Technology = () => {
@@ -60,6 +60,9 @@ const Technology = () => {
                         <div className={style.simbolos}>
                             <h5>PostgreSQL</h5>
                             <SiPostgresql className={style.icons} />
+                        </div> <div className={style.simbolos}>
+                            <h5>Solidity</h5>
+                            <SiSolidity className={style.icons} />
                         </div>
                     </div>
                     {/* </div> */}
