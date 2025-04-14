@@ -30,7 +30,7 @@ const Reviews = () => {
     form.current.reset()
     if (!imput.email || !imput.comment) return swal("Debe completar los datos requeridos", "Disculpe las molestias");
     dispatch(postReviews(imput), setImput({ email: '', comment: '' }),
-      swal("Muchas gracias por su aporte!", "Esteré sevisando su aporte a mí Porfolio", "success"));
+      swal("Muchas gracias por su aporte!", "Esteré revisando su aporte a mí Porfolio", "success"));
   };
 
   return (
@@ -41,7 +41,9 @@ const Reviews = () => {
           <form ref={form} className={styles.fomurlario}>
             <textarea name="email" className={styles.name} placeholder='Name' onChange={handleChange} />
             <textarea name="comment" className={styles.coment} placeholder="Comentario..." onChange={handleChange} />
-            <input type="submit" className={styles.btn} onClick={handleSubmit} />
+            <div className={styles.contentBtn}>
+              <input type="submit" className={styles.btn} onClick={handleSubmit} />
+            </div>
           </form>
         </div>
       </div>

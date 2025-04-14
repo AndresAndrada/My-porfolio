@@ -1,4 +1,4 @@
-    .about {
+.about {
     padding: 60px 0;
     width: 100vw;
     background-color: #f7f7f7;
@@ -30,39 +30,43 @@
     to {
       opacity: 1;
     }
-  }
+}
   
-  @keyframes fadeOut {
+@keyframes fadeOut {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
     }
-  }
+}
   
-  .fadeIn {
+.fadeIn {
     animation: fadeIn 0.9s ease-in-out;
-  }
+}
   
-  .fadeOut {
+.fadeOut {
     animation: fadeOut 0.9s ease-in-out;
-  }
-  
-/* @keyframes tranparente {
-    0%{display: flex;}
-    100%{display: none;}
-} */
+}
 
 .container:hover {
-    border-radius: 0.3125rem;
-    box-shadow: 0px 100px 80px 0px rgba(33, 42, 42, 0.07), 0px 41.778px 33.422px 0px rgba(33, 42, 42, 0.07), 0px 22.336px 17.869px 0px rgba(33, 42, 42, 0.07), 0px 12.522px 10.017px 0px rgba(33, 42, 42, 0.07), 0px 6.65px 5.32px 0px rgba(33, 42, 42, 0.07), 0px 2.767px 2.214px 0px rgba(33, 42, 42, 0.07);
+    border-radius: 1.3125rem;
+    box-shadow: 0px 100px 80px 0px rgba(33, 42, 42, 0.07),
+                0px 41.778px 33.422px 0px rgba(33, 42, 42, 0.07),
+                0px 22.336px 17.869px 0px rgba(33, 42, 42, 0.07),
+                0px 12.522px 10.017px 0px rgba(33, 42, 42, 0.07),
+                0px 6.65px 5.32px 0px rgba(33, 42, 42, 0.07),
+                0px 2.767px 2.214px 0px rgba(33, 42, 42, 0.07);
 }
 
 .title {
     text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .aboutContent {
@@ -90,6 +94,7 @@
 }
 
 .bioContainer {
+    width: 100%;
     flex: 1;
     padding: 0 20px;
 }
@@ -144,9 +149,26 @@
         font-size: 25px;
     }
     .textH4 {
-        font-size: 12px;
+        font-size: 15px;
     }
     .profilePic {
         width: 120px;
     }
+    .bioContainer {
+        padding: 0;
+        max-height: 350px; /* Ajustable */
+        overflow-y: auto;
+    }
+}
+
+/* Estilo opcional para personalizar scrollbar */
+.bioContainer {
+    scrollbar-width: thin; /* Firefox */
+}
+.bioContainer::-webkit-scrollbar {
+    width: 6px;
+}
+.bioContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }

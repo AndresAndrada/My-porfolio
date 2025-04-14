@@ -35,12 +35,12 @@
     transition: .3s;
 }
 
-.card {
-    width: 100%;
-}
-
 .name:hover {
     border: 2px solid rgb(45, 40, 40);
+}
+
+.card {
+    width: 100%;
 }
 
 .coment {
@@ -51,12 +51,19 @@
     transition: .4s;
 }
 
+.contentBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .coment:hover {
     border: 2px solid rgb(45, 40, 40);
 }
 
 .btn {
     margin: 25px;
+    width: 6rem;
     border-radius: 10px;
     border: 0;
     transition: .4s;
