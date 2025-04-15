@@ -1,5 +1,5 @@
 .inicio {
-    background-image: url('../../assets/cba4-new.jpg');
+    background-image: url('../../assets/Cba1.jpg');
     width: 10ovw;
     height: 100vh;
     background-size: cover;
@@ -43,6 +43,11 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     transition: .5s;
+    background-color: rgba(0, 0, 0, 0.3); /* fondo oscuro semitransparente */
+    backdrop-filter: blur(8px);           /* aplica el blur al fondo */
+    -webkit-backdrop-filter: blur(8px);   /* soporte en Safari */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .title:hover {
@@ -50,8 +55,21 @@
 }
 
 .subtitle {
-    color: rgb(241, 233, 122);
+    /* color: rgb(241, 233, 122); */
+    color: rgb(242, 242, 242);
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.25); /* más transparente */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.25); /* sombra amplia y suave */
+    /* text-shadow: 
+    4px 4px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.6),
+    1px 1px 2px rgba(0, 0, 0, 0.5); */
 }
 
 @media (max-width: 858px) {
