@@ -36,6 +36,7 @@ const Reviews = () => {
   return (
     <div className={styles.reviews} id="Footer">
       <div className={styles.conten}>
+        <h1>Contactame</h1>
         <h4 className={styles.texto}>Si deseas dejar un comentario para realizarme un feedback de mis trabajos, para que puede mejorar, puedes hacerlo aquí:</h4>
         <div className={styles.card}>
           <form ref={form} className={styles.fomurlario}>

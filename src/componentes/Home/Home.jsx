@@ -46,7 +46,7 @@ const Home = () => {
                 <h6 className={style.textH6}>LinkedIn</h6>
               </button>
             </Link>
-            <a target="_blank" href={docs} rel="noreferrer">
+            <a target="_blank" href={docs} rel="noreferrer" className={style.link}>
               <button type="button" className={style.boton}>
                 <h6 className={style.textH6}>Curriculum</h6>
               </button>
