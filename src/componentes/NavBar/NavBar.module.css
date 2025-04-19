@@ -37,10 +37,16 @@
     background: none;
     color: rgb(229, 155, 102);
 }
-
-.link:active {
+/* .link:active {
     background: none;
     color: rgb(229, 155, 102);
+} */
+.activeLink {
+    color: rgb(229, 155, 102);
+    text-decoration: none;
+    margin-right: 1rem; 
+    display: inline;
+    cursor: pointer;
 }
 @media (max-width: 768px) { 
     .list {

@@ -8,10 +8,11 @@ import './NavBar.module.css'
 import { BurgerButton } from './dropdown/BurgerButton';
 
 function Navbar(props) {
-
+  const [active, setActive] = useState('home');
   const [click, setClick] = useState(false);
 
-  const closeMenu = () => {
+  const closeMenu = (e) => {
+    setActive(e)
     setClick(false)
   };
 
@@ -24,12 +25,65 @@ function Navbar(props) {
           </a>
         </div>
         <div className={`${styles.list} ${click ? styles.active : null}`}>
-          <Link className={styles.link} to='Home' name='home' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Home</Link>
-          <Link className={styles.link} to='About' name='about' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>About</Link>
-          <Link className={styles.link} to='Proyecto' name='project' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Proyectos</Link>
-          <Link className={styles.link} to='Technology' name='technology' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Tecnologias</Link>
-          <Link className={styles.link} to='Certificado' name='certificado' spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Certificado</Link>
-          <Link className={styles.link} to='Footer' name='footer' spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contacto</Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='Home' name='home'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={() => closeMenu('home')}>
+            Home
+          </Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='About'
+            name='about'
+            spy={true}
+            smooth={true}
+            offset={-23}
+            duration={500}
+            onClick={() => closeMenu('about')}>
+            About
+          </Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='Proyecto' name='project' spy={true} smooth={true} offset={-47} duration={500} onClick={() => closeMenu('project')}>
+            Proyectos
+          </Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='Technology' name='technology'
+            spy={true} smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={() => closeMenu('tecnology')}>
+            Tecnologias
+          </Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='Certificado' name='certificado'
+            spy={true} smooth={true}
+            offset={-80}
+            duration={500}
+            onClick={() => closeMenu('certific')}>
+            Certificado
+          </Link>
+          <Link
+            className={styles.link}
+            activeClass={styles.activeLink}
+            to='Footer' name='footer'
+            spy={true} smooth={true}
+            offset={-150}
+            duration={500}
+            onClick={() => closeMenu('contact')}>
+            Contacto
+          </Link>
         </div>
         <div className={styles.burguer}>
           <BurgerButton click={click} onClick={() => setClick(!click)} />
