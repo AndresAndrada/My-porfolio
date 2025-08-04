@@ -43,7 +43,7 @@ const Reviews = () => {
             <textarea name="email" className={styles.name} placeholder='Name' onChange={handleChange} />
             <textarea name="comment" className={styles.coment} placeholder="Comentario..." onChange={handleChange} />
             <div className={styles.contentBtn}>
-              <input type="submit" className={styles.btn} onClick={handleSubmit} />
+              <input type="submit" className={styles.boton} onClick={handleSubmit} />
             </div>
           </form>
         </div>

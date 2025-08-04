@@ -7,7 +7,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import bonita from '../../assets/BonitaImg.png';
 import hire from '../../assets/hire.png';
 import pokemon from '../../assets/pokemon.png';
-import docs from '../../doc/CV.pdf';
+import docs from '../../doc/Currículum-Vitae Andrada Andres.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
@@ -23,9 +23,8 @@ const Home = () => {
       <div className={style.home} id="Home">
         <div className={style.left}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}
-          <h1 className={style.presentacion}>
-            Hola! Mi nombre es
-            <span className={style.nombre}> Andres Andrada</span>
+          <h1 className={style.presentation}>
+            Hola! Mi nombre es <span className={style.name}>Andres Andrada</span>
           </h1>
           <h3 className={style.localizacion}><IoLocationSharp /><span>Córdoba, Argentina</span></h3>
           <h3><span className={style.profesion}>Full-Stack Developer</span></h3>

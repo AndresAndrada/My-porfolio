@@ -68,7 +68,8 @@ function Navbar(props) {
             className={styles.link}
             activeClass={styles.activeLink}
             to='Certificado' name='certificado'
-            spy={true} smooth={true}
+            spy={true}
+            smooth={true}
             offset={-80}
             duration={500}
             onClick={() => closeMenu('certific')}>

@@ -1,0 +1,21 @@
+.loader {
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+.fill-primary {
+  fill: #2563eb; /* Azul primario */
+  opacity: 0.5;
+}
+
+.fill-secondary {
+  fill: #22d3ee; /* Celeste secundario */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -6,7 +6,6 @@ import image from '../../assets/FOTO CV.png'
 
 const About = () => {
   const [showDescription, setShowDescription] = useState(true);
-  console.log(showDescription, 'SHOW');
   return (
     <div className={style.about} id="About" onClick={() => setShowDescription(!showDescription)}>
       <section id="about" className={style.about1}>

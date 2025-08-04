@@ -14,8 +14,8 @@ axios.defaults.baseURL = 'https://db-andres-production-e788.up.railway.app/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={ store }> 
-    < BrowserRouter >
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
     </BrowserRouter >
   </Provider>

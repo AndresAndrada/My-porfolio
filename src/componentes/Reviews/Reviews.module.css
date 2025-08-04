@@ -78,14 +78,40 @@
     border: 2px solid rgb(45, 40, 40);
 }
 
-.btn {
+/* .btn {
     margin: 25px;
     width: 6rem;
     border-radius: 10px;
     border: 0;
     transition: .4s;
     font-size: large;
-}
+} */
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #024e77;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+   .boton:hover {
+    background-color: #005f91;
+    transform: translateY(-2px);
+  }
+  
+  .boton:active {
+    transform: scale(0.98);
+  }
 
 .btn:hover {
     border: 2px solid rgb(45, 40, 40);
@@ -116,10 +142,9 @@
     .fomurlario {
         display: flex;
     }
-    .btn {
+    /* .btn {
         font-size: 15px;
-        /* width: 20%; */
-    }
+    } */
 }
 
 @media (max-width: 600px) {

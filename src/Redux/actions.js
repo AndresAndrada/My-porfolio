@@ -16,9 +16,8 @@ export const getCount = () => {
 
 export const patchCount = (id, count) => {
     return async (dispatch) => {
-        console.log(id, count, 'PARAMETROS ACTIONS PATCH');
-        const aux = await axios.patch(`/count/${id}`, count);
-        console.log(aux.data, 'DATA ACTIONS PATCH');
+        // const aux = await axios.patch(`/count/${id}`, count);
+        const aux = { id, ...count };
         return dispatch({
             type: PATCH_COUNT,
             payload: aux.data
