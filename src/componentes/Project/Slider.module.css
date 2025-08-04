@@ -1,6 +1,7 @@
 .slick-slider {
   width: 100%;
-  max-width: 1100px;
+  max-width: 75rem;
+  min-height: 500px; /* Ajusta la altura mínima según sea necesario */
   margin: 0 auto;
   display: flex;
   justify-items: center;
@@ -11,7 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 120%;
+}
+
+.slick-list {
+  display: flex;
+  gap: 24px; /* Ajusta el espacio entre slides */
+  padding: 10px 0;
 }
 
 .slick-dots {
@@ -37,6 +44,6 @@
 
 @media (max-width: 480px) {
   .slick-slider {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }

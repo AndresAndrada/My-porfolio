@@ -20,9 +20,9 @@ function Navbar(props) {
     <>
       <div className={styles.conteiner}>
         <div className={styles.img}>
-          <a href='/home' className='enlace'>
+          {/* <a href='/home' className='enlace'>
             <img src={logo} className={styles.fotohome} alt='logo' />
-          </a>
+          </a> */}
         </div>
         <div className={`${styles.list} ${click ? styles.active : null}`}>
           <Link
