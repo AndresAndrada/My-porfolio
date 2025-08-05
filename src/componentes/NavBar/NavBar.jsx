@@ -40,7 +40,7 @@ function Navbar(props) {
             name='about'
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-37}
             duration={500}
             onClick={() => closeMenu('about')}>
             About
@@ -52,7 +52,7 @@ function Navbar(props) {
             name='project'
             spy={true}
             smooth={true}
-            offset={-23}
+            offset={-27}
             duration={500}
             onClick={() => closeMenu('project')}>
             Proyectos
@@ -73,7 +73,7 @@ function Navbar(props) {
             to='Certificado' name='certificado'
             spy={true}
             smooth={true}
-            offset={-5}
+            offset={-7}
             duration={500}
             onClick={() => closeMenu('certific')}>
             Certificado
