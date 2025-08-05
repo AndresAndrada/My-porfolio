@@ -51,7 +51,7 @@ const Certificados = () => {
           className={sliderStyles['slick-slider']}>
           {certificate.map((item) => {
             return (
-              <div className={style.henry}>
+              <div key={item.id} className={style.henry}>
                 <div className={style.image}>
                   {/* <img src={ hire } alt={ hire } width='800' /> */}
                   <img src={item.img} alt={item.img} className={style.image} />

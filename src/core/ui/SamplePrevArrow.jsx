@@ -4,7 +4,9 @@ export default function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div onClick={onClick}>
-      <FaArrowCircleLeft size="20px" color="#2563eb" cursor="pointer" />
+      <FaArrowCircleLeft size="20px"
+        color="rgba(204, 156, 58, 1)"
+        cursor="pointer" />
     </div>
   );
 }
