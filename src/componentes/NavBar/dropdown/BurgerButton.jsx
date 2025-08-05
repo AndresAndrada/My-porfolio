@@ -2,7 +2,7 @@ import styles from './BurgerButton.module.css'
 
 export const BurgerButton = ({ click, onClick }) => {
     return (
-        <div class={`${styles.navicon5} ${click ? styles.open : null}`} onClick={onClick}>
+        <div className={`${styles.navicon5} ${click ? styles.open : null}`} onClick={onClick}>
             <span></span>
             <span></span>
             <span></span>
