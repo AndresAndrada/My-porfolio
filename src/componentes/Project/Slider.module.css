@@ -38,12 +38,12 @@
 
 @media (max-width: 600px) {
   .slick-slider {
-    max-width: 90%;
+    max-width: 85vw;
   }
 }
 
 @media (max-width: 480px) {
   .slick-slider {
-    max-width: 75vw;
+    max-width: 90vw;
   }
 }

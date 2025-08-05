@@ -28,7 +28,7 @@ const Technology = () => {
     dots: true,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
     speed: 2000,
