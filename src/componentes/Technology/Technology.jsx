@@ -28,7 +28,7 @@ const Technology = () => {
     dots: true,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     speed: 2000,
@@ -49,18 +49,10 @@ const Technology = () => {
         }
       },
       {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
         breakpoint: 400,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
       }
     ]

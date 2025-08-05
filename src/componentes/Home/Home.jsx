@@ -27,8 +27,8 @@ const Home = () => {
           <h1 className={style.presentation}>
             Hola! Mi nombre es <span className={style.name}>Andres Andrada</span>
           </h1>
+          <h3><span className={style.profesion}>Full-Stack Developer</span><span className={style.dev}>{"<></>"}</span></h3>
           <h3 className={style.localizacion}><IoLocationSharp /><span>Córdoba, Argentina</span></h3>
-          <h3><span className={style.profesion}>Full-Stack Developer</span></h3>
         </div>
         <div className={style.right}>
           {/* <Slider { ...settings }> */}

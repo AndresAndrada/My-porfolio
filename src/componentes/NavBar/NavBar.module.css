@@ -23,6 +23,7 @@
     z-index: 2;
 }
 .list {
+    width: 10px;
     position: initial;
     margin: 0;
 }
@@ -37,10 +38,6 @@
     background: none;
     color: rgb(229, 155, 102);
 }
-/* .link:active {
-    background: none;
-    color: rgb(229, 155, 102);
-} */
 .activeLink {
     color: rgb(229, 155, 102);
     text-decoration: none;
@@ -48,6 +45,14 @@
     display: inline;
     cursor: pointer;
 }
+.darkMode {
+    max-width: 50px;
+    color: white;
+    cursor: pointer;
+    margin-right: 1rem; 
+    display: inline;
+}
+
 @media (max-width: 768px) { 
     .list {
         position: absolute;

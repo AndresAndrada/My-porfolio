@@ -3,9 +3,11 @@ import { Link } from "react-scroll";
 import styles from '../NavBar/NavBar.module.css';
 import './NavBar.module.css'
 import { BurgerButton } from './dropdown/BurgerButton';
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 function Navbar(props) {
-  // const [active, setActive] = useState('home');
+  const [mode, setMode] = useState('home');
   const [click, setClick] = useState(false);
 
   const closeMenu = (e) => {
@@ -88,6 +90,12 @@ function Navbar(props) {
             onClick={() => closeMenu('contact')}>
             Contacto
           </Link>
+        </div>
+        <div className={styles.darkMode}>
+          {mode
+            ? <MdOutlineLightMode size="25px" onClick={() => setMode(!mode)} />
+            : <MdDarkMode size="25px" color='white' onClick={() => setMode(!mode)} />
+          }
         </div>
         <div className={styles.burguer}>
           <BurgerButton click={click} onClick={() => setClick(!click)} />

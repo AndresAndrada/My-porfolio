@@ -43,6 +43,6 @@
 
 @media (max-width: 480px) {
   .slick-slider {
-    max-width: 91vw;
+    max-width: 75vw;
   }
 }
