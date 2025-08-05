@@ -5,7 +5,7 @@ import style from '../TechnologyComp/TechnologyComp.module.css'
 
 const TechnologyComp = () => {
   return (
-    <div className={style.contenedor}>
+    <section className={style.contenedor} id="Technology">
       <h2>Tecnologías</h2>
       <div className={style.technology}>
         <div className={style.left}>
@@ -55,7 +55,7 @@ const TechnologyComp = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

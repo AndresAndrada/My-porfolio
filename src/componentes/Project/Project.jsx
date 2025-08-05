@@ -53,8 +53,8 @@ const Project = (url) => {
     ]
   };
   return (
-    <div className={styles.container}>
-      <div className={styles.title} id="Proyecto">
+    <section className={styles.container} id="Proyecto">
+      <div className={styles.title}>
         <h2>Proyectos</h2>
       </div>
       {/* <div className={styles.project}> */}
@@ -87,7 +87,7 @@ const Project = (url) => {
           })}
         </Slider>
       </div>
-    </div>
+    </section>
   )
 };
 

@@ -12,6 +12,7 @@ import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const handleClickLinkedIn = () => {
@@ -68,6 +69,9 @@ const Home = () => {
       </div>
       <div className={style.reviews}>
         <Reviews />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

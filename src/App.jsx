@@ -20,7 +20,6 @@ function App() {
         {location.pathname !== '/' && <Route path='/' component={Navbar} />}
         <Route exact path='/' component={Inicio} />
         <Route exact path='/home' component={Home} />
-
       </div>
     </React.Suspense>
 
