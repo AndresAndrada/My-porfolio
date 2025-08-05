@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './BurgerButton.module.css'
 
 export const BurgerButton = ({ click, onClick }) => {

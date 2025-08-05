@@ -11,7 +11,7 @@ import Scrum from "./3- Scrum/Scrum";
 const Certificados = () => {
 
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="Certificado">
             <div className={styles.title} id="Certificado">
                 <h2>Certificados</h2>
             </div>
@@ -31,7 +31,7 @@ const Certificados = () => {
                 </div>
                 {/* </Slider> */}
             </div>
-        </div>
+        </section>
     )
 };
 
