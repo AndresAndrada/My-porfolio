@@ -18,10 +18,12 @@ function Navbar(props) {
   return (
     <>
       <div className={styles.conteiner}>
-        <div className={styles.img}>
-          {/* <a href='/home' className='enlace'>
-            <img src={logo} className={styles.fotohome} alt='logo' />
-          </a> */}
+        <div className={`${styles.img} ${styles.darkMode}`}>
+          {mode
+            ? <MdOutlineLightMode size="30px" onClick={() => setMode(!mode)} />
+            : <MdDarkMode size="30px" color='white' onClick={() => setMode(!mode)} />
+          }
+          {/* <img src={logo} className={styles.fotohome} alt='logo' /> */}
         </div>
         <div className={`${styles.list} ${click ? styles.active : null}`}>
           <Link
@@ -54,7 +56,7 @@ function Navbar(props) {
             name='project'
             spy={true}
             smooth={true}
-            offset={-27}
+            offset={-10}
             duration={500}
             onClick={() => closeMenu('project')}>
             Proyectos
@@ -64,7 +66,7 @@ function Navbar(props) {
             activeClass={styles.activeLink}
             to='Technology' name='technology'
             spy={true} smooth={true}
-            offset={-15}
+            offset={-5}
             duration={500}
             onClick={() => closeMenu('tecnology')}>
             Tecnologias
@@ -75,7 +77,7 @@ function Navbar(props) {
             to='Certificado' name='certificado'
             spy={true}
             smooth={true}
-            offset={-7}
+            offset={-5}
             duration={500}
             onClick={() => closeMenu('certific')}>
             Certificado
@@ -90,12 +92,6 @@ function Navbar(props) {
             onClick={() => closeMenu('contact')}>
             Contacto
           </Link>
-        </div>
-        <div className={styles.darkMode}>
-          {mode
-            ? <MdOutlineLightMode size="25px" onClick={() => setMode(!mode)} />
-            : <MdDarkMode size="25px" color='white' onClick={() => setMode(!mode)} />
-          }
         </div>
         <div className={styles.burguer}>
           <BurgerButton click={click} onClick={() => setClick(!click)} />

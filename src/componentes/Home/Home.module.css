@@ -218,6 +218,7 @@
         display: block;
         position: relative;
         padding-top: 120px;
+        background-attachment: none;
         padding-bottom: 150px;
         padding-left: 20px;  
         padding-right: 20px;

@@ -1,12 +1,11 @@
 .reviews {
-    /* margin: 100px; */
     padding: 50px 0;
     width: 100%;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f7f7f7;
-    /* height: 650px; */
 }
 
 .conten {
@@ -46,6 +45,7 @@
 }
 
 .name {
+    min-height: 50px;
     margin: 25px;
     border-radius: 10px;
     border: 0;
@@ -77,15 +77,6 @@
 .coment:hover {
     border: 2px solid rgb(45, 40, 40);
 }
-
-/* .btn {
-    margin: 25px;
-    width: 6rem;
-    border-radius: 10px;
-    border: 0;
-    transition: .4s;
-    font-size: large;
-} */
 
 .boton {
     display: flex;

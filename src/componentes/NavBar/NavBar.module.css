@@ -23,7 +23,9 @@
     z-index: 2;
 }
 .list {
-    width: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: initial;
     margin: 0;
 }
@@ -45,8 +47,10 @@
     display: inline;
     cursor: pointer;
 }
+
 .darkMode {
     max-width: 50px;
+    padding: 10px 20px;
     color: white;
     cursor: pointer;
     margin-right: 1rem; 
