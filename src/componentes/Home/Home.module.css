@@ -44,6 +44,11 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(243, 243, 243, 0.2);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+.left:hover {
+    transform: box-shadow .1s ease, translateY(-8px);
 }
 
 .right {
@@ -61,6 +66,7 @@
 
 .presentation {
     color: wheat;
+    cursor: default;
 }
 
 .name {

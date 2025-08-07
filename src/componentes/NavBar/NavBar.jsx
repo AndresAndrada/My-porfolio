@@ -87,7 +87,7 @@ function Navbar(props) {
             activeClass={styles.activeLink}
             to='Footer' name='footer'
             spy={true} smooth={true}
-            offset={-5}
+            offset={-35}
             duration={500}
             onClick={() => closeMenu('contact')}>
             Contacto

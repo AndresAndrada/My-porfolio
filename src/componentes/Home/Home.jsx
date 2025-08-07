@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 // import { Link } from "react-router-dom";
 import About from '../About/About'
 import Technology from '../Technology/Technology'
@@ -15,6 +15,35 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
+  const containerRef = useRef(null);
+
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const effect = containerRef.current;
+    console.log("🚀 ~ About ~ height:", effect.clientHeight);
+    const handleMouseMove = (e) => {
+      const rect = effect.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const width = effect.clientWidth;
+      const height = effect.clientHeight;
+      const yRotation = ((x - width / 2) / width) * 10;
+      const xRotation = ((y - height / 2) / width) * 10;
+      const string = `perspective(500px) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+      effect.style.transform = string;
+    };
+    const handleMouseOut = () => {
+      effect.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    };
+    effect.addEventListener("mousemove", handleMouseMove);
+    effect.addEventListener("mouseout", handleMouseOut);
+    return () => {
+      effect.removeEventListener("mousemove", handleMouseMove);
+      effect.removeEventListener("mouseout", handleMouseOut);
+    };
+  }, []);
+
   const handleClickLinkedIn = () => {
     window.open('https://www.linkedin.com/in/andr%C3%A9s-alfredo-andrada-1a83261b5/');
   };
@@ -22,7 +51,7 @@ const Home = () => {
   return (
     <div className={style.container}>
       <div className={style.home} id="Home">
-        <div className={style.left}>
+        <div className={style.left} ref={containerRef}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}
           <h1 className={style.presentation}>
             Hola! Mi nombre es <span className={style.name}>Andres Andrada</span>
@@ -55,24 +84,12 @@ const Home = () => {
           {/* </Slider> */}
         </div>
       </div>
-      {/* <div className={style.about}> */}
       <About />
-      {/* </div> */}
-      {/* <div> */}
       <Project />
-      {/* </div> */}
-      {/* <div> */}
       <Technology />
-      {/* </div> */}
-      {/* <div> */}
       <Certificados />
-      {/* </div> */}
-      {/* <div className={style.reviews}> */}
       <Reviews />
-      {/* </div> */}
-      {/* <div> */}
       <Footer />
-      {/* </div> */}
     </div>
   );
 };
