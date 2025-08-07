@@ -53,7 +53,7 @@ const About = () => {
     setOption(option);
   }
   return (
-    <div className={style.about} id="About">
+    <section className={style.about} id="About">
       <section id="about" className={style.about1}>
         <h2 className={style.title}>Acerca de Mí</h2>
         {!showDescription
@@ -117,7 +117,7 @@ const About = () => {
           </div>
         }
       </section>
-    </div >
+    </section >
   )
 };
 

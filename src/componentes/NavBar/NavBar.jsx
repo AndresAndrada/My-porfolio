@@ -44,7 +44,7 @@ function Navbar(props) {
             name='about'
             spy={true}
             smooth={true}
-            offset={-37}
+            offset={-1}
             duration={500}
             onClick={() => closeMenu('about')}>
             About
@@ -56,7 +56,7 @@ function Navbar(props) {
             name='project'
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={1}
             duration={500}
             onClick={() => closeMenu('project')}>
             Proyectos
@@ -66,7 +66,7 @@ function Navbar(props) {
             activeClass={styles.activeLink}
             to='Technology' name='technology'
             spy={true} smooth={true}
-            offset={-20}
+            offset={1}
             duration={500}
             onClick={() => closeMenu('tecnology')}>
             Tecnologias
@@ -77,7 +77,7 @@ function Navbar(props) {
             to='Certificado' name='certificado'
             spy={true}
             smooth={true}
-            offset={-15}
+            offset={1}
             duration={500}
             onClick={() => closeMenu('certific')}>
             Certificado
@@ -87,7 +87,7 @@ function Navbar(props) {
             activeClass={styles.activeLink}
             to='Footer' name='footer'
             spy={true} smooth={true}
-            offset={-32}
+            offset={1}
             duration={500}
             onClick={() => closeMenu('contact')}>
             Contacto
