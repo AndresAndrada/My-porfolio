@@ -55,24 +55,24 @@ const Home = () => {
           {/* </Slider> */}
         </div>
       </div>
-      <div className={style.about}>
-        <About />
-      </div>
-      <div>
-        <Project />
-      </div>
-      <div>
-        <Technology />
-      </div>
-      <div>
-        <Certificados />
-      </div>
-      <div className={style.reviews}>
-        <Reviews />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      {/* <div className={style.about}> */}
+      <About />
+      {/* </div> */}
+      {/* <div> */}
+      <Project />
+      {/* </div> */}
+      {/* <div> */}
+      <Technology />
+      {/* </div> */}
+      {/* <div> */}
+      <Certificados />
+      {/* </div> */}
+      {/* <div className={style.reviews}> */}
+      <Reviews />
+      {/* </div> */}
+      {/* <div> */}
+      <Footer />
+      {/* </div> */}
     </div>
   );
 };

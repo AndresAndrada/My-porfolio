@@ -1,23 +1,26 @@
 .slick-slider {
   width: 100%;
   max-width: 75rem;
-  min-height: 500px; /* Ajusta la altura mínima según sea necesario */
-  margin: 0 auto;
+  min-height: 450px;
+  margin: 50px auto;
   display: flex;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
   }
 
 .slick-slide > div {
   display: flex;
+  width: 50rem;
+  height: auto;
+  padding-bottom: 20px;
+  min-height: 600px; 
+  height: 100%;
   justify-content: center;
   align-items: center;
-  height: 120%;
 }
 
 .slick-list {
   display: flex;
-  gap: 24px; /* Ajusta el espacio entre slides */
   padding: 10px 0;
 }
 
@@ -47,3 +50,16 @@
     max-width: 75vw;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

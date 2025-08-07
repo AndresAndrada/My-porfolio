@@ -37,10 +37,10 @@ const Reviews = () => {
     <div className={styles.reviews} id="Footer">
       <div className={styles.conten}>
         <h1>Contactame</h1>
-        <h4 className={styles.texto}>Si deseas dejar un comentario para realizarme un feedback de mis trabajos, para que puede mejorar, puedes hacerlo aquí:</h4>
+        <h4 className={styles.texto}>Si estas interesado en que trabajemos juntos, envíame un mensaje:</h4>
         <div className={styles.card}>
           <form ref={form} className={styles.fomurlario}>
-            <textarea name="email" className={styles.name} placeholder='Name' onChange={handleChange} />
+            <input name="email" className={styles.name} placeholder='Name' onChange={handleChange} />
             <textarea name="comment" className={styles.coment} placeholder="Comentario..." onChange={handleChange} />
             <div className={styles.contentBtn}>
               <input type="submit" className={styles.boton} onClick={handleSubmit} />

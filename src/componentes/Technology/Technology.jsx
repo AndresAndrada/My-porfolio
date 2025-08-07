@@ -1,4 +1,3 @@
-import React from "react";
 import { SiSequelize, SiPostgresql, SiExpress } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoHtml5 } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -33,7 +32,7 @@ const Technology = () => {
     autoplay: true,
     speed: 2000,
     // autoplaySpeed: 0,
-    rows: 2,
+    // rows: 2,
     // cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -59,8 +58,9 @@ const Technology = () => {
   };
   return (
     <section className={style.contenedor} id="Technology">
-      <h2>Tecnologías</h2>
+      <h2 className={style.title}>Tecnologías</h2>
       <div className={style.technology}>
+        <h4 className={style.subTitle}>Frontend</h4>
         <div className="slider-container">
           <Slider
             {...settings}
@@ -94,6 +94,14 @@ const Technology = () => {
               <h5 className={style.itmes}>Next</h5>
               <TbBrandNextjs className={style.icons} />
             </div>
+          </Slider>
+        </div>
+        <h4 className={style.subTitleBackend}>Backend</h4>
+        <div className="slider-container">
+          <Slider
+            {...settings}
+            className={sliderStyles['slick-slider']}
+          >
             <div className={style.simbolos}>
               <h5 className={style.itmes}>Node.JS</h5>
               <IoLogoNodejs className={style.icons} />

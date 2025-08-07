@@ -156,6 +156,7 @@
 
 .bold {
     font-weight: bold;
+    color: rgb(141, 124, 91);
 }
 
 .aboutContent {
@@ -177,6 +178,12 @@
     flex: 1;
     gap: 1rem;
     max-width: 300px;
+}
+
+.saludo{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .profilePic {
@@ -246,7 +253,7 @@
 @media (max-width: 480px) {
     .container {
         display: block;
-        padding: 10px 40px 10px 40px;
+        padding: 50px 40px 0 40px;
     }
     /* .aboutContent {
         display: flex;
