@@ -14,7 +14,10 @@
 }
 
 .container {
+    width: 100%;
+    height: auto;
     max-width: 1100px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -27,6 +30,9 @@
     /* background-color: rgba(97, 74, 74, 0.2); */
     transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.6s cubic-bezier(0.4,0,0.2,1);
     opacity: initial;
+    will-change: transform;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .container:hover {
@@ -37,6 +43,7 @@
                 0px 12.522px 10.017px 0px rgba(33, 42, 42, 0.07),
                 0px 6.65px 5.32px 0px rgba(33, 42, 42, 0.07),
                 0px 2.767px 2.214px 0px rgba(33, 42, 42, 0.07);
+    transform: box-shadow .1s ease, translateY(-8px);
 }
 
 .container2 {

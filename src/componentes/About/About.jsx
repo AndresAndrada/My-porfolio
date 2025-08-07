@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import { Link } from "react-router-dom";
 import style from '../About/About.module.css';
 // import docs from '../../doc/CV.pdf';
@@ -10,6 +10,44 @@ import { PiToolbox } from "react-icons/pi";
 const About = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [option, setOption] = useState("description");
+  const containerRef = useRef(null);
+  // const effect = document.getElementById("container");
+  // const width = effect?.clientWidth;
+
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const effect = containerRef.current;
+    console.log("🚀 ~ About ~ height:", effect.clientHeight);
+    const handleMouseMove = (e) => {
+      const rect = effect.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const width = effect.clientWidth;
+      const height = effect.clientHeight;
+      const yRotation = ((x - width / 2) / width) * 10;
+      const xRotation = ((y - height / 2) / width) * 10;
+      const string = `perspective(500px) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+      effect.style.transform = string;
+    };
+    const handleMouseOut = () => {
+      effect.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    };
+    effect.addEventListener("mousemove", handleMouseMove);
+    effect.addEventListener("mouseout", handleMouseOut);
+    return () => {
+      effect.removeEventListener("mousemove", handleMouseMove);
+      effect.removeEventListener("mouseout", handleMouseOut);
+    };
+  }, []);
+
+
+  // const height = effect?.clientHeight;
+
+
+
+
+
   const handleOption = (option) => {
     setShowDescription(!showDescription);
     setOption(option);
@@ -19,7 +57,7 @@ const About = () => {
       <section id="about" className={style.about1}>
         <h2 className={style.title}>Acerca de Mí</h2>
         {!showDescription
-          ? <div className={`${style.container}`}>
+          ? <div className={`${style.container}`} ref={containerRef}>
             {/* <div className={style.aboutContent}> */}
             <div className={style.profilePicContainer}>
               <img src={image} alt="Mi foto" className={`${style.profilePic}  ${style.fadeOut}`} />
@@ -37,12 +75,8 @@ const About = () => {
                 <PiToolbox /> Experiencia
               </div>
               <div className={style.selector} onClick={() => handleOption("background")}>
-                <VscTools /> Backgroun
+                <VscTools /> Background
               </div>
-              {/* <h4 className={style.parrafo}>Soy  un apasionado desarrollador web con experiencia destacada en el desarrollo del lado del front-end y back-end. Mi enfoque se centra en la creación de aplicaciones web innovadoras y eficientes. Poseo habilidades sólidas en las tecnologías clave del ecosistema web, con énfasis en JavaScript, React.js y Node.js</h4>
-              <br />
-              <h4 className={style.parrafo}>En mi tiempo libre, disfruto aprendiendo nuevas habilidades y creando proyectos interesantes.</h4>
-              <h4 className={style.parrafo}>¡No dudes en contactarme si tienes alguna pregunta o proyecto en el que pueda ayudarte!</h4> */}
             </div>
             {/* </div> */}
           </div>
