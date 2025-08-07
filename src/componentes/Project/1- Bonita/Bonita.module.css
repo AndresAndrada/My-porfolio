@@ -30,7 +30,7 @@
 }
 
 .image:hover img {
-    transform: scale(1.08) rotate(-2deg);
+    transform: scale(1.08);
 }
 
 .text {
@@ -64,7 +64,33 @@ p {
     color: black;
 }
 
+.botonIcon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 8px;
+    /* border: none; */
+    /* padding: 0.6rem 1.2rem; */
+    font-size: 1rem;
+    cursor: default;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contentIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 400ms ease;
+}
+
+.contentIcon:hover {
+    font-size: 40px;
+}
+
 .tecnology {
+    display: flex;
     color: rgb(68, 65, 65);
     font-size: 35px;
     transition: all 400ms ease;
@@ -74,6 +100,15 @@ p {
     color: rgb(68, 65, 65);
     font-size: 35px;
     transition: all 400ms ease;
+}
+
+.iconDoc {
+    font-size: 30px;
+    transition: all 400ms ease;
+}
+
+.iconDoc:hover {
+    font-size: 35px;
 }
 
 icon-icon {

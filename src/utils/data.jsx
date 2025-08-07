@@ -11,10 +11,11 @@ import docsSigma from '../doc/Andrés Andrada PersonalClass SCRUM.pdf';
 import docsPlatzi from '../doc/Platzi-diploma-blazor-webassembly.pdf'
 import scrum from '../assets/PersonalClass SCRUM.jpeg';
 import sigma from '../assets/sigma.png';
+import retenes from '../assets/Retenes.jpg';
 import effort_habit from '../assets/effort-habit.jpeg';
-import { FaReact, FaNode } from "react-icons/fa";
+import { FaReact, FaNode, FaJava } from "react-icons/fa";
 import { TbBrandVite, TbBrandNextjs } from "react-icons/tb";
-import { SiRedux } from "react-icons/si";
+import { SiRedux, SiSpringboot } from "react-icons/si";
 
 export const data = [
   {
@@ -70,6 +71,15 @@ export const data = [
     github: "https://github.com/AndresAndrada/Effort-Habit",
     deploy: "https://effort-habit.vercel.app/",
     tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
+  },
+  {
+    img: retenes,
+    name: "VidaSegura",
+    title: "VidaSegura",
+    description: "Seguros de vida",
+    github: "https://github.com/AndresAndrada/Bitsion-apirest",
+    deploy: "",
+    tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaJava color='#333284ff' />, <SiSpringboot color="#118d26ff" />]
   }
 ];
 

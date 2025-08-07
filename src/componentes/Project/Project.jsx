@@ -76,20 +76,21 @@ const Project = (url) => {
                   <h4 className={style.title}>{item.title}</h4>
                   <p>{item.description}</p>
                 </div>
-                <div className={style.boton}>
+                <div className={style.botonIcon}>
                   <Link onClick={() => handleClickgithub(item.github)} className={style.tecnology}>
                     {item?.tecnology.length > 0 && item?.tecnology.map((icon) => {
-                      return icon;
+                      return <div className={style.contentIcon}>{icon}</div>;
                     })}
                   </Link>
                 </div>
                 <div className={style.boton}>
                   <Link onClick={() => handleClickgithub(item.github)} className={style.link}>
-                    <FaGithub color="#ce8c40ff" size={"30px"} />
+                    <FaGithub color="#ce8c40ff" className={style.iconDoc} />
                   </Link>
-                  {item.deploy && <Link onClick={() => handleClickDeploy(item.deploy)} className={style.link}>
-                    <IoDocumentTextSharp color="#ce8c40ff" size={"30px"} />
-                  </Link>}
+                  {item.deploy &&
+                    <Link onClick={() => handleClickDeploy(item.deploy)} className={style.link}>
+                      <IoDocumentTextSharp color="#ce8c40ff" className={style.iconDoc} />
+                    </Link>}
                 </div>
               </div>
             )
