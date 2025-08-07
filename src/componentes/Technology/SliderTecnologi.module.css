@@ -4,7 +4,7 @@
   min-height: 250px; /* Ajusta la altura mínima según sea necesario */
   margin: 0 auto;
   display: flex;
-  align-content: center;
+  align-content: stretch;
   }
 
 .slick-slide > div {
@@ -16,8 +16,6 @@
 
 .slick-list {
   display: flex;
-  /* gap: 20px; */
-  /* padding: 10px 0; */
 }
 
 .slick-dots {

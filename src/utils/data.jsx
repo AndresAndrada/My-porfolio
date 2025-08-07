@@ -4,13 +4,17 @@ import pokemon from '../assets/pokemon.png';
 import pc from '../assets/pc.png'
 import wtp from '../assets/whtp.png'
 import platzi from '../assets/Platzi-blazor-webassembly.png';
-import henry from '../assets/Henry.jpeg';
+import henry from '../assets/Henry.png';
 import docsPC from '../doc/Andrés Andrada PersonalClass SCRUM.pdf';
 import docsHnery from "../doc/Full Stack Web Developer - Henry.pdf";
 import docsSigma from '../doc/Andrés Andrada PersonalClass SCRUM.pdf';
 import docsPlatzi from '../doc/Platzi-diploma-blazor-webassembly.pdf'
-import scrum from '../assets/PersonalClass SCRUM.png';
+import scrum from '../assets/PersonalClass SCRUM.jpeg';
 import sigma from '../assets/sigma.png';
+import effort_habit from '../assets/effort-habit.jpeg';
+import { FaReact, FaNode } from "react-icons/fa";
+import { TbBrandVite, TbBrandNextjs } from "react-icons/tb";
+import { SiRedux } from "react-icons/si";
 
 export const data = [
   {
@@ -19,7 +23,8 @@ export const data = [
     title: "Bonita Devoto",
     description: "E-commerce",
     github: "https://github.com/AndresAndrada/pfhenry-back",
-    deploy: ""
+    deploy: "",
+    tecnology: [<FaReact color='#365bb1ff' />, <SiRedux color='#7533a0ff' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
   },
   {
     img: hire,
@@ -27,7 +32,8 @@ export const data = [
     title: "HireMySkills",
     description: "E-commerce de Servicios",
     github: "https://github.com/sergioare/PF-HireMySkills",
-    deploy: "https://pf-hire-my-skills.vercel.app/"
+    deploy: "https://pf-hire-my-skills.vercel.app/",
+    tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
   },
   {
     img: pokemon,
@@ -35,7 +41,8 @@ export const data = [
     title: "Pokemon",
     description: "Proyecto Individual",
     github: "https://github.com/AndresAndrada/PI-Pokemon-main",
-    deploy: ""
+    deploy: "",
+    tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
   },
   {
     img: pc,
@@ -43,16 +50,27 @@ export const data = [
     title: "Personal Class",
     description: "E-commerce",
     github: "https://github.com/AndresAndrada/PersonalClass-Front",
-    deploy: "https://api.personalclassonline.com/"
+    deploy: "https://api.personalclassonline.com/",
+    tecnology: [<TbBrandNextjs color='black' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
   },
   {
     img: wtp,
     name: "whatsAppBoot",
     title: "WhatsApp-Boot",
-    description: "Respuestas personalizadas y automatizadas",
+    description: "Respuestas automatizadas",
     github: "https://github.com/AndresAndrada/whatsapp-web",
-    deploy: "https://api.personalclassonline.com/"
+    deploy: "https://api.personalclassonline.com/",
+    tecnology: [<FaNode color='#118d26ff' />]
   },
+  {
+    img: effort_habit,
+    name: "effort-habit",
+    title: "Personal Class",
+    description: "E-commerce",
+    github: "https://github.com/AndresAndrada/Effort-Habit",
+    deploy: "https://effort-habit.vercel.app/",
+    tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaNode color='#118d26ff' />]
+  }
 ];
 
 export const certificate = [
@@ -72,8 +90,8 @@ export const certificate = [
   },
   {
     id: 3,
-    name: "Platzi",
-    title: "Blazor - WebAssembly",
+    name: "Scrum",
+    title: "Metodología SCRUM",
     img: scrum,
     docs: docsPC,
   },

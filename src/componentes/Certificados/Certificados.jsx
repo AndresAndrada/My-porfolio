@@ -8,6 +8,7 @@ import { certificate } from "../../utils/data";
 import SampleNextArrow from "../../core/ui/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
 import sliderStyles from './SliderCertific.module.css';
+import { IoDocumentTextSharp } from "react-icons/io5";
 
 const Certificados = () => {
   var settings = {
@@ -62,7 +63,8 @@ const Certificados = () => {
                 </div>
                 <div>
                   <a target="_blank" href={item.docs} rel="noreferrer" className={style.link}>
-                    <ion-icon name="reader"></ion-icon>
+                    <IoDocumentTextSharp color="#ce8c40ff" size={"30px"} />
+
                   </a>
                 </div>
               </div>

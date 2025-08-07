@@ -74,10 +74,16 @@
 }
 
 ion-icon {
-        font-size: 40px;
-        width: 30px;
-        color: white;
-    }
+    font-size: 40px;
+    width: 30px;
+    color: white;
+    transition: .3s;
+}
+
+ion-icon:hover {
+    font-size: 50px;
+}
+
 .boton {
     color: black;
 }

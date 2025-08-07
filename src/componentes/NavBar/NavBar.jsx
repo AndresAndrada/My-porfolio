@@ -56,7 +56,7 @@ function Navbar(props) {
             name='project'
             spy={true}
             smooth={true}
-            offset={-10}
+            offset={-20}
             duration={500}
             onClick={() => closeMenu('project')}>
             Proyectos
@@ -66,7 +66,7 @@ function Navbar(props) {
             activeClass={styles.activeLink}
             to='Technology' name='technology'
             spy={true} smooth={true}
-            offset={-5}
+            offset={-20}
             duration={500}
             onClick={() => closeMenu('tecnology')}>
             Tecnologias
@@ -77,7 +77,7 @@ function Navbar(props) {
             to='Certificado' name='certificado'
             spy={true}
             smooth={true}
-            offset={-5}
+            offset={-15}
             duration={500}
             onClick={() => closeMenu('certific')}>
             Certificado

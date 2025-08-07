@@ -14,6 +14,8 @@ import SampleNextArrow from "../../core/ui/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
 import { data } from "../../utils/data";
 import { Link } from "react-scroll";
+import { FaGithub } from "react-icons/fa6";
+import { IoDocumentTextSharp } from "react-icons/io5";
 
 const Project = (url) => {
   const handleClickgithub = () => {
@@ -70,16 +72,23 @@ const Project = (url) => {
                   {/* <img src={ img } alt={ hire } width='800' /> */}
                   <img src={item.img} alt={item.img} className={style.image} />
                 </div>
-                <div className={style.title}>
-                  <h4>{item.title}</h4>
-                  <h5>{item.description}</h5>
+                <div className={style.text}>
+                  <h4 className={style.title}>{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+                <div className={style.boton}>
+                  <Link onClick={() => handleClickgithub(item.github)} className={style.tecnology}>
+                    {item?.tecnology.length > 0 && item?.tecnology.map((icon) => {
+                      return icon;
+                    })}
+                  </Link>
                 </div>
                 <div className={style.boton}>
                   <Link onClick={() => handleClickgithub(item.github)} className={style.link}>
-                    <ion-icon name="logo-github"></ion-icon>
+                    <FaGithub color="#ce8c40ff" size={"30px"} />
                   </Link>
                   {item.deploy && <Link onClick={() => handleClickDeploy(item.deploy)} className={style.link}>
-                    <ion-icon name="reader"></ion-icon>
+                    <IoDocumentTextSharp color="#ce8c40ff" size={"30px"} />
                   </Link>}
                 </div>
               </div>
