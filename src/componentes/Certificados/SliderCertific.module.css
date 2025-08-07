@@ -1,7 +1,7 @@
 .slick-slider {
   width: 100%;
   max-width: 80rem;
-  min-height: 500px; /* Ajusta la altura mínima según sea necesario */
+  min-height: 400px; /* Ajusta la altura mínima según sea necesario */
   display: flex;
   justify-items: center;
   align-items: center;
