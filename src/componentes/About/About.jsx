@@ -5,20 +5,16 @@ import style from '../About/About.module.css';
 import image from '../../assets/FOTO CV.png'
 import { MdOutlineDescription, MdOutlineBook } from "react-icons/md";
 import { VscTools } from "react-icons/vsc";
-import { PiToolbox } from "react-icons/pi";
+import { CgToolbox } from "react-icons/cg";
 
 const About = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [option, setOption] = useState("description");
   const containerRef = useRef(null);
-  // const effect = document.getElementById("container");
-  // const width = effect?.clientWidth;
-
 
   useEffect(() => {
     if (!containerRef.current) return;
     const effect = containerRef.current;
-    console.log("🚀 ~ About ~ height:", effect.clientHeight);
     const handleMouseMove = (e) => {
       const rect = effect.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -41,24 +37,17 @@ const About = () => {
     };
   }, []);
 
-
-  // const height = effect?.clientHeight;
-
-
-
-
-
   const handleOption = (option) => {
     setShowDescription(!showDescription);
     setOption(option);
   }
+
   return (
     <section className={style.about} id="About">
-      <section id="about" className={style.about1}>
+      <div id="about" className={style.about1}>
         <h2 className={style.title}>Acerca de Mí</h2>
         {!showDescription
-          ? <div className={`${style.container}`} ref={containerRef}>
-            {/* <div className={style.aboutContent}> */}
+          ? <div className={style.containerData} ref={containerRef}>
             <div className={style.profilePicContainer}>
               <img src={image} alt="Mi foto" className={`${style.profilePic}  ${style.fadeOut}`} />
             </div>
@@ -72,13 +61,12 @@ const About = () => {
                 <MdOutlineBook /> Estudios
               </div>
               <div className={style.selector} onClick={() => handleOption("experience")}>
-                <PiToolbox /> Experiencia
+                <CgToolbox /> Experiencia
               </div>
               <div className={style.selector} onClick={() => handleOption("background")}>
                 <VscTools /> Background
               </div>
             </div>
-            {/* </div> */}
           </div>
           : <div className={`${style.container2} ${style.fadeIn}`} onClick={() => setShowDescription(false)}>
             {option === "description" && <div className={style.bioContainer}>
@@ -116,7 +104,7 @@ const About = () => {
             </div>}
           </div>
         }
-      </section>
+      </div>
     </section >
   )
 };

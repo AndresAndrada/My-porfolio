@@ -2,7 +2,7 @@ import { SiSequelize, SiPostgresql, SiExpress } from "react-icons/si";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs, IoLogoReact, IoLogoHtml5 } from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript, SiTailwindcss, SiSolidity, SiDocker } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
 import style from '../../componentes/Technology/Technology.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

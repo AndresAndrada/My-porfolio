@@ -1,11 +1,11 @@
-.reviews {
+.conteiner {
     padding: 70px 0;
     width: 100%;
     min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
 }
 
 .conten {
@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 858px) {
-    .reviews {
+    .conteiner {
         /* margin: 0; */
         padding: 0;
         width: 100%;
@@ -130,10 +130,10 @@
 }
 
 @media (max-width: 600px) {
-    .reviews {
-        /* margin: 0; */
-        padding: 80px 0 80px 0;
-        height: 70vh;
+    .conteiner {
+        margin: 0;
+        padding: 150px 0 80px 0;
+        height: 90vh;
     }
     .conten {
         width: 80%;
