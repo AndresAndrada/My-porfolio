@@ -1,8 +1,9 @@
-import { GET_COUNT } from "./actions";
+import { GET_COUNT, TOGGLE_DARK_MODE } from "./actions";
 
 const initialState = {
     count: [],
     rewiews: [],
+    darkMode: false,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -13,6 +14,7 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 count: action.payload
             };
+        case TOGGLE_DARK_MODE:
         default:
             return { ...state };
     };

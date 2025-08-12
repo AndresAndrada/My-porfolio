@@ -13,15 +13,15 @@ import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "../Footer/Footer";
+import { useStoreUi } from "../../store";
 
 const Home = () => {
+  const { DarkMode } = useStoreUi(state => state);
   const containerRef = useRef(null);
-
 
   useEffect(() => {
     if (!containerRef.current) return;
     const effect = containerRef.current;
-    console.log("🚀 ~ About ~ height:", effect.clientHeight);
     const handleMouseMove = (e) => {
       const rect = effect.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -49,7 +49,7 @@ const Home = () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={`${style.container} ${DarkMode ? style.dark : ""}`}>
       <div className={style.home} id="Home">
         <div className={style.left} ref={containerRef}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}

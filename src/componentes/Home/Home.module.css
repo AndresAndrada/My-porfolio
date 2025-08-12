@@ -5,6 +5,20 @@
     align-items: center;
     width: 100vw;
     overflow: hidden;
+        transition: background 0.5s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Home.module.css */
+.container.dark {
+  background: #181818;
+  color: #f5f5f5;
+    transition: background 0.5s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+.left.dark, .right.dark {
+  background: #23272f;
+  /* color: #f5f5f5; */
+    transition: background 0.5s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
 }
 
 .home {
@@ -200,6 +214,11 @@
         flex-direction: column;
         justify-content: center;
     } */
+     .home {
+        padding-top: 120px;
+        padding-left: 20px;  
+        padding-right: 20px;
+    }
      .dev {
         display: none;
      }

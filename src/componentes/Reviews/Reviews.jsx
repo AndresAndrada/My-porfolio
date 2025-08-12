@@ -34,7 +34,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className={styles.reviews} id="Footer">
+    <div className={styles.conteiner} id="Footer">
       <div className={styles.conten}>
         <h1>Contactame</h1>
         <h4 className={styles.texto}>Si estas interesado en que trabajemos juntos, envíame un mensaje:</h4>
