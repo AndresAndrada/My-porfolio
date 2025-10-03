@@ -12,10 +12,11 @@ import docsPlatzi from '../doc/Platzi-diploma-blazor-webassembly.pdf'
 import scrum from '../assets/PersonalClass SCRUM.jpeg';
 import sigma from '../assets/sigma.png';
 import vidaSegura from '../assets/Retenes.jpg';
+import nextDemo from '../assets/Next-demo.jpeg';
 import effort_habit from '../assets/effort-habit.jpeg';
 import { FaReact, FaNode, FaJava } from "react-icons/fa";
 import { TbBrandVite, TbBrandNextjs } from "react-icons/tb";
-import { SiRedux, SiSpringboot } from "react-icons/si";
+import { SiRedux, SiNextui, SiSpringboot } from "react-icons/si";
 
 export const data = [
   {
@@ -87,6 +88,16 @@ export const data = [
     github: "https://github.com/AndresAndrada/Bitsion-apirest",
     deploy: "",
     tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaJava color='#333284ff' />, <SiSpringboot color="#118d26ff" />]
+  },
+  {
+    img: nextDemo,
+    name: "NextDemo",
+    title: "Next Demo",
+    subTitle: "Mi tienda",
+    description: "Esta aplicación la desarrollé más que nada para aplicar mis conocimientos apendidos en Java para el Backend y poder reflejar el resultado de dicha API del lado del cliente para una mejor muestra de los resultados",
+    github: "https://github.com/AndresAndrada/next-demo",
+    deploy: "",
+    tecnology: [<FaReact color='#365bb1ff' />, <TbBrandNextjs color='black' />, <SiNextui color='#ce8c40ff' />, <TbBrandVite color='#ce8c40ff' />, <FaJava color='#333284ff' />, <SiSpringboot color="#118d26ff" />]
   }
 ];
 
