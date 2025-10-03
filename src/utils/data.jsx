@@ -84,7 +84,7 @@ export const data = [
     name: "VidaSegura",
     title: "VidaSegura",
     subTitle: "Seguros de vida",
-    description: "Esta aplicación la desarrollé más que nada para aplicar mis conocimientos apendidos en Java para el Backend y poder reflejar el resultado de dicha API del lado del cliente para una mejor muestra de los resultados",
+    description: "Esta aplicación la desarrollé más que nada para aplicar mis conocimientos aprendidos en Java para el Backend y poder reflejar el resultado de dicha API del lado del cliente para una mejor muestra de los resultados",
     github: "https://github.com/AndresAndrada/Bitsion-apirest",
     deploy: "",
     tecnology: [<FaReact color='#365bb1ff' />, <TbBrandVite color='#ce8c40ff' />, <FaJava color='#333284ff' />, <SiSpringboot color="#118d26ff" />]
@@ -94,7 +94,7 @@ export const data = [
     name: "NextDemo",
     title: "Next Demo",
     subTitle: "Mi tienda",
-    description: "Esta aplicación la desarrollé más que nada para aplicar mis conocimientos apendidos en Java para el Backend y poder reflejar el resultado de dicha API del lado del cliente para una mejor muestra de los resultados",
+    description: "Esta aplicación la desarrollé para demostrar mis habilidades en Next para una prueba técnica. Solo requeria Frontend y decidí aplicar algunas funcionalidades extras como el Dark Mode, la permanencia de datos en el Local Storage utilizando Zustand.",
     github: "https://github.com/AndresAndrada/next-demo",
     deploy: "",
     tecnology: [<FaReact color='#365bb1ff' />, <TbBrandNextjs color='black' />, <SiNextui color='#ce8c40ff' />, <TbBrandVite color='#ce8c40ff' />, <FaJava color='#333284ff' />, <SiSpringboot color="#118d26ff" />]
