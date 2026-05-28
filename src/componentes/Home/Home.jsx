@@ -7,7 +7,8 @@ import { IoLocationSharp } from "react-icons/io5";
 import bonita from '../../assets/BonitaImg.png';
 import hire from '../../assets/hire.png';
 import pokemon from '../../assets/pokemon.png';
-import docs from '../../doc/Currículum-Vitae Andrada Andres.pdf';
+import docs from '../../doc/Currículum-Vitae Andrada Andres Alfredo.pdf';
+import docs1 from '../../doc/Andrada_Andres_Alfredo_CV.pdf';
 import Reviews from "../Reviews/Reviews";
 import Project from '../Project/Project'
 import Certificados from "../Certificados/Certificados";
@@ -140,11 +141,17 @@ const Home = () => {
                 <h6 className={style.textH6}>LinkedIn</h6>
               </button>
             </Link>
-            <a target="_blank" href={docs} rel="noreferrer" className={style.link}>
+            {Language === 'es' 
+            ? <a target="_blank" href={docs} rel="noreferrer" className={style.link}> 
               <button type="button" className={style.boton}>
                 <h6 className={style.textH6}>{t.resumeBtn}</h6>
               </button>
-            </a>
+            </a> 
+            : <a target="_blank" href={docs1} rel="noreferrer" className={style.link}>
+          <button type="button" className={style.boton}>
+                <h6 className={style.textH6}>{t.resumeBtn}</h6>
+              </button>
+            </a> }
           </div>
           {/* </Slider> */}
         </div>
