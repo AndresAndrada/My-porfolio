@@ -1,6 +1,7 @@
 .footer {
-    width: 100vw;
-    background-color: #222831;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(34, 40, 49, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;

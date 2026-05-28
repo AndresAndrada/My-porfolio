@@ -1,12 +1,20 @@
 .conteiner {
     position: fixed;
-    width: 100vw;
-    background-color: #222831;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(34, 40, 49, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .4rem;
-    z-index: 1;
+    padding: .4rem .7rem;
+    z-index: 100;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.scrolled {
+    background-color: rgba(34, 40, 49, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .fotohome {
     border-radius: 100%;
@@ -51,11 +59,28 @@
 
 .darkMode {
     max-width: 50px;
-    padding: 10px 20px;
+    padding: 10px 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.2rem; 
+    display: inline;
+}
+
+.languageMode {
+    max-width: 80px;
+    padding: 10px 5px;
     color: white;
     cursor: pointer;
     margin-right: 1rem; 
-    display: inline;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.languageText {
+    font-weight: 800;
+    max-width: 10px;
 }
 
 @keyframes fadeIn {

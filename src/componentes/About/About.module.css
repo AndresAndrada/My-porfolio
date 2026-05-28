@@ -8,6 +8,12 @@
       inset 0 10.5px 200.5px 0 rgba(60,60,60,0.07);
 }
 
+.about {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
 .container.dark {
   background: #181818;
   color: #f5f5f5;
@@ -26,7 +32,7 @@
 .containerData {
     width: 100%;
     min-width: 1000px;
-    max-width: 1600px;
+    max-width: 160px;
     height: auto;
     min-height: 450px;
     display: flex;
@@ -48,13 +54,13 @@
 
 .containerData:hover {
     border-radius: 15rem;
-    box-shadow: 0px 100px 80px 50px rgba(33, 42, 42, 0.07),
-                0px 41.778px 33.422px 50px rgba(33, 42, 42, 0.07),
+    box-shadow: 0px 50px 80px 50px rgba(33, 42, 42, 0.07),
+                0px 42px 33.422px 50px rgba(33, 42, 42, 0.07),
                 0px 22.336px 17.869px 0px rgba(33, 42, 42, 0.07),
                 0px 12.522px 10.017px 0px rgba(33, 42, 42, 0.07),
                 0px 6.65px 5.32px 0px rgba(33, 42, 42, 0.07),
                 0px 2.767px 2.214px 0px rgba(33, 42, 42, 0.07);
-    transform: box-shadow .1s ease, translateY(-8px);
+    transform: box-shadow .1s ease, translateY(-2px);
 }
 
 .container2 {

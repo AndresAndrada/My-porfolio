@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 // import { Link } from "react-router-dom";
 import About from '../About/About'
 import Technology from '../Technology/Technology'
@@ -15,8 +15,71 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "../Footer/Footer";
 import { useStoreUi } from "../../store";
 
+const translations = {
+  es: {
+    greeting: "Hola! Mi nombre es ",
+    name: "Andres Andrada",
+    profession: "Full-Stack Developer",
+    location: "Córdoba, Argentina",
+    resumeBtn: "Curriculum"
+  },
+  en: {
+    greeting: "Hi! My name is ",
+    name: "Andres Andrada",
+    profession: "Full-Stack Developer",
+    location: "Cordoba, Argentina",
+    resumeBtn: "Resume"
+  }
+};
+
+const ScrollReveal = ({ children }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const currentRef = ref.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      }
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateY(0)" : "translateY(50px)",
+        transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
+        width: "100%",
+        willChange: "opacity, transform"
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
 const Home = () => {
-  const { DarkMode } = useStoreUi(state => state);
+  const { DarkMode, Language } = useStoreUi(state => state);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -48,16 +111,18 @@ const Home = () => {
     window.open('https://www.linkedin.com/in/andr%C3%A9s-alfredo-andrada-1a83261b5/');
   };
 
+  const t = translations[Language] || translations.es;
+
   return (
     <div className={`${style.container} ${DarkMode ? style.dark : ""}`}>
       <div className={style.home} id="Home">
         <div className={style.left} ref={containerRef}>
           {/* <h2 className={ style.saludo }>Hola!</h2> */}
           <h1 className={style.presentation}>
-            Hola! Mi nombre es <span className={style.name}>Andres Andrada</span>
+            {t.greeting} <span className={style.name}>{t.name}</span>
           </h1>
-          <h3><span className={style.profesion}>Full-Stack Developer</span><span className={style.dev}>{"<></>"}</span></h3>
-          <h3 className={style.localizacion}><IoLocationSharp /><span>Córdoba, Argentina</span></h3>
+          <h3><span className={style.dev}>{"<>"}</span><span className={style.profesion}>{t.profession}</span><span className={style.dev}>{"</>"}</span></h3>
+          <h3 className={style.localizacion}><IoLocationSharp /><span>{t.location}</span></h3>
         </div>
         <div className={style.right}>
           {/* <Slider { ...settings }> */}
@@ -77,18 +142,18 @@ const Home = () => {
             </Link>
             <a target="_blank" href={docs} rel="noreferrer" className={style.link}>
               <button type="button" className={style.boton}>
-                <h6 className={style.textH6}>Curriculum</h6>
+                <h6 className={style.textH6}>{t.resumeBtn}</h6>
               </button>
             </a>
           </div>
           {/* </Slider> */}
         </div>
       </div>
-      <About />
-      <Project />
-      <Technology />
-      <Certificados />
-      <Reviews />
+      <ScrollReveal><About /></ScrollReveal>
+      <ScrollReveal><Project /></ScrollReveal>
+      <ScrollReveal><Technology /></ScrollReveal>
+      <ScrollReveal><Certificados /></ScrollReveal>
+      <ScrollReveal><Reviews /></ScrollReveal>
       <Footer />
     </div>
   );

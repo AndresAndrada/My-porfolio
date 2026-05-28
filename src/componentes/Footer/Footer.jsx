@@ -2,7 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from '../../componentes/Footer/Footer.module.css'
 
+import { useStoreUi } from "../../store";
+
+const translations = {
+  es: {
+    message1: "¡Muchas gracias por visitar mi porfolio! 😁",
+    message2: "En caso de que desee contactarme les dejo los siguientes datos: ⬇️",
+    rights: "© 2025 - Todos los derechos reservados."
+  },
+  en: {
+    message1: "Thank you very much for visiting my portfolio! 😁",
+    message2: "If you want to contact me, here is my information: ⬇️",
+    rights: "© 2025 - All rights reserved."
+  }
+};
+
 const Footer = () => {
+  const { Language } = useStoreUi(state => state);
 
   const handleClickWapp = () => {
     window.open('https://wa.me/543517445402');
@@ -20,13 +36,15 @@ const Footer = () => {
     window.open('https://github.com/AndresAndrada');
   };
 
+  const t = translations[Language] || translations.es;
+
   return (
     <div className={style.footer}>
       <div className={style.container}>
         <div className={style.parrafo}>
-          <p className={style.letra}>Muchas gracias por visitar mi porfolio! 😁
+          <p className={style.letra}>{t.message1}
             <br />
-            En caso de que desee contactarme les dejo los siguieste datos: ⬇️
+            {t.message2}
           </p>
         </div>
         <div className={style.redes}>
@@ -61,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.date}>
-        <p className={style.letra}>© 2025 - Todos los derechos reservados.</p>
+        <p className={style.letra}>{t.rights}</p>
       </div>
     </div>
   );
