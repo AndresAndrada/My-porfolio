@@ -2,7 +2,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from '../Project/Project.module.css'
-import style from './Card.module.css';
 import sliderStyles from './Slider.module.css';
 import SampleNextArrow from "../../core/ui/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
