@@ -80,7 +80,7 @@ const translations = {
 };
 
 const About = () => {
-  const { Language } = useStoreUi(state => state);
+  const { Language, DarkMode } = useStoreUi(state => state);
   const [showDescription, setShowDescription] = useState(false);
   const [option, setOption] = useState("description");
   const containerRef = useRef(null);
@@ -118,8 +118,8 @@ const About = () => {
   const t = translations[Language] || translations.es;
 
   return (
-    <section className={style.about} id="About">
-      <div id="about" className={style.about1}>
+    <section className={`${style.about} ${DarkMode ? 'dark' : ''}`} id="About">
+      <div id="about" className={`${style.about1} ${DarkMode ? style.dark : ''}`}>
         <h2 className={style.title}>{t.title}</h2>
         {!showDescription
           ? <div className={style.containerData} ref={containerRef}>

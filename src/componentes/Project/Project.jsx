@@ -8,7 +8,11 @@ import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
 import { data } from "../../utils/data";
 import { CardProject } from "./CardProject";
 
+import { useStoreUi } from "../../store";
+
 const Project = (url) => {
+  const { DarkMode } = useStoreUi(state => state);
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -38,7 +42,7 @@ const Project = (url) => {
     ]
   };
   return (
-    <section className={styles.container} id="Proyecto">
+    <section className={`${styles.container} ${DarkMode ? 'dark' : ''}`} id="Proyecto">
       <div className={styles.project}>
         <div className={styles.title}>
           <h2>Proyectos</h2>

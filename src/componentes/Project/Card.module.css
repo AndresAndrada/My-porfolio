@@ -2,92 +2,75 @@
   perspective: 1000px;
   width: 100%;
   max-width: 350px;
-  height: 100%;
+  height: 410px;
+  margin: 8px 20px 0px;
 }
 
 .bonita {
-    display: flex;
+    position: relative;
     width: 100%;
-    max-width: 350px;
-  max-height: 410px;
-    flex-direction: column;
-    margin: 8px 20px 0px;
-    padding: 10px;
-    transition: all 400ms ease;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.6s cubic-bezier(0.4,0,0.2,1);
-}
-
-.bonita:hover {
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-    transform: translateY(-1%);
 }
 
 .bonita.flipped {
   transform: rotateY(180deg);
 }
 
-.bonita.flipped .bonitafront {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.bonita.flipped .bonitaback {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.bonita:not(.flipped) .bonitaback {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.bonitafront {
-  width: 100%;
-  backface-visibility: hidden;
-  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.6s cubic-bezier(0.4,0,0.2,1);
-}
-
 .bonitafront, .bonitaback {
-  /* backface-visibility: hidden; */
-  transition: opacity 0.5s, transform 0.5s;
-  opacity: 1;
-  pointer-events: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .bonitaback {
-  position: absolute;
-  padding-left: 20px;
   transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    display: flex;
-    width: 100%;
-    max-width: 350px;
-  max-height: 410px;
-    flex-direction: column;
-    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.6s cubic-bezier(0.4,0,0.2,1);
-
 }
 
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 2;
-    }
+.flip-container:hover .bonitafront,
+.flip-container:hover .bonitaback {
+    box-shadow: 2px 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
-  
-@keyframes fadeOut {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 2;
-    }
+
+/* Dark mode styles for card */
+:global(.dark) .bonitafront,
+:global(.dark) .bonitaback {
+    background-color: #23272f;
+    color: #f5f5f5;
+    box-shadow: none;
+}
+
+:global(.dark) .title {
+    color: #f5f5f5;
+}
+
+:global(.dark) p {
+    color: #d1d1d1;
+}
+
+:global(.dark) .tecnology,
+:global(.dark) .link {
+    color: #f5f5f5;
+}
+
+:global(.dark) .flip-container:hover .bonitafront,
+:global(.dark) .flip-container:hover .bonitaback {
+    box-shadow: 0px 5px 10px 14px rgba(116, 154, 154, 0.07),
+                0px 5px 8px 14px rgba(116, 154, 154, 0.07),
+                0px 5px 10.869px 0px rgba(116, 154, 154, 0.07),
+                0px 12.522px 5.017px 0px rgba(116, 154, 154, 0.07),
+                0px 6.65px 3.32px 0px rgba(116, 154, 154, 0.07),
+                0px 2.767px 1.214px 0px rgba(46, 58, 58, 0.07);
 }
 
 
