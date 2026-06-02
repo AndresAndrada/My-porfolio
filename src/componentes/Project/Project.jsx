@@ -25,18 +25,28 @@ const Project = (url) => {
     // centerMode: true,
     responsive: [
       {
-        breakpoint: 710,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 0
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 650,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          arrows: true
         }
       }
     ]
@@ -55,7 +65,6 @@ const Project = (url) => {
           >
             {data.map((item) => {
               return <CardProject item={item} />
-
             })}
           </Slider>
         </div>

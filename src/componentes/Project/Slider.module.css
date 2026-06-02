@@ -45,9 +45,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .slick-slider {
-    max-width: 75vw;
+    max-width: 100vw;
+    /* padding-left: ; */
   }
 }
 

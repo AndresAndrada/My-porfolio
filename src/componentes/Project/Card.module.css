@@ -201,7 +201,15 @@ icon-icon {
         box-shadow: none;
         margin: 10px 20px 0px;
         border: rgb(223, 212, 212) 1px solid;
-        height: auto;
+        /* height: auto; */
+    }
+      .bonitafront, .bonitaback {
+        min-height: 300px;
+        padding: 8px;
+    }
+    .image {
+        width: 100%;
+        min-height: 110px;
     }
 }
 
@@ -213,69 +221,88 @@ icon-icon {
         box-shadow: none;
         margin: 10px 20px 0px;
         border: rgb(223, 212, 212) 1px solid;
-        height: auto;
+        /* height: auto; */
     }
 }
 
 @media (max-width: 480px) {
-    .bonita {
+    .flip-container {
         width: 100%;
-        margin: 10px 1.5px 0px;
-        max-width: 240px;
-        min-width: 10px;
-        height: auto;
-        border: rgb(217, 212, 212) 1px solid;
-        box-shadow: none;
+        max-width: 320px;
+        /* min-height: 480px; */
+        margin: 10px auto;
     }
-    .bonita:hover {
-        cursor: default;
-        box-shadow: 2px 2px 2px 1px 2px rgba(0, 0, 0, 0.4);
-    }
-    .bonitaback {
-        transform: translateY(-1);
 
-  }
+    .bonitafront, .bonitaback {
+        min-height: 300px;
+        padding: 8px;
+    }
+
     .image {
         width: 100%;
-        height: 120px;
+        height: 160px;
     }
-    .contenVideo {
-        margin: 50px 0;
+    
+    .title {
+        font-size: 18px;
+        margin-bottom: 5px;
     }
-    .video {
-        width: 450px;
-        height: 10px;
-        padding-bottom: 40px;
+
+    p {
+        font-size: 14px;
     }
+
     .description {
         padding: 0;
-        height: 130px;
-        max-height: 550px;
-        min-height: 10px;
+        height: 180px;
+        min-height: 150px;
         overflow-y: auto;
-        /* background-color: red; */
+        margin-bottom: 10px;
     }
-     .iconDoc {
-        font-size: 25px;
-    }
-    .contentIcon {
-        font-size: 25px;
-        height: 30px;
-    }
-    /*.boton {
-        display: none;
-    } */
+    
     .description p {
         font-size: 13px;
+        line-height: 1.4;
     }
+
+    .botonIcon {
+        gap: 4px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: auto;
+    }
+
+    .contentIcon {
+        font-size: 24px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boton {
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .iconDoc {
+        font-size: 28px;
+    }
+
     .description {
         scrollbar-width: thin;
     }
     .description::-webkit-scrollbar {
-        width: 6px;
+        width: 4px;
     }
     .description::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 10px;
+    }
+    
+    :global(.dark) .description::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
