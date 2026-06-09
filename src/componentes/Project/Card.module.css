@@ -20,8 +20,8 @@
 }
 
 .bonitafront, .bonitaback {
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
+  min-width: 90%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -267,7 +267,7 @@ icon-icon {
 
     .botonIcon {
         gap: 4px;
-        justify-content: center;
+        /* justify-content: center; */
         flex-wrap: wrap;
         margin-top: auto;
     }
@@ -282,7 +282,7 @@ icon-icon {
     }
 
     .boton {
-        justify-content: center;
+        /* justify-content: center; */
         margin-top: 10px;
         padding-bottom: 5px;
     }

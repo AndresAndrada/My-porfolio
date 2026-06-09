@@ -7,15 +7,23 @@ import SampleNextArrow from "../../core/ui/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
 import { data } from "../../utils/data";
 import { CardProject } from "./CardProject";
-
 import { useStoreUi } from "../../store";
 
+const translations = {
+  es: {
+    title: "Proyectos",
+      },
+  en: {
+    title: "Projects",
+  }
+};
+
 const Project = (url) => {
-  const { DarkMode } = useStoreUi(state => state);
+  const { DarkMode, Language } = useStoreUi(state => state);
   
   var settings = {
-    dots: true,
-    infinite: true,
+dots: true,
+    infinite: true, 
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -25,37 +33,69 @@ const Project = (url) => {
     // centerMode: true,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 710,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 0
+          initialSlide: 2
         }
       },
       {
-        breakpoint: 650,
+        breakpoint: 550,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          arrows: true
+          slidesToScroll: 1
         }
       }
     ]
   };
+
+  //  var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
+  //   nextArrow: <SampleNextArrow />,
+  //   prevArrow: <SamplePrevArrow />,
+  //   // centerMode: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 900,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         initialSlide: 0
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 650,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         centerMode: false
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 500,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         centerMode: false,
+  //         arrows: true
+  //       }
+  //     }
+  //   ]
+  // };
+
+  const t = translations[Language] || translations.es;
+  
   return (
     <section className={`${styles.container} ${DarkMode ? 'dark' : ''}`} id="Proyecto">
       <div className={styles.project}>
         <div className={styles.title}>
-          <h2>Proyectos</h2>
+          <h2>{t.title}</h2>
         </div>
         {/* <div className={styles.project}> */}
         <div className="slider-container">
