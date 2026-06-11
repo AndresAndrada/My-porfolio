@@ -39,7 +39,7 @@
     display: flex;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    /* background-color: rgba(97, 74, 74, 0.2); */
+    background-color: rgba(97, 74, 74, 0.2);
     transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);
     opacity: initial;
     will-change: transform;
@@ -49,13 +49,14 @@
 
 .containerData:hover {
     border-radius: 15rem;
-    box-shadow: 0px 11px 20px 25px rgba(46, 58, 58, 0.07),
-                0px 11px 8px 25px rgba(46, 58, 58, 0.07),
-                0px 11px 10.869px 0px rgba(46, 58, 58, 0.07),
+    box-shadow: 0px 50px 80px 25px rgba(46, 58, 58, 0.07),
+                0px 42px 23.422px 25px rgba(46, 58, 58, 0.07),
+                0px 22.336px 10.869px 0px rgba(46, 58, 58, 0.07),
                 0px 12.522px 5.017px 0px rgba(46, 58, 58, 0.07),
                 0px 6.65px 3.32px 0px rgba(46, 58, 58, 0.07),
                 0px 2.767px 1.214px 0px rgba(46, 58, 58, 0.07);
     transform: box-shadow .1s ease, translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 .container2 {
@@ -254,7 +255,7 @@
     .containerData {
         display: flex;
         flex-direction: column;
-        min-width: 100px;
+        min-width: 500px;
         /* padding: 50px 40px 0 40px; */
     }
     .title {
@@ -293,6 +294,10 @@
 }
 
 @media (max-width: 480px) {
+    .containerData, .container2 {
+        height: 100%;
+        max-height: 600px;
+    }
     .containerData {
         display: flex;
         flex-direction: column;

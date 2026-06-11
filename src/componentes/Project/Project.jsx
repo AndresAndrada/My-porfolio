@@ -18,11 +18,11 @@ const translations = {
   }
 };
 
-const Project = (url) => {
+const Project = () => {
   const { DarkMode, Language } = useStoreUi(state => state);
   
   var settings = {
-dots: true,
+    dots: true,
     infinite: true, 
     speed: 500,
     slidesToShow: 3,
@@ -33,18 +33,20 @@ dots: true,
     // centerMode: true,
     responsive: [
       {
-        breakpoint: 710,
+        breakpoint: 700,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 0
         }
       },
       {
         breakpoint: 550,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode: false,
+          arrows: true
         }
       }
     ]
@@ -98,13 +100,13 @@ dots: true,
           <h2>{t.title}</h2>
         </div>
         {/* <div className={styles.project}> */}
-        <div className="slider-container">
+        <div className={styles.sliderContainer}>
           <Slider
             {...settings}
             className={sliderStyles['slick-slider']}
           >
             {data.map((item) => {
-              return <CardProject item={item} />
+              return <CardProject key={item.id} item={item} />
             })}
           </Slider>
         </div>

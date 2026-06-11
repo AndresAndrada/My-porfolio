@@ -26,7 +26,6 @@ export const CardProject = ({ item }) => {
             <h4 className={style.title}>{item.title}</h4>
             <p>{item.subTitle}</p>
           </div>
-          <div style={{ flexGrow: 1 }}></div>
           <div className={style.botonIcon}>
             <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.tecnology}>
               {item?.tecnology.length > 0 && item?.tecnology.map((icon, index) => {
@@ -52,7 +51,6 @@ export const CardProject = ({ item }) => {
           <div className={style.description}>
             <p>{item.description}</p>
           </div>
-          <div style={{ flexGrow: 1 }}></div>
           <div className={style.botonIcon}>
             <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.tecnology}>
               {item?.tecnology.length > 0 && item?.tecnology.map((icon, index) => {
