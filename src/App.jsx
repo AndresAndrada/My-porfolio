@@ -6,10 +6,12 @@ import Home from './componentes/Home/Home';
 import { Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import { Loader } from './core/ui/Loader';
+import { useStoreUi } from './store';
 
 function App() {
   // console.log(window.pageYOffset, 'WIND APP');
   const location = useLocation()
+  const { Entered } = useStoreUi(state => state);
   return (
     <React.Suspense fallback={
       <div className="h-screen w-full grid place-content-center">
@@ -17,8 +19,8 @@ function App() {
       </div>
     }>
       <div className="App">
-        {location.pathname !== '/' && <Route path='/' component={Navbar} />}
-        <Route exact path='/' component={Inicio} />
+        {(location.pathname !== '/' || Entered) && <Route path='/' component={Navbar} />}
+        <Route exact path='/' component={Entered ? Home : Inicio} />
         <Route exact path='/home' component={Home} />
       </div>
     </React.Suspense>

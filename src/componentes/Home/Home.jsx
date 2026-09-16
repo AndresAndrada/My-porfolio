@@ -22,14 +22,16 @@ const translations = {
     name: "Andres Andrada",
     profession: "Full-Stack Developer",
     location: "Córdoba, Argentina",
-    resumeBtn: "Curriculum"
+    resumeBtn: "Curriculum",
+    doc: docs,
   },
   en: {
     greeting: "Hi! My name is ",
     name: "Andres Andrada",
     profession: "Full-Stack Developer",
     location: "Cordoba, Argentina",
-    resumeBtn: "Resume"
+    resumeBtn: "Resume",
+    doc: docs1,
   }
 };
 
@@ -142,12 +144,12 @@ const Home = () => {
               </button>
             </Link>
             {Language === 'es' 
-            ? <a target="_blank" href={docs} rel="noreferrer" className={style.link}> 
+            ? <a target="_blank" href={t.doc} rel="noreferrer" className={style.link}> 
               <button type="button" className={style.boton}>
                 <h6 className={style.textH6}>{t.resumeBtn}</h6>
               </button>
             </a> 
-            : <a target="_blank" href={docs1} rel="noreferrer" className={style.link}>
+            : <a target="_blank" href={t.doc} rel="noreferrer" className={style.link}>
           <button type="button" className={style.boton}>
                 <h6 className={style.textH6}>{t.resumeBtn}</h6>
               </button>
