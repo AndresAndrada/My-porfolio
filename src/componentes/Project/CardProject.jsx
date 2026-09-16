@@ -18,9 +18,8 @@ export const CardProject = ({ item }) => {
   return (
     <div className={style['flip-container']} onClick={() => setFlipped(!flipped)}>
       <div className={`${style.bonita} ${flipped ? style.flipped : ""}`}>
-        <div className={`${style.bonitafront} ${flipped ? style.fadeOut : style.fadeIn}`}>
+        <div className={style.bonitafront}>
           <div className={style.image}>
-            {/* <img src={ img } alt={ hire } width='800' /> */}
             <img src={item.img} alt={item.img} className={style.image} />
           </div>
           <div className={style.text}>
@@ -28,23 +27,23 @@ export const CardProject = ({ item }) => {
             <p>{item.subTitle}</p>
           </div>
           <div className={style.botonIcon}>
-            <Link onClick={() => handleClickgithub(item.github)} className={style.tecnology}>
-              {item?.tecnology.length > 0 && item?.tecnology.map((icon) => {
-                return <div className={style.contentIcon}>{icon}</div>;
+            <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.tecnology}>
+              {item?.tecnology.length > 0 && item?.tecnology.map((icon, index) => {
+                return <div key={index} className={style.contentIcon}>{icon}</div>;
               })}
             </Link>
           </div>
           <div className={style.boton}>
-            <Link onClick={() => handleClickgithub(item.github)} className={style.link}>
+            <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.link}>
               <FaGithub color="#ce8c40ff" className={style.iconDoc} />
             </Link>
             {item.deploy &&
-              <Link onClick={() => handleClickDeploy(item.deploy)} className={style.link}>
+              <Link onClick={(e) => { e.stopPropagation(); handleClickDeploy(item.deploy); }} className={style.link}>
                 <IoDocumentTextSharp color="#ce8c40ff" className={style.iconDoc} />
               </Link>}
           </div>
         </div>
-        <div className={`${style.bonitaback} ${flipped ? style.fadeIn : style.fadeOut}`}>
+        <div className={style.bonitaback}>
           <div className={style.text}>
             <h4 className={style.title}>{item.title}</h4>
             <p>{item.subTitle}</p>
@@ -53,18 +52,18 @@ export const CardProject = ({ item }) => {
             <p>{item.description}</p>
           </div>
           <div className={style.botonIcon}>
-            <Link onClick={() => handleClickgithub(item.github)} className={style.tecnology}>
-              {item?.tecnology.length > 0 && item?.tecnology.map((icon) => {
-                return <div className={style.contentIcon}>{icon}</div>;
+            <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.tecnology}>
+              {item?.tecnology.length > 0 && item?.tecnology.map((icon, index) => {
+                return <div key={index} className={style.contentIcon}>{icon}</div>;
               })}
             </Link>
           </div>
           <div className={style.boton}>
-            <Link onClick={() => handleClickgithub(item.github)} className={style.link}>
+            <Link onClick={(e) => { e.stopPropagation(); handleClickgithub(item.github); }} className={style.link}>
               <FaGithub color="#ce8c40ff" className={style.iconDoc} />
             </Link>
             {item.deploy &&
-              <Link onClick={() => handleClickDeploy(item.deploy)} className={style.link}>
+              <Link onClick={(e) => { e.stopPropagation(); handleClickDeploy(item.deploy); }} className={style.link}>
                 <IoDocumentTextSharp color="#ce8c40ff" className={style.iconDoc} />
               </Link>}
           </div>

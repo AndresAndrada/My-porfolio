@@ -1,31 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
 import styles from '../NavBar/NavBar.module.css';
 import './NavBar.module.css'
 import { BurgerButton } from './dropdown/BurgerButton';
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
+import { MdOutlineLightMode, MdDarkMode, MdLanguage } from "react-icons/md";
 import { useStoreUi } from '../../store';
 
 function Navbar() {
-  const { SetDarkMode, DarkMode } = useStoreUi(state => state);
-  console.log("🚀 ~ Navbar ~ DarkMode:", DarkMode)
+  const { SetDarkMode, DarkMode, Language, SetLanguage } = useStoreUi(state => state);
   const [mode, setMode] = useState('home');
   const [click, setClick] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
 
   const closeMenu = (e) => {
-    // setActive(e)
     setClick(false)
   };
 
   return (
-    <div className={styles.conteiner}>
-      <div className={`${styles.img} ${styles.darkMode}`}>
-        {mode
-          ? <MdOutlineLightMode size="30px" onClick={() => SetDarkMode(!DarkMode)} className={styles.fadeOut} />
-          : <MdDarkMode size="30px" color='white' onClick={() => setMode(!DarkMode)} className={styles.fadeIn} />
-        }
-        {/* <img src={logo} className={styles.fotohome} alt='logo' /> */}
+    <div className={`${styles.conteiner} ${scrolled ? styles.scrolled : ''}`}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.2rem' }}>
+        <div className={`${styles.img} ${styles.darkMode}`}>
+          {mode
+            ? <MdOutlineLightMode size="30px" onClick={() => SetDarkMode(!DarkMode)} className={styles.fadeOut} />
+            : <MdDarkMode size="30px" color='white' onClick={() => setMode(!DarkMode)} className={styles.fadeIn} />
+          }
+        </div>
+        <div 
+          className={styles.languageMode} 
+          onClick={() => SetLanguage(Language === 'es' ? 'en' : 'es')}
+        >
+          <MdLanguage size="30px" />
+          <span className={styles.languageText} >{Language.toUpperCase()}</span>
+        </div>
       </div>
       <div className={`${styles.list} ${click ? styles.active : null}`}>
         <Link

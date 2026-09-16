@@ -1,8 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from '../../componentes/Footer/Footer.module.css'
+import { FaWhatsapp, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+
+import { useStoreUi } from "../../store";
+
+const translations = {
+  es: {
+    message1: "Desarrollando soluciones digitales con pasión y código.",
+    message2: "¿Listo para empezar tu próximo proyecto? ¡Contáctame!",
+    rights: `© ${new Date().getFullYear()} Andres Andrada. Todos los derechos reservados.`
+  },
+  en: {
+    message1: "Developing digital solutions with passion and code.",
+    message2: "Ready to start your next project? Let's talk!",
+    rights: `© ${new Date().getFullYear()} Andres Andrada. All rights reserved.`
+  }
+};
 
 const Footer = () => {
+  const { Language } = useStoreUi(state => state);
 
   const handleClickWapp = () => {
     window.open('https://wa.me/543517445402');
@@ -20,50 +37,35 @@ const Footer = () => {
     window.open('https://github.com/AndresAndrada');
   };
 
-  return (
-    <div className={style.footer}>
-      <div className={style.container}>
-        <div className={style.parrafo}>
-          <p className={style.letra}>Muchas gracias por visitar mi porfolio! 😁
-            <br />
-            En caso de que desee contactarme les dejo los siguieste datos: ⬇️
-          </p>
-        </div>
-        <div className={style.redes}>
-          <div className={style.items}>
-            <p className={style.parrafoItem}>WhatsApp:</p>
-            <Link onClick={handleClickWapp} className={style.link}>
-              {/* <img src={ whtp } alt="whtp" width='50' /> */}
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </Link>
-          </div>
-          <div className={style.items}>
-            <p className={style.parrafoItem}>LinkedIn:</p>
-            <Link onClick={handleClickLinkedIn} className={style.link}>
-              {/* <img src={ linkedIn } alt="linkedIn" width='50' /> */}
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </Link>
-          </div>
-          <div className={style.items}>
-            <p className={style.parrafoItem}>Instagam:</p>
-            <Link onClick={handleClickInst} className={style.link}>
-              {/* <img src={ inst } alt="inst" width='50' /> */}
-              <ion-icon name="logo-instagram"></ion-icon>
-            </Link>
-          </div>
-          <div className={style.items}>
-            <p className={style.parrafoItem}>gitHub:</p>
-            <Link onClick={handleClickgithub} className={style.link}>
-              <ion-icon name="logo-github"></ion-icon>
-            </Link>
-          </div>
+  const t = translations[Language] || translations.es;
 
+  return (
+    <footer className={style.footer}>
+      <div className={style.container}>
+        <div className={style.textSection}>
+          <h3 className={style.title}>{t.message2}</h3>
+          <p className={style.subtitle}>{t.message1}</p>
+        </div>
+        
+        <div className={style.redes}>
+          <Link onClick={handleClickWapp} className={style.link} aria-label="WhatsApp">
+            <FaWhatsapp />
+          </Link>
+          <Link onClick={handleClickLinkedIn} className={style.link} aria-label="LinkedIn">
+            <FaLinkedin />
+          </Link>
+          <Link onClick={handleClickInst} className={style.link} aria-label="Instagram">
+            <FaInstagram />
+          </Link>
+          <Link onClick={handleClickgithub} className={style.link} aria-label="GitHub">
+            <FaGithub />
+          </Link>
         </div>
       </div>
       <div className={style.date}>
-        <p className={style.letra}>© 2025 - Todos los derechos reservados.</p>
+        <p className={style.letra}>{t.rights}</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

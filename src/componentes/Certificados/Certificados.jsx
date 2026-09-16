@@ -9,8 +9,11 @@ import SampleNextArrow from "../../core/ui/SampleNextArrow";
 import SamplePrevArrow from "../../core/ui/SamplePrevArrow";
 import sliderStyles from './SliderCertific.module.css';
 import { IoDocumentTextSharp } from "react-icons/io5";
+import { useStoreUi } from "../../store";
 
 const Certificados = () => {
+  const { DarkMode } = useStoreUi(state => state);
+
   var settings = {
     dots: true,
     infinite: true,
@@ -40,7 +43,7 @@ const Certificados = () => {
     ]
   };
   return (
-    <section className={styles.container} id="Certificado">
+    <section className={`${styles.container} ${DarkMode ? 'dark' : ''}`} id="Certificado">
       <div className={styles.certificadoSection}>
         <div className={styles.title} id="Certificado">
           <h2>Certificados</h2>

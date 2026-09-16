@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
         transition: background 0.5s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -23,8 +23,8 @@
 
 .home {
     background-image: url('../../assets/home.jpg');
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
     /* height: 100vh; */
     background-size: cover;
     background-position: center center;
@@ -33,8 +33,6 @@
     padding-top: 250px;
     padding-bottom: 300px;
     padding-left: 50px;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .dev {
@@ -216,8 +214,8 @@
     } */
      .home {
         padding-top: 120px;
-        padding-left: 20px;  
-        padding-right: 20px;
+        /* padding-left: 20px;  
+        padding-right: 20px; */
     }
      .dev {
         display: none;
@@ -265,8 +263,6 @@
         position: relative;
         padding-top: 100px;
         padding-bottom: 120px;
-        padding-left: 20px;  
-        padding-right: 20px;
         margin-left: 0;
     }
     .left {

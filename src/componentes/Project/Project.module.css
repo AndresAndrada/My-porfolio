@@ -1,18 +1,23 @@
 .container {
-    width: 100vw;
-    min-height: 50vw;
-    overflow: hidden;
-   padding: 60px 0;     
-   /* background-color: red; */
+    width: 100%;
+    min-height: 55vh;
+    overflow-x: hidden;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .project {
     width: 100%;
-    padding: 20px 0;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* padding: 20px 16px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .title {
@@ -24,8 +29,17 @@
     font-size: 10px;
 }
 
-@media (max-width: 858px) {
-    /* .card {
-        
-    } */
+.sliderContainer {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 550px) {
+    .container {
+    width: 100%;
+    min-height: 70vh;
+}
+    .sliderContainer {
+        height: 450px;
+    }
 }
